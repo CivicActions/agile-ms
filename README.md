@@ -21,6 +21,7 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 1. Bootstrap
 1. Angular JS
 1. AWS Cloud Environments
+1. Docker
 1. Jenkins CI Server
 1. JSON web service data endpoint
 
