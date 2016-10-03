@@ -10,6 +10,7 @@ var config = {
   publicDir: 'public',
   cssDir: 'css',
   jsDir: 'js',
+  viewDir: 'views'
 };
 
 gulp.task('fonts', function() {
@@ -23,8 +24,18 @@ gulp.task('js', function() {
   gulp.src([
     config.bowerDir + '/jquery/dist/jquery.min.js',
     config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
-    'js/app.js',
+    config.bowerDir + '/angular/angular.js',
+    config.bowerDir + '/angular-sanitize/angular-sanitize.js',
+    config.bowerDir + '/angular-animate/angular-animate.js',
+    config.bowerDir + '/angular-resource/angular-resource.js',
+    config.bowerDir + '/angular-touch/angular-touch.js',
+    config.bowerDir + '/angular-ui-router/release/angular-ui-router.js',
+    config.bowerDir + '/angular-bootstrap/ui-bootstrap.js'
   ])
+    .pipe(gulp.dest(config.publicDir + '/js/'))
+    .pipe(livereload());
+
+  gulp.src(['js/**/*.js'])
     .pipe(gulp.dest(config.publicDir + '/js/'))
     .pipe(livereload());
 });
@@ -36,10 +47,17 @@ gulp.task('sass', function() {
     .pipe(livereload());
 });
 
+gulp.task('html', function() {
+  gulp.src(config.viewDir + '/**/*.html')
+    .pipe(gulp.dest(config.publicDir + '/views'))
+    .pipe(livereload());
+})
+
 gulp.task('watch', ['server'], function() {
   livereload.listen({ basePath: '.' });
-  gulp.watch(config.cssDir + '/*.scss', ['sass']);
-  gulp.watch(config.jsDir + '/app.js', ['js']);
+  gulp.watch(config.viewDir + '/**/*.html', ['html']); 
+  gulp.watch(config.cssDir + '/**/*.scss', ['sass']);
+  gulp.watch(config.jsDir + '/**/*.js', ['js']);
 });
 
 gulp.task('server', function(done) {
