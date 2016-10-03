@@ -1,0 +1,56 @@
+#!/usr/bin/bash
+set -e
+cd "$(git rev-parse --show-toplevel)"
+if [ "$2" = "" ]; then
+  echo "Usage ./bin/deploy [subdomain] [domain]"
+  exit 1
+fi
+SUBDOMAIN="$1"
+DOMAIN="$2"
+# Create host NAME combining git commit hash+subdomain+domain.
+COMMIT=$(git rev-parse --short HEAD)
+NAME="${COMMIT}-${SUBDOMAIN}.${DOMAIN}"
+echo "[deploy] Attempting to create host ${NAME}"
+TAG_PREFIX="${SUBDOMAIN}.${DOMAIN}"
+AWS='docker run --rm -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_VPC_ID -e AWS_DEFAULT_REGION -e AWS_ZONE -e AWS_SUBNET_ID anigeo/awscli'
+
+#Provision AWS Docker machine
+docker-machine create "${NAME}" --driver amazonec2 --amazonec2-instance-type t2.micro
+echo "[deploy] Docker machine created. Waiting a few seconds before getting the UP and ID"
+sleep 10
+IP=$(docker-machine ip "${NAME}" 2>&1)
+INSTANCE_ID=$(docker-machine inspect --format='{{.Driver.InstanceId}}' "${NAME}" 2>&1)
+echo "[deploy] Machine created at IP=${IP}, INSTANCE_ID=${INSTANCE_ID}."
+echo "[deploy] Setting tag to 'candidate' for ${INSTANCE_ID}."
+${AWS} ec2 create-tags --resources "${INSTANCE_ID}" --tags "Key=Status,Value=${TAG_PREFIX}-candidate"
+
+# Open port 80
+${AWS} ec2 revoke-security-group-ingress --group-name docker-machine --protocol tcp --port 80 --cidr 0.0.0.0/0
+${AWS} ec2 authorize-security-group-ingress --group-name docker-machine --protocol tcp --port 80 --cidr 0.0.0.0/0
+
+# Deploy specific commit/tag to host.
+docker-machine ssh "${NAME}" "sudo git clone https://github.com/CivicActions/agile-ms.git ${PWD} && cd ${PWD} && sudo git checkout \"${COMMIT}\""
+# Change directory permissions to non-privileged user.
+docker-machine ssh "${NAME}" "sudo chown -R \${USER}:\${GROUP} ${PWD}"
+
+#Enable (in subshell) Docker client connection to remote Docker host.
+(
+  eval "$(docker-machine env "${NAME}")"
+
+  # Build container
+  docker-compose build
+  docker-compose up -d
+)
+
+# Setup DNS and CDN.
+docker run -it --rm -e TOKEN="${CLOUDFLARE_TOKEN}" -e EMAIL="${CLOUDFLARE_EMAIL}" -e DOMAIN="${DOMAIN}" programmerq/cfcli cfcli removerecord "${SUBDOMAIN}"
+docker run -it --rm -e TOKEN="${CLOUDFLARE_TOKEN}" -e EMAIL="${CLOUDFLARE_EMAIL}" -e DOMAIN="${DOMAIN}" programmerq/cfcli cfcli -a -t A addrecord "${SUBDOMAIN}" "${IP}"
+
+echo "[deploy] Deployed to https://${SUBDOMAIN}.${DOMAIN}"
+
+# Purge CDN cache
+docker run -it --rm -e TOKEN="${CLOUDFLARE_TOKEN}" -e EMAIL="${CLOUDFLARE_EMAIL}" -e DOMAIN="${DOMAIN}" programmerq/cfcli cfcli purgecache
+echo "[deploy] Purging CloudFlare cache for ${DOMAIN}."
+echo "[deploy] Deploy success."
+
+
