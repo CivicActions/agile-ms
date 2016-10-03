@@ -1,7 +1,7 @@
 # Agile Mississippi Project
 
 ## Key Assets
-1. Data endpoint: 
+1. Data endpoint: https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json
 1. Dev server:
 1. QA server:
 1. CI server:
