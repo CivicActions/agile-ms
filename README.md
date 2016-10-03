@@ -24,6 +24,7 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 1. Docker
 1. Jenkins CI Server
 1. JSON web service data endpoint
+1. Gulp as a task runner
 
 ## Local Development Config
 1. Ensure you have node, and npm installed on your local machine
