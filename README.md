@@ -1,1 +1,25 @@
-# agile-ms
+# Agile Mississippi Project
+
+## Key Assets
+1. Data endpoint: 
+1. Dev server:
+1. QA server:
+1. CI server:
+1. Slack channel: 
+1. Dev deployment Slack command:
+1. Prod deployment Slack command
+
+## Development Workflow
+
+We are leveraging a fork-and-pull peer reviewed code model that leverages pull requests.
+
+Pull requests are submitted to the Slack channel and any available developer performs a code review.
+
+Deployments occur through Slack by running the commands noted above. Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
+
+## Technical Architecture
+1. Bootstrap
+1. Angular JS
+1. AWS Cloud Environments
+1. Jenkins CI Server
+1. JSON web service data endpoint
