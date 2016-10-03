@@ -14,7 +14,7 @@
 We are leveraging a fork-and-pull peer reviewed code model that leverages pull requests.
 
 Pull requests are submitted to the Slack channel and any available developer performs a code review.
-
+ 
 Deployments occur through Slack by running the commands noted above. Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
 
 ## Technical Architecture
@@ -23,3 +23,8 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 1. AWS Cloud Environments
 1. Jenkins CI Server
 1. JSON web service data endpoint
+
+## Local Development Config
+1. Ensure you have node, and npm installed on your local machine
+1. Navigate to /docroot
+1. run gulp from terminal
