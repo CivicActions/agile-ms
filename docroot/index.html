@@ -85,7 +85,7 @@
         });
 
       });
-console.log(features);
+
     });
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -99,14 +99,16 @@ console.log(features);
     function addMarker(feature) {
       var marker = new google.maps.Marker({
         position: feature.position,
+        type: feature.type,
         // icon: icons[feature.type].icon,
         map: map
       });
     }
+
     var markerPoints = JSON.parse(localStorage.getItem('markerPoints'));
 
-    for (var i = 0, feature; feature = markerPoints[i]; i++) {
-      addMarker(feature.position);
+    for (var i = 0; i < markerPoints.length; i++) {
+      addMarker(markerPoints[i]);
     }
   }
 
