@@ -17,23 +17,37 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
+
+      var filteredResults = {};
+
+      function resetResults() {
+        //$.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json', function( data ) {
+        //  filteredResults = data;
+        //});
+
+        var data = $.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json');
+        console.log($.parseJSON(data.getData()));
+      }
+
       function searchForZip() {
+        resetResults();
         var zip = document.getElementById('zip-code').value;
-        renderMap(zip);
-        renderFilters(zip);
-        renderListing(zip);
+        renderMap();
+        renderFilters();
+        renderListing();
+        console.log(filteredResults);
       }
 
-      function renderMap(zip) {
-        alert('in render map ' + zip);
+      function renderMap() {
+        //alert('in render map ' + filteredResults.length());
       }
 
-      function renderFilters(zip) {
-        alert('in render filters ' + zip);
+      function renderFilters() {
+        //alert('in render filters ' + filteredResults.length());
       }
 
-      function renderListing(zip) {
-        alert('in render listing ' + zip);
+      function renderListing() {
+        //alert('in render listing ' + filteredResults.length());
       }
     </script>
   </head>
