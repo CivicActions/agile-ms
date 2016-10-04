@@ -16,12 +16,73 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+      function searchForZip() {
+        var zip = document.getElementById('zip-code').value;
+        renderMap(zip);
+        renderFilters(zip);
+        renderListing(zip);
+      }
+
+      function renderMap(zip) {
+        alert('in render map ' + zip);
+      }
+
+      function renderFilters(zip) {
+        alert('in render filters ' + zip);
+      }
+
+      function renderListing(zip) {
+        alert('in render listing ' + zip);
+      }
+    </script>
   </head>
 
   <body role="document" page-ready>
     <base href="/">
     <div class="container page">
-        <main id="main" class="main transform" ui-view></main>
+        <main id="main" class="main transform" ui-view>
+
+          <!--
+          HEADER ROW
+          -->
+          <div id="header">
+            <input type="text" id="zip-code" />
+            <button onclick="searchForZip()">< Search by Zip Code</button>
+            <span id="zip-code-results-summary">SEARCH RESULTS GO HERE</span>
+          </div>
+
+          <!--
+          MAP ROW
+          -->
+          <div id="map">
+            MAP GOES HERE
+          </div>
+
+          <!--
+          ADVANCED SEARCH ROW
+          -->
+          <div id="advanced-search">
+
+            <!--
+            FILTERS COLUMN
+            -->
+            <div id="advanced-search-filters">
+              FILTERS GO HERE
+            </div>
+
+            <!--
+            LISTING COLUMN
+            -->
+            <div id="advanced-search-listing">
+              LISTING GOES HERE
+            </div>
+
+
+          </div>
+
+
+        </main>
     </div><!-- /.page -->
 
     <script src="public/js/jquery.min.js"></script>
