@@ -16,12 +16,87 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+
+      var filteredResults = {};
+
+      function resetResults() {
+        //$.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json', function( data ) {
+        //  filteredResults = data;
+        //});
+
+        var data = $.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json');
+        console.log($.parseJSON(data.getData()));
+      }
+
+      function searchForZip() {
+        resetResults();
+        var zip = document.getElementById('zip-code').value;
+        renderMap();
+        renderFilters();
+        renderListing();
+        console.log(filteredResults);
+      }
+
+      function renderMap() {
+        //alert('in render map ' + filteredResults.length());
+      }
+
+      function renderFilters() {
+        //alert('in render filters ' + filteredResults.length());
+      }
+
+      function renderListing() {
+        //alert('in render listing ' + filteredResults.length());
+      }
+    </script>
   </head>
 
   <body role="document" page-ready>
     <base href="/">
     <div class="container page">
-        <main id="main" class="main transform" ui-view></main>
+        <main id="main" class="main transform" ui-view>
+
+          <!--
+          HEADER ROW
+          -->
+          <div id="header">
+            <input type="text" id="zip-code" />
+            <button onclick="searchForZip()">< Search by Zip Code</button>
+            <span id="zip-code-results-summary">SEARCH RESULTS GO HERE</span>
+          </div>
+
+          <!--
+          MAP ROW
+          -->
+          <div id="map">
+            MAP GOES HERE
+          </div>
+
+          <!--
+          ADVANCED SEARCH ROW
+          -->
+          <div id="advanced-search">
+
+            <!--
+            FILTERS COLUMN
+            -->
+            <div id="advanced-search-filters">
+              FILTERS GO HERE
+            </div>
+
+            <!--
+            LISTING COLUMN
+            -->
+            <div id="advanced-search-listing">
+              LISTING GOES HERE
+            </div>
+
+
+          </div>
+
+
+        </main>
     </div><!-- /.page -->
 
     <script src="public/js/jquery.min.js"></script>
