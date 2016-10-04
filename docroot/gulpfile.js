@@ -30,7 +30,10 @@ gulp.task('js', function() {
     config.bowerDir + '/angular-resource/angular-resource.js',
     config.bowerDir + '/angular-touch/angular-touch.js',
     config.bowerDir + '/angular-ui-router/release/angular-ui-router.js',
-    config.bowerDir + '/angular-bootstrap/ui-bootstrap.js'
+    config.bowerDir + '/angular-bootstrap/ui-bootstrap.js',
+    config.bowerDir + '/lodash/lodash.js',
+    config.bowerDir + '/angular-simple-logger/dist/angular-simple-logger.js',
+    config.bowerDir + '/angular-google-maps/dist/angular-google-maps.js',
   ])
     .pipe(gulp.dest(config.publicDir + '/js/'))
     .pipe(livereload());
@@ -55,7 +58,7 @@ gulp.task('html', function() {
 
 gulp.task('watch', ['server'], function() {
   livereload.listen({ basePath: '.' });
-  gulp.watch(config.viewDir + '/**/*.html', ['html']); 
+  gulp.watch(config.viewDir + '/**/*.html', ['html']);
   gulp.watch(config.cssDir + '/**/*.scss', ['sass']);
   gulp.watch(config.jsDir + '/**/*.js', ['js']);
 });

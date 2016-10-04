@@ -11,6 +11,7 @@ angular.module('app', [
   'app.node',
   'ui.router',
   'drupalService',
+  'googleMap',
   'rawService',
   'scrollTo',
   'ui.bootstrap',
@@ -32,7 +33,6 @@ angular.module('app', [
       $rootScope.apiUrl = 'http://172.17.0.4';
       // Raw github url
       $rootScope.rawUrl = 'https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json';
-
       // Apply meta data if available
       $rootScope.$on('$stateChangeStart', 
         function(event, toState, toParams, fromState, fromParams){
