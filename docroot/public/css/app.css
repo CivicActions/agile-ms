@@ -6346,3 +6346,9 @@ to prevent collapsing during animation*/
     -ms-transform: scale3d(0.5, 0.5, 0.5);
     -o-transform: scale3d(0.5, 0.5, 0.5);
     transform: scale3d(0.5, 0.5, 0.5); } }
+
+.angular-google-map-container {
+  height: 400px; }
+
+.navbar-toggle .icon-bar {
+  background: #337ab7; }

@@ -1,54 +1,126 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Agile MS</title>
+  <title>Agile MS</title>
 
-    <link href="public/css/app.css" rel="stylesheet">
+  <link href="public/css/app.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-  <body role="document" page-ready>
-    <base href="/">
-    <div class="container page">
-        <main id="main" class="main transform" ui-view></main>
-    </div><!-- /.page -->
+</head>
 
-    <script src="public/js/jquery.min.js"></script>
-    <script src="public/js/bootstrap.js"></script>
-    <script src="public/js/angular.js"></script>
-    <script src="public/js/angular-sanitize.js"></script>
-    <script src="public/js/angular-animate.js"></script>
-    <script src="public/js/angular-resource.js"></script>
-    <script src="public/js/angular-touch.js"></script>
-    <script src="public/js/angular-ui-router.js"></script>
-    <script src="public/js/ui-bootstrap.js"></script>
-    <!-- App -->
-    <script src="public/js/app.js"></script>
-    <!-- Providers -->
-    <script src="public/js/providers/drupalService.js"></script>
-    <script src="public/js/providers/rawService.js"></script>
-    <!-- Utilities -->
-    <script src="public/js/utilities/scrollTo.js"></script>
-    <!-- Controllers -->
-    <script src="public/js/controllers/resource/resourceCtrl.js"></script>
-    <!-- Routes -->
-    <script src="public/js/routes/pageRoutes.js"></script>
-    <script src="public/js/routes/nodeRoutes.js"></script>
-    <!-- Filters -->
-    <script src="public/js/filters/weightFilter.js"></script>
-    <!-- Directives -->
-    <script src="public/js/directives/resource/resource.js"></script>
-    <script src="public/js/directives/pageReady.js"></script>
-  </body>
+<body role="document">
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Agile MS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+  <div id="map" style="margin-top:100px;height:400px"></div>
+
+</div> <!-- /container -->
+
+<script src="public/js/jquery.min.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/app.js"></script>
+<script>
+  var map;
+  var features = [];
+  function initialize() {
+    var items = [];
+    var dataItems = $.getJSON("/ms_its_rfp_3717_vendor_challenge_dataset_final.json", function (data) {
+      var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+      var icons = {
+        info: {
+          icon: iconBase + 'info-i_maps.png'
+        }
+      };
+      var userSelect = '39194';
+      var lat = '';
+      var lng = '';
+      var address = '';
+      var geo = new google.maps.Geocoder;
+      localStorage.removeItem('markerPoints');
+      $.each(dataItems, function (key, val) {
+        console.log(val.PhysicalZipCode);
+        if (val.PhysicalZipCode == userSelect) {
+          items.push(val.ProviderName);
+
+          geo.geocode({'address': val.PhysicalZipCode}, function (results, status) {
+
+            if (status == google.maps.GeocoderStatus.OK) {
+              lat = results[0].geometry.location.lat();
+              lng = results[0].geometry.location.lng();
+              features.push({
+                position: new google.maps.LatLng(lat, lng),
+                type: 'info'
+              });
+              localStorage.setItem('markerPoints', JSON.stringify(features));
+            }
+          });
+        }
+      });
+
+    });
+
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 5,
+      center: new google.maps.LatLng(32.2988, -90.1848),
+      mapTypeId: 'roadmap',
+
+    });
+
+
+    function addMarker(feature) {
+      var marker = new google.maps.Marker({
+        position: feature.position,
+        type: feature.type,
+        // icon: icons[feature.type].icon,
+        map: map
+      });
+    }
+
+    if (localStorage.getItem('markerPoints')) {
+      var markerPoints = JSON.parse(localStorage.getItem('markerPoints'));
+
+      for (var i = 0; i < markerPoints.length; i++) {
+        addMarker(markerPoints[i]);
+      }
+    }
+  }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4dPQm3pmKn5E45kLhsPqovQhj3iihBdU&callback=initialize">
+</script>
+</body>
 </html>
