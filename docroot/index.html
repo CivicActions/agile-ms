@@ -64,32 +64,36 @@
           icon: iconBase + 'info-i_maps.png'
         }
       };
-
+      var userSelect = '39194';
       var lat = '';
       var lng = '';
       var address = '';
       var geo = new google.maps.Geocoder;
+      localStorage.removeItem('markerPoints');
+      $.each(dataItems, function (key, val) {
+        console.log(val.PhysicalZipCode);
+        if (val.PhysicalZipCode == userSelect) {
+          items.push(val.ProviderName);
 
-      $.each(data, function (key, val) {
-        items.push(val.ProviderName);
-        geo.geocode({'address': val.PhysicalZipCode}, function (results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            lat = results[0].geometry.location.lat();
-            lng = results[0].geometry.location.lng();
-            features.push({
-              position: new google.maps.LatLng(lat, lng),
-              type: 'info'
-            });
-            localStorage.setItem('markerPoints', JSON.stringify(features));
-          }
-        });
+          geo.geocode({'address': val.PhysicalZipCode}, function (results, status) {
 
+            if (status == google.maps.GeocoderStatus.OK) {
+              lat = results[0].geometry.location.lat();
+              lng = results[0].geometry.location.lng();
+              features.push({
+                position: new google.maps.LatLng(lat, lng),
+                type: 'info'
+              });
+              localStorage.setItem('markerPoints', JSON.stringify(features));
+            }
+          });
+        }
       });
 
     });
 
     map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 16,
+      zoom: 5,
       center: new google.maps.LatLng(32.2988, -90.1848),
       mapTypeId: 'roadmap',
 
@@ -105,10 +109,12 @@
       });
     }
 
-    var markerPoints = JSON.parse(localStorage.getItem('markerPoints'));
+    if (localStorage.getItem('markerPoints')) {
+      var markerPoints = JSON.parse(localStorage.getItem('markerPoints'));
 
-    for (var i = 0; i < markerPoints.length; i++) {
-      addMarker(markerPoints[i]);
+      for (var i = 0; i < markerPoints.length; i++) {
+        addMarker(markerPoints[i]);
+      }
     }
   }
 
