@@ -6347,6 +6347,25 @@ to prevent collapsing during animation*/
     -o-transform: scale3d(0.5, 0.5, 0.5);
     transform: scale3d(0.5, 0.5, 0.5); } }
 
+.full-width {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5%; }
+  .full-width #form-legend {
+    font-size: 135%;
+    margin-bottom: 50px; }
+  .full-width .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto; }
+  .full-width #form-help {
+    font-size: 95%;
+    margin-top: 15px; }
+
 #map-toggle {
   position: relative; }
   #map-toggle .toggle-map {
@@ -6368,3 +6387,6 @@ to prevent collapsing during animation*/
 
 .hide {
   display: none; }
+
+.no-opacity {
+  opacity: 0; }
