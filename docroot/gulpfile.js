@@ -30,7 +30,8 @@ gulp.task('js', function() {
     config.bowerDir + '/angular-resource/angular-resource.js',
     config.bowerDir + '/angular-touch/angular-touch.js',
     config.bowerDir + '/angular-ui-router/release/angular-ui-router.js',
-    config.bowerDir + '/angular-bootstrap/ui-bootstrap.js'
+    config.bowerDir + '/angular-bootstrap/ui-bootstrap.js',
+    config.bowerDir + '/angular-bootstrap/ui-bootstrap-tpls.js'
   ])
     .pipe(gulp.dest(config.publicDir + '/js/'))
     .pipe(livereload());
