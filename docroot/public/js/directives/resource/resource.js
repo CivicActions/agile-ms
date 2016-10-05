@@ -3,15 +3,14 @@
 
 angular.module('app')
 
-.directive('resourceList', function factory($window, $browser) {
+.directive('resourceList', function factory($window, $browser, $timeout) {
   return {
     restrict: 'E',
-    scope: {
-     'items': '=',
-    },
+    controller: 'ResourceController',
     templateUrl: 'public/views/resource/list.html',
     link: function($scope, $element, $attrs) {
-      console.log($scope);
+      // Watch filtered ResultsCallbvac
+      $scope.respondFilterChange($scope);
     }
   }
 })

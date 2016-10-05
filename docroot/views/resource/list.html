@@ -1,5 +1,8 @@
-<ul class="results-list">
-  <li ng-repeat="(key, item) in items" class="resource-item">
+<div ng-if="!items || !items.length">
+  <h4>No results</h4>
+</div>
+<div class="results-list">
+  <div ng-repeat="(key, item) in items" class="resource-item">
     <resource-teaser item="item" />
-  </li>
-</ul>
+  </div>
+</div>
