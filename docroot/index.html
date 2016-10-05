@@ -40,7 +40,7 @@
                        }, this);
                     }
                     // filter by provider type
-                    if(  this.activeFilters.ProviderTypeDescription 
+                    if(  this.activeFilters.ProviderTypeDescription
                       && this.activeFilters.ProviderTypeDescription.length
                     ) {
                         results = results.filter(function(item) {
@@ -52,8 +52,8 @@
                 // Call angular callback
                 if(this.onChangeCallback) {
                     this.onChangeCallback(results);
-                } 
-                this.results = results; 
+                }
+                this.results = results;
             }
             // sets Filters, calls applyFilters
             this.setFilters = function(filters) {
@@ -79,17 +79,21 @@
           HEADER ROW
           -->
           <div id="header">
-            <div class="panel panel-default">
-                <div class="panel-heading">Search</div>
+            <div id="naked-panel-item" class="naked-panel">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="form-group col-sm-6">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="zip-code" />
+                        <div class="form-group full-width">
+                          <div id="form-legend">Find safe and quality child care providers in the state of Mississippi.</div>
+
+                          <div class="input-group">
+                                <input placeholder="Your zipcode or address" name="zip-code" class="form-control" type="text" id="zip-code" />
                                 <div class="input-group-btn">
-                                    <button class="btn btn-primary" onclick="searchForZip()">Search by Zip Code</button>
+                                  <button type="button" class="btn btn-primary" onclick="searchForZip()">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                  </button>
                                 </div>
                             </div>
+                          <div id="form-help">Search for providers near you</div>
                         </div>
                         <div class="col-sm-6">
                             <h5 id="result-note"></h5>
@@ -99,43 +103,44 @@
             </div>
           </div>
 
-          <!--
-          MAP ROW
-          -->
-          <div id="map-toggle"><span class="toggle-map hide">Show Map</span><span class="toggle-map">Hide map</span></div>
-          <div id="map">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div id="map-interior" style="height:500px;"></div>
+          <div id="post-landing-wrap" class="no-opacity hide">
+            <!--
+            MAP ROW
+            -->
+            <div id="map-toggle"><span class="toggle-map hide">Show Map</span><span class="toggle-map">Hide map</span></div>
+            <div id="map">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div id="map-interior" style="height:500px;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!--
+            ADVANCED SEARCH ROW
+            -->
+            <div id="advanced-search" class="row">
+
+              <!--
+              FILTERS COLUMN
+              -->
+              <div id="advanced-search-filters" class="col-sm-4 col-md-3">
+                  <div class="panel panel-default">
+                      <div class="panel-body">
+                          <h4>Filter</h4>
+                          <resource-filters />
+                      </div>
+                  </div>
+              </div>
+
+              <!--
+              LISTING COLUMN
+              -->
+              <div id="advanced-search-listing" class="col-sm-8 col-md-9">
+                <resource-list />
               </div>
             </div>
           </div>
-
-          <!--
-          ADVANCED SEARCH ROW
-          -->
-          <div id="advanced-search" class="row">
-
-            <!--
-            FILTERS COLUMN
-            -->
-            <div id="advanced-search-filters" class="col-sm-4 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h4>Filter</h4>
-                        <resource-filters />
-                    </div>
-                </div>
-            </div>
-
-            <!--
-            LISTING COLUMN
-            -->
-            <div id="advanced-search-listing" class="col-sm-8 col-md-9">
-              <resource-list />
-            </div>
-          </div>
-
         </main>
     </div><!-- /.page -->
 
@@ -171,7 +176,7 @@
         $.getJSON(
             'https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json'
             , function( data ) {
-                // add unique ids to objects, set fullResults 
+                // add unique ids to objects, set fullResults
                 filteredResults.fullResults = data.map(function(item, key) {
                     item.id = key;
                     return item;
@@ -199,6 +204,7 @@
        * Searches zip from input
        */
       function searchForZip() {
+        toggleLanding();
         var filters = {
             zip: document.getElementById('zip-code').value
         };
@@ -221,6 +227,17 @@
             $('.toggle-map').addClass('position-relative');
           }
         })
+      }
+
+      /**
+       * Toggles landing block.
+       */
+      function toggleLanding() {
+        $('#naked-panel-item').removeClass('naked-panel').addClass('panel panel-default');
+        $('#post-landing-wrap').removeClass('hide').animate({
+          'opacity': 1
+        })
+        $('.form-group').removeClass('full-width').addClass('col-sm-6');
       }
 
       /**
@@ -319,7 +336,7 @@
             text = '';
         }
         else {
-            text = "There are " + filteredResults.results.length 
+            text = "There are " + filteredResults.results.length
                  + " child care providers within the " + filteredResults.activeFilters.zip + " zipcode.";
         }
         $('#result-note').text(text);
@@ -334,7 +351,7 @@
             }
         });
         // Call once to populate
-        filterResults({ 
+        filterResults({
             zip: null,
             ProviderTypeDescription: []
         });
