@@ -91,6 +91,7 @@
           <!--
           MAP ROW
           -->
+          <div id="map-toggle"><span class="toggle-map hide">Show Map</span><span class="toggle-map">Hide map</span></div>
           <div id="map">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -195,10 +196,24 @@
       }
 
       /**
+       * Hides/displays map.
+       */
+      function toggleMap() {
+        $('.toggle-map').click(function() {
+          $('.toggle-map, #map').toggleClass('hide');
+          $('.toggle-map').removeClass('position-relative');
+          if ($('#map').hasClass('hide')) {
+            $('.toggle-map').addClass('position-relative');
+          }
+        })
+      }
+
+      /**
        * Outputs google map and markers.
        */
       function renderMap() {
         console.log(filteredResults);
+        toggleMap();
         if (filteredResults.activeFilters.zip) {
           var userSelect = filteredResults.activeFilters.zip;
           getCoords();
@@ -257,16 +272,18 @@
               var marker = new google.maps.Marker({
                 position: {lat: lat, lng: lng},
                 type: 'info',
-                //icon: icons[feature.type].icon,
+                icon: 'public/images/person.png',
                 map: map
               });
-              var html = '<b>' + val.ProviderName + '</b><hr/>' + val.PhysicalCity + ',<br/>' + val.ProviderTypeDescription + '<br />Rating: ' + val.QualityRating
-                + '<br/> ' + val.PhoneNumber + '<hr />';
+              var html = '<b>' + val.ProviderName + '</b><hr/>' + val.PhysicalCity + ',<br/>' + val.ProviderTypeDescription + '<br />'
+                + val.PhoneNumber + '<br />' + val.QualityRating + ' stars<hr />';
+
 
               var infoWindow = new google.maps.InfoWindow;
               google.maps.event.addListener(marker, 'click', function () {
+
                 infoWindow.setContent(html);
-                infoWindow.open(map, marker);
+                infoWindow.open(map, this);
               });
             }
           });
@@ -310,7 +327,7 @@
       })(jQuery);
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4dPQm3pmKn5E45kLhsPqovQhj3iihBdU&callback=renderMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHz-VCCJudAUffG24i9QOosAECS2aJSs&callback=renderMap">
     </script>
   </body>
 </html>

@@ -6346,3 +6346,25 @@ to prevent collapsing during animation*/
     -ms-transform: scale3d(0.5, 0.5, 0.5);
     -o-transform: scale3d(0.5, 0.5, 0.5);
     transform: scale3d(0.5, 0.5, 0.5); } }
+
+#map-toggle {
+  position: relative; }
+  #map-toggle .toggle-map {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    z-index: 9;
+    padding: 8px 25px;
+    border: thin solid #7F7F7F;
+    background: #cacaca;
+    cursor: pointer;
+    color: #484848; }
+    #map-toggle .toggle-map.position-relative {
+      position: relative;
+      top: -10px; }
+    #map-toggle .toggle-map:hover {
+      background: #aeaeae;
+      border: thin solid #7F7F7F; }
+
+.hide {
+  display: none; }
