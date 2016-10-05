@@ -1,9 +1,33 @@
 // Bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/theme";
-
 // Bourbon
 @import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
-
 @import "angular/animate";
 
+#map-toggle {
+  position: relative;
+  .toggle-map {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    z-index: 9;
+    padding: 8px 25px;
+    border: thin solid #7F7F7F;
+    background: #cacaca;
+    cursor: pointer;
+    color: #484848;
+    &.position-relative {
+      position: relative;
+      top:-10px;
+    }
+    &:hover {
+      background: #aeaeae;
+      border: thin solid #7F7F7F;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
