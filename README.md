@@ -4,10 +4,10 @@
 1. Data endpoint: https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json
 1. Dev server: https://agile-ms-dev.civicactions.com
 1. Production server: https://agile-ms.civicactions.com
-1. CI server:
-1. Slack channel: 
-1. Dev deployment Slack command:
-1. Prod deployment Slack command
+1. CI server: http://ci.civicactions.net
+1. Slack channel: #agile-ms
+1. Dev deployment Slack command: /agile-ms-deploy-dev
+1. Prod deployment Slack command: /agile-ms-deploy-prod
 
 ## Development Workflow
 
