@@ -1,5 +1,21 @@
-<div class="item">
-  <h4><a ui-sref="home.resource({ resourceID: item.id })" 
-         ng-click="titleClick($event)" 
-         ng-bind-html="item.ProviderName" /></h4>
-</div>
+<div class="item panel"><div class="panel-body">
+  <div class="row">
+    <div class="col-sm-8 col-md-9">
+      <h4><a ui-sref="home.resource({ resourceID: item.id })" 
+             ng-click="titleClick($event)" 
+             ng-bind-html="item.ProviderName" /></h4>
+      <p><span ng-if="item.LicenseType == 'LICENSED'" class="label label-info">Licensed</span> {{item.ProviderTypeDescription}}</p>
+      <div class="row">
+        <div class="col-sm-7 col-md-8">
+          <span>{{item.PhysicalCity}}</span> <span>{{item.PhysicalZipCode}}</span>
+        </div>
+        <div class="col-sm-5 col-md-4">
+          <i class="fa fa-phone"></i> <span>{{item.PhoneNumber}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-3">
+      <div class="stars" ng-bind-html="getStars(item)"></div>
+    </div>
+  </div>
+</div></div>
