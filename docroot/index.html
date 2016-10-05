@@ -10,6 +10,7 @@
     <title>Agile MS</title>
 
     <link href="public/css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -17,84 +18,109 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-
-      var filteredResults = {};
-
-      function resetResults() {
-        //$.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json', function( data ) {
-        //  filteredResults = data;
-        //});
-
-        var data = $.getJSON('https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json');
-        console.log($.parseJSON(data.getData()));
-      }
-
-      function searchForZip() {
-        resetResults();
-        var zip = document.getElementById('zip-code').value;
-        renderMap();
-        renderFilters();
-        renderListing();
-        console.log(filteredResults);
-      }
-
-      function renderMap() {
-        //alert('in render map ' + filteredResults.length());
-      }
-
-      function renderFilters() {
-        //alert('in render filters ' + filteredResults.length());
-      }
-
-      function renderListing() {
-        //alert('in render listing ' + filteredResults.length());
-      }
+        // Global results object
+        var filteredResults = new function () {
+            // callback for angular
+            this.onChangeCallback = null;
+            // Possible filters
+            this.activeFilters = {};
+            // full results list for filtering
+            this.fullResults = [];
+            // filtered results
+            this.results = [];
+            // Setter for zipcode
+            this.applyFilters = function() {
+                // Filter by zip
+                var results = [];
+                if(this.activeFilters.zip) {
+                   results = this.fullResults.filter(function(item) {
+                        return parseInt(this.activeFilters.zip) === parseInt(item.PhysicalZipCode)
+                   }, this);
+                }
+                // @TODO more filters
+                // Call angular callback
+                if(this.onChangeCallback) {
+                    this.onChangeCallback(results);
+                } 
+                this.results = results; 
+            }
+            // sets Filters, calls applyFilters
+            this.setFilters = function(filters) {
+                // Either set set or default
+                // @TODO more filter properties
+                this.activeFilters = filters || {
+                    zip: null
+                };
+                this.applyFilters();
+            }
+            // Init
+            this.setFilters();
+        };
     </script>
   </head>
 
   <body role="document" page-ready>
     <base href="/">
     <div class="container page">
-        <main id="main" class="main transform" ui-view>
-
+        <main>
           <!--
           HEADER ROW
           -->
           <div id="header">
-            <input type="text" id="zip-code" />
-            <button onclick="searchForZip()">< Search by Zip Code</button>
-            <span id="zip-code-results-summary">SEARCH RESULTS GO HERE</span>
+            <div class="panel panel-default">
+                <div class="panel-heading">Search</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <div class="input-group">
+                                <input class="form-control" type="text" id="zip-code" />
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" onclick="searchForZip()">Search by Zip Code</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 id="result-note"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
 
           <!--
           MAP ROW
           -->
           <div id="map">
-            MAP GOES HERE
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        MAP GOES HERE
+                    </div>
+                </div>
           </div>
 
           <!--
           ADVANCED SEARCH ROW
           -->
-          <div id="advanced-search">
+          <div id="advanced-search" class="row">
 
             <!--
             FILTERS COLUMN
             -->
-            <div id="advanced-search-filters">
-              FILTERS GO HERE
+            <div id="advanced-search-filters" class="col-sm-4 col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4>Filter</h4>
+                    </div>
+                </div>
             </div>
 
             <!--
             LISTING COLUMN
             -->
-            <div id="advanced-search-listing">
-              LISTING GOES HERE
+            <div id="advanced-search-listing" class="col-sm-8 col-md-9">
+              <resource-list />
             </div>
-
-
           </div>
-
 
         </main>
     </div><!-- /.page -->
@@ -106,24 +132,104 @@
     <script src="public/js/angular-animate.js"></script>
     <script src="public/js/angular-resource.js"></script>
     <script src="public/js/angular-touch.js"></script>
-    <script src="public/js/angular-ui-router.js"></script>
     <script src="public/js/ui-bootstrap.js"></script>
     <!-- App -->
     <script src="public/js/app.js"></script>
     <!-- Providers -->
-    <script src="public/js/providers/drupalService.js"></script>
     <script src="public/js/providers/rawService.js"></script>
-    <!-- Utilities -->
-    <script src="public/js/utilities/scrollTo.js"></script>
     <!-- Controllers -->
     <script src="public/js/controllers/resource/resourceCtrl.js"></script>
-    <!-- Routes -->
-    <script src="public/js/routes/pageRoutes.js"></script>
-    <script src="public/js/routes/nodeRoutes.js"></script>
-    <!-- Filters -->
-    <script src="public/js/filters/weightFilter.js"></script>
     <!-- Directives -->
     <script src="public/js/directives/resource/resource.js"></script>
-    <script src="public/js/directives/pageReady.js"></script>
+
+    <script>
+      /**
+       * Querys JSON, populates global variable
+       */
+      function resetResults(callback) {
+        // Already have data
+        if(filteredResults.fullResults && filteredResults.fullResults.length) {
+            return callback();
+        }
+        // Query json
+        $.getJSON(
+            'https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json'
+            , function( data ) {
+                // add unique ids to objects, set fullResults 
+                filteredResults.fullResults = data.map(function(item, key) {
+                    item.id = key;
+                    return item;
+                } );
+                callback();
+            }
+        );
+      }
+
+      /**
+       * Filters filter: { zip: 39202 }
+       */
+      function filterResults(filters, callback) {
+        // Data set empty, so grab
+        resetResults(function() {
+            // Filter by zip
+            filteredResults.setFilters(filters);
+            callback();
+        });
+      }
+
+      /**
+       * Searches zip from input
+       */
+      function searchForZip() {
+        var filters = {
+            zip: document.getElementById('zip-code').value
+        };
+        // Got a new zip, so filter
+        filterResults(filters, function() {
+            renderNote();
+            renderMap();
+            renderFilters();
+        });
+      }
+
+      function renderMap() {
+        //alert('in render map ' + filteredResults.length());
+      }
+
+      function renderFilters() {
+        //alert('in render filters ' + filteredResults.length());
+      }
+
+      /**
+       * Changes text next to search
+       */
+      function renderNote() {
+        //alert('in render listing ' + filteredResults.length());
+        var text;
+        if(!filteredResults.results || !filteredResults.results.length) {
+            text = '';
+        }
+        else {
+            text = "There are " + filteredResults.results.length 
+                 + " child care providers within the " + filteredResults.zip + " zipcode.";
+        }
+        $('#result-note').text(text);
+      }
+
+      (function($) {
+
+        $('#zip-code').keypress(function (ev) {
+            var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+            if (keycode == '13') {
+                searchForZip();
+            }
+        });
+        // Call once to populate
+        resetResults(function() {
+            console.log(filteredResults);
+        });
+
+      })(jQuery);
+    </script>
   </body>
 </html>
