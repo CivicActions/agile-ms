@@ -32,12 +32,23 @@
             this.applyFilters = function() {
                 // Filter by zip
                 var results = [];
-                if(this.activeFilters.zip) {
-                   results = this.fullResults.filter(function(item) {
-                        return parseInt(this.activeFilters.zip) === parseInt(item.PhysicalZipCode)
-                   }, this);
+                if(this.activeFilters) {
+                    // Filter by zip
+                    if(this.activeFilters.zip) {
+                       results = this.fullResults.filter(function(item) {
+                            return parseInt(this.activeFilters.zip) === parseInt(item.PhysicalZipCode)
+                       }, this);
+                    }
+                    // filter by provider type
+                    if(  this.activeFilters.ProviderTypeDescription 
+                      && this.activeFilters.ProviderTypeDescription.length
+                    ) {
+                        results = results.filter(function(item) {
+                            return -1 !== this.activeFilters.ProviderTypeDescription.indexOf(item.ProviderTypeDescription)
+                       }, this);
+                    }
+                    // @TODO more filters
                 }
-                // @TODO more filters
                 // Call angular callback
                 if(this.onChangeCallback) {
                     this.onChangeCallback(results);
@@ -47,14 +58,14 @@
             // sets Filters, calls applyFilters
             this.setFilters = function(filters) {
                 // Either set set or default
-                // @TODO more filter properties
-                this.activeFilters = filters || {
-                    zip: null
+                var keys = Object.keys(filters);
+                for (var i = 0; i < keys.length; i++) {
+                    this.activeFilters[keys[i]] = filters[keys[i]];
                 };
                 this.applyFilters();
             }
             // Init
-            this.setFilters();
+            this.setFilters({});
         };
 
     </script>
@@ -112,6 +123,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <h4>Filter</h4>
+                        <resource-filters />
                     </div>
                 </div>
             </div>
@@ -142,6 +154,7 @@
     <script src="public/js/providers/rawService.js"></script>
     <!-- Controllers -->
     <script src="public/js/controllers/resource/resourceCtrl.js"></script>
+    <script src="public/js/controllers/resource/providerFilterCtrl.js"></script>
     <!-- Directives -->
     <script src="public/js/directives/resource/resource.js"></script>
 
@@ -176,7 +189,9 @@
         resetResults(function() {
             // Filter by zip
             filteredResults.setFilters(filters);
-            callback();
+            if(callback) {
+                callback();
+            }
         });
       }
 
@@ -212,9 +227,8 @@
        * Outputs google map and markers.
        */
       function renderMap() {
-        console.log(filteredResults);
         toggleMap();
-        if (filteredResults.activeFilters.zip) {
+        if (filteredResults.activeFilters && filteredResults.activeFilters.zip) {
           var userSelect = filteredResults.activeFilters.zip;
           getCoords();
         }
@@ -320,8 +334,9 @@
             }
         });
         // Call once to populate
-        resetResults(function() {
-            console.log(filteredResults);
+        filterResults({ 
+            zip: null,
+            ProviderTypeDescription: []
         });
 
       })(jQuery);
