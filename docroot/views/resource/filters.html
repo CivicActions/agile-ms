@@ -7,8 +7,10 @@
 
   <h4>Type of Provider</h4>
   <div class="provider-type-filters">
-    <div ng-repeat="(key, filter) in providerTypes" class="provider-type">
-      <div class="provider-type-filter">{{filter}}</div>
-    </div>
+    <ul ng-repeat="(key, filter) in providerTypes" class="provider-type list-group">
+      <a ng-class="{active:filterActive( 'ProviderTypeDescription', filter )}" 
+         ng-click="filterClick( $event, 'ProviderTypeDescription', filter )" 
+         href="#" class="list-group-item provider-type-filter">{{filter}}</a>
+    </ul>
   </div>
 </div>

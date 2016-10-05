@@ -24,9 +24,35 @@ angular.module('app')
           }
 
            scope.providerTypes = filteredProviderTypes;
-
         });
       }) 
     });
   }
+
+  $scope.filterClick = function(event, filterType, value) {
+    event.preventDefault();
+    var filters = {};
+    filters[filterType] = [];
+    // Get active items if applicable
+    if(filteredResults.activeFilters[filterType]) {
+      filters[filterType] = filteredResults.activeFilters[filterType]
+    }
+    // Already active ?
+    var index = filters[filterType].indexOf(value);
+    if(index !== -1) {
+      filters = filters[filterType].splice(index, 1);
+    }
+    else {
+      filters[filterType].push(value);
+    }
+    filteredResults.setFilters(filters);
+  };
+
+  $scope.filterActive = function(filterType, value) {
+    if(filteredResults.activeFilters[filterType] && filteredResults.activeFilters[filterType].indexOf(value) !== -1) {
+      return true;
+    }
+    return false;
+  }
+
 }]);
