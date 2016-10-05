@@ -91,8 +91,12 @@
           <!--
           MAP ROW
           -->
-          <div id="map" style="height:500px;">
-
+          <div id="map">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div id="map-interior" style="height:500px;"></div>
+              </div>
+            </div>
           </div>
 
           <!--
@@ -189,77 +193,80 @@
         });
       }
 
-
+      /**
+       * Outputs google map and markers.
+       */
       function renderMap() {
         console.log(filteredResults);
-        var userSelect = '39428';
+        if (filteredResults.activeFilters.zip) {
+          var userSelect = filteredResults.activeFilters.zip;
+          getCoords();
+        }
+        else {
+          var userSelect = '39209';
+          getCoords();
+          /**
+           * @TODO - add html geolocation - leaving out for now as it doesn't play nice with markers callback.
+           *
+           * if (navigator.geolocation) {
+           * navigator.geolocation.getCurrentPosition(showPosition);
+           * } else {
+           * var userSelect = '39209'
+           * getCoords();
+           * }
+           */
+        }
+
+        function showPosition(position) {
+          localStorage.setItem('maplat', position.coords.latitude);
+          localStorage.setItem('maplng', position.coords.longitude);
+        }
+
         var map;
-        var mapgeo = new google.maps.Geocoder;
-        mapgeo.geocode({'address': userSelect}, function (results, status) {
 
-          if (status == google.maps.GeocoderStatus.OK) {
-            var lat2 = results[0].geometry.location.lat();
-            var lng2 = results[0].geometry.location.lng();
-            localStorage.setItem('maplat', lat2);
-            localStorage.setItem('maplng', lng2);
-          }
+        function getCoords() {
+          var mapgeo = new google.maps.Geocoder;
+          mapgeo.geocode({'address': userSelect}, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+              var lat2 = results[0].geometry.location.lat();
+              var lng2 = results[0].geometry.location.lng();
+              localStorage.setItem('maplat', lat2);
+              localStorage.setItem('maplng', lng2);
+            }
 
-        })
+          })
+        }
 
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+        map = new google.maps.Map(document.getElementById('map-interior'), {
+          zoom: 11,
           center: new google.maps.LatLng(localStorage.getItem('maplat'), localStorage.getItem('maplng')),
           mapTypeId: 'roadmap',
         });
 
-        var features = [];
-
-        var items = [];
-        var endpoint = resetResults();
-        var dataItems = $.getJSON("https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json", function (data) {
-          var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-          var icons = {
-            info: {
-              icon: iconBase + 'info-i_maps.png'
-            }
-          };
-
-          var sortedItems = [];
-          $.each(dataItems.responseJSON, function (key, val) {
-            if (val.PhysicalZipCode == userSelect) {
-              sortedItems.push(this);
-            }
-          })
-          localStorage.setItem('points', JSON.stringify(sortedItems));
-
-        });
-
         var geo = new google.maps.Geocoder;
-        var items = JSON.parse(localStorage.getItem('points'));
+        var items = filteredResults.results;
 
         $.each(items, function (key, val) {
-          // items.push(val.ProviderName);
+
           geo.geocode({'address': val.PhysicalZipCode}, function (results, status) {
 
             if (status == google.maps.GeocoderStatus.OK) {
-              if (val.PhysicalZipCode == '39428') {
-                var lat = results[0].geometry.location.lat();
-                var lng = results[0].geometry.location.lng();
-                var marker = new google.maps.Marker({
-                  position: {lat: lat, lng: lng},
-                  type: 'info',
-                  //icon: icons[feature.type].icon,
-                  map: map
-                });
-                var html = "<b>" + val.ProviderName + " </b> <br/> " + val.PhysicalCity + ", <br/> " + val.ProviderTypeDescription + " <br />Rating: " + val.QualityRating
-                  +  "<br/> " + val.PhoneNumber;
+              var lat = results[0].geometry.location.lat() + Math.random() * (0.120 - 0.0200) + 0.0200;
+              var lng = results[0].geometry.location.lng() + Math.random() * (0.120 - 0.0200) + 0.0200;
+              var marker = new google.maps.Marker({
+                position: {lat: lat, lng: lng},
+                type: 'info',
+                //icon: icons[feature.type].icon,
+                map: map
+              });
+              var html = '<b>' + val.ProviderName + '</b><hr/>' + val.PhysicalCity + ',<br/>' + val.ProviderTypeDescription + '<br />Rating: ' + val.QualityRating
+                + '<br/> ' + val.PhoneNumber + '<hr />';
 
-                var infoWindow = new google.maps.InfoWindow;
-                google.maps.event.addListener(marker, 'click', function(){
-                  infoWindow.setContent(html);
-                  infoWindow.open(map, marker);
-                });
-              }
+              var infoWindow = new google.maps.InfoWindow;
+              google.maps.event.addListener(marker, 'click', function () {
+                infoWindow.setContent(html);
+                infoWindow.open(map, marker);
+              });
             }
           });
 
