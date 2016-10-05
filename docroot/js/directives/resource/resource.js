@@ -15,6 +15,18 @@ angular.module('app')
   }
 })
 
+.directive('resourceFilters', function factory($window, $browser, $timeout) {
+  return {
+    restrict: 'E',
+    controller: 'ProviderFilterController',
+    templateUrl: 'public/views/resource/filters.html',
+    link: function($scope, $element, $attrs) {
+      // Watch filtered ResultsCallbvac
+      $scope.respondFilterChange($scope);
+    }
+  }
+})
+
 .directive('resourceTeaser', function factory($window, $browser) {
   return {
     restrict: 'E',
