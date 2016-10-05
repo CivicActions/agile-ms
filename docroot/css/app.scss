@@ -5,6 +5,32 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "angular/animate";
 
+.full-width {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  .triggered {
+
+  }
+  #form-legend {
+    font-size: 135%;
+    margin-bottom: 50px;
+  }
+  .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #form-help {
+    font-size: 95%;
+    margin-top: 15px;
+  }
+}
+
 #map-toggle {
   position: relative;
   .toggle-map {
@@ -19,7 +45,7 @@
     color: #484848;
     &.position-relative {
       position: relative;
-      top:-10px;
+      top: -10px;
     }
     &:hover {
       background: #aeaeae;
@@ -31,3 +57,8 @@
 .hide {
   display: none;
 }
+
+.no-opacity {
+  opacity: 0;
+}
+
