@@ -47,6 +47,14 @@
                             return -1 !== this.activeFilters.ProviderTypeDescription.indexOf(item.ProviderTypeDescription)
                        }, this);
                     }
+                    // filter by rating
+                    if(  this.activeFilters.QualityRatingDescription
+                            && this.activeFilters.QualityRatingDescription.length
+                    ) {
+                        results = results.filter(function(item) {
+                            return -1 !== this.activeFilters.QualityRatingDescription.indexOf(item.QualityRatingDescription)
+                        }, this);
+                    }
                     // @TODO more filters
                 }
                 // Call angular callback
@@ -127,8 +135,9 @@
               <div id="advanced-search-filters" class="col-sm-4 col-md-3">
                   <div class="panel panel-default">
                       <div class="panel-body">
-                          <h4>Filter</h4>
-                          <resource-filters />
+                          <h3>Narrow your search</h3>
+                          <provider-filters></provider-filters>
+                          <rating-filters></rating-filters>
                       </div>
                   </div>
               </div>
@@ -160,6 +169,7 @@
     <!-- Controllers -->
     <script src="public/js/controllers/resource/resourceCtrl.js"></script>
     <script src="public/js/controllers/resource/providerFilterCtrl.js"></script>
+    <script src="public/js/controllers/resource/ratingFilterCtrl.js"></script>
     <!-- Directives -->
     <script src="public/js/directives/resource/resource.js"></script>
 
@@ -353,7 +363,8 @@
         // Call once to populate
         filterResults({
             zip: null,
-            ProviderTypeDescription: []
+            ProviderTypeDescription: [],
+            QualityRatingDescription: []
         });
 
       })(jQuery);
