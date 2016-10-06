@@ -223,7 +223,7 @@
         }
         // Query json
         $.getJSON(
-            'https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json'
+            'api.json'
             , function( data ) {
                 // add unique ids to objects, set fullResults
                 filteredResults.fullResults = data.map(function(item, key) {
@@ -320,9 +320,9 @@
         }
 
         var map;
-
+        var mapgeo;
         function getCoords() {
-          var mapgeo = new google.maps.Geocoder;
+          mapgeo = new google.maps.Geocoder
           mapgeo.geocode({'address': userSelect}, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
               var lat2 = results[0].geometry.location.lat();
@@ -349,12 +349,8 @@
         var items = filteredResults.results;
 
         $.each(items, function (key, val) {
-
-          geo.geocode({'address': val.PhysicalZipCode}, function (results, status) {
-
-            if (status == google.maps.GeocoderStatus.OK) {
-              var lat = results[0].geometry.location.lat() + Math.random() * (0.120 - 0.0200) + 0.0200;
-              var lng = results[0].geometry.location.lng() + Math.random() * (0.120 - 0.0200) + 0.0200;
+              var lat = Number(val.lat) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
+              var lng = Number(val.lng) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
               var marker = new google.maps.Marker({
                 position: {lat: lat, lng: lng},
                 type: 'info',
@@ -369,8 +365,6 @@
                 infoWindow.setContent(html);
                 infoWindow.open(map, this);
               });
-            }
-          });
 
         });
       }
