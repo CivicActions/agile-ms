@@ -245,6 +245,8 @@
        * Searches zip from input
        */
       function searchForZip() {
+        toggleMap();
+        renderMap();
         toggleLanding();
         var filters = {
             zip: document.getElementById('zip-code').value
