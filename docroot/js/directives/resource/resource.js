@@ -39,6 +39,21 @@ angular.module('app')
   }
 })
 
+// Watches input for return key
+.directive('nameSearchField', function () {
+  return {
+    restrict: 'A',
+    controller: 'NameSearchController',
+    link: function ($scope, $element, $attrs) {
+      $element.bind("keydown", function (event) {
+        if (event.which == 13) {
+          $scope.nameSearch(event);
+        }
+      });
+    }
+  }
+})
+
 .directive('nameSearch', function factory($window, $browser, $timeout) {
   return {
     restrict: 'E',
