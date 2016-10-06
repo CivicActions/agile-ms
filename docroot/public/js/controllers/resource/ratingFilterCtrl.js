@@ -5,6 +5,14 @@ angular.module('app')
 
   var self = this;
 
+  var filteredRatings = [
+    'Low',
+    'Average',
+    'Good',
+    'Very Good',
+    'Excellent'
+  ];
+
   // Init event emitter
   FilteredResults.resultEvent();
 
@@ -13,15 +21,15 @@ angular.module('app')
     $scope.$on('resultChange', function(event, data){
       $timeout(function () {
         scope.$apply(function () {
-          var filteredRatings = [];
+          // var filteredRatings = [];
 
-          // Loop over filtered data set and get unique set of types.
-          for (var i=0; i<data.results.length; i++) {
-            // Check if type is in ratings array.
-            if (filteredRatings.indexOf(data.results[i].QualityRatingDescription) == -1) {
-              filteredRatings.push(data.results[i].QualityRatingDescription);
-            }
-          }
+          // // Loop over filtered data set and get unique set of types.
+          // for (var i=0; i<data.results.length; i++) {
+          //   // Check if type is in ratings array.
+          //   if (filteredRatings.indexOf(data.results[i].QualityRatingDescription) == -1) {
+          //     filteredRatings.push(data.results[i].QualityRatingDescription);
+          //   }
+          // }
 
            scope.ratings = filteredRatings;
         });
