@@ -84,6 +84,12 @@
                             return -1 !== this.activeFilters.QualityRatingDescription.indexOf(item.QualityRatingDescription)
                         }, this);
                     }
+                    // filter by name
+                    if(  this.activeFilters.ProviderName) {
+                        results = results.filter(function(item) {
+                            return JSON.stringify(item.ProviderName.toLowerCase()).match(this.activeFilters.ProviderName.toLowerCase());
+                        }, this);
+                    }
                     // @TODO more filters
                 }
                 // Call angular callback
@@ -167,6 +173,7 @@
                           <h3>Narrow your search</h3>
                           <provider-filters></provider-filters>
                           <rating-filters></rating-filters>
+                          <name-search></name-search>
                       </div>
                   </div>
               </div>
@@ -199,6 +206,7 @@
     <script src="public/js/controllers/resource/resourceCtrl.js"></script>
     <script src="public/js/controllers/resource/providerFilterCtrl.js"></script>
     <script src="public/js/controllers/resource/ratingFilterCtrl.js"></script>
+    <script src="public/js/controllers/resource/nameSearchCtrl.js"></script>
     <!-- Directives -->
     <script src="public/js/directives/resource/resource.js"></script>
 
@@ -257,6 +265,19 @@
             renderMap();
             renderFilters();
         });
+      }
+
+      /**
+       * Searches name from input
+       */
+      function searchForName() {
+          filteredResults.activeFilters.ProviderName = document.getElementById('name-search').value
+          // Got a new zip, so filter
+          filterResults(filteredResults.activeFilters, function() {
+              renderNote();
+              renderMap();
+              renderFilters();
+          });
       }
 
       /**

@@ -39,6 +39,18 @@ angular.module('app')
   }
 })
 
+.directive('nameSearch', function factory($window, $browser, $timeout) {
+  return {
+    restrict: 'E',
+    controller: 'NameSearchController',
+    templateUrl: 'public/views/resource/name-search.html',
+    link: function($scope, $element, $attrs) {
+      // Watch filtered ResultsCallbvac
+      $scope.respondFilterChange($scope);
+    }
+  }
+})
+
 .directive('resourceTeaser', function factory($window, $browser) {
   return {
     restrict: 'E',
