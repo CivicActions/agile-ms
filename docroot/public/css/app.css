@@ -6385,6 +6385,9 @@ to prevent collapsing during animation*/
       background: #aeaeae;
       border: thin solid #7F7F7F; }
 
+#map-interior {
+  height: 500px; }
+
 .hide {
   display: none; }
 
