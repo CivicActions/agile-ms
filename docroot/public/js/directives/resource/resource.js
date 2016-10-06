@@ -15,11 +15,23 @@ angular.module('app')
   }
 })
 
-.directive('resourceFilters', function factory($window, $browser, $timeout) {
+.directive('providerFilters', function factory($window, $browser, $timeout) {
   return {
     restrict: 'E',
     controller: 'ProviderFilterController',
-    templateUrl: 'public/views/resource/filters.html',
+    templateUrl: 'public/views/resource/provider-filters.html',
+    link: function($scope, $element, $attrs) {
+      // Watch filtered ResultsCallbvac
+      $scope.respondFilterChange($scope);
+    }
+  }
+})
+
+.directive('ratingFilters', function factory($window, $browser, $timeout) {
+  return {
+    restrict: 'E',
+    controller: 'RatingFilterController',
+    templateUrl: 'public/views/resource/rating-filters.html',
     link: function($scope, $element, $attrs) {
       // Watch filtered ResultsCallbvac
       $scope.respondFilterChange($scope);

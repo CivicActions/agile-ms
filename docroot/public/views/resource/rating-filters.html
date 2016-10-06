@@ -1,0 +1,10 @@
+<div ng-if="ratings.length">
+  <h4>Rating</h4>
+  <div class="rating-filters">
+    <div ng-repeat="(key, filter) in ratings" class="rating list-group">
+      <a ng-class="{active:filterActive( 'QualityRatingDescription', filter )}"
+         ng-click="filterClick( $event, 'QualityRatingDescription', filter )"
+         href="#" class="list-group-item rating-filter">{{filter}}</a>
+    </div>
+  </div>
+</div>
