@@ -5,7 +5,7 @@
 var map;
 var autocomplete;
 function renderMap() {
-  searchForZip();
+
   toggleMap();
   var userSelect = $('#zip-code').val();
 
@@ -17,8 +17,8 @@ function renderMap() {
     if (status == google.maps.GeocoderStatus.OK) {
       lat = results[0].geometry.location.lat();
       lng = results[0].geometry.location.lng();
-      localStorage.setItem('entryLat', lat);
-      localStorage.setItem('entryLng', lng);
+      localStorage.setItem('entryLat', lat.toFixed(2));
+      localStorage.setItem('entryLng', lng.toFixed(2));
     }
   });
   setTimeout(function () {
@@ -35,13 +35,13 @@ function renderMap() {
     autocomplete.bindTo('bounds', map);
 
     var geo = new google.maps.Geocoder;
+
+    searchForZip();
     var items = filteredResults.results;
 
     $.each(items, function (key, val) {
-      var lat = Number(val.lat) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
-      var lng = Number(val.lng) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
       var marker = new google.maps.Marker({
-        position: {lat: lat, lng: lng},
+        position: {lat: val.lat, lng: val.lng},
         type: 'info',
         icon: 'public/images/person.png',
         map: map
