@@ -11,7 +11,7 @@ angular.module('app')
   var filteredProviderTypes = [
     'Daycare Center',
     'Licensed Home-based Daycare',
-    'Quality Star participating Daycare Center',
+    'Quality Star Participating Daycare Center',
     'Nanny',
     'Un-licensed Home-based Daycare',
     'Relative In-Home',
