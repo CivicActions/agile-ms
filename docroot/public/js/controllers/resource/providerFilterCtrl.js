@@ -9,11 +9,11 @@ angular.module('app')
   FilteredResults.resultEvent();
 
   var filteredProviderTypes = [
-    'Center',
-    'Group Home',
-    'Slot Contractor',
-    'Non-Relative In-Home',
-    'Non-Relative Out-of-Home',
+    'Daycare Center',
+    'Licensed Home-based Daycare',
+    'Quality Star participating Daycare Center',
+    'Nanny',
+    'Un-licensed Home-based Daycare',
     'Relative In-Home',
     'Relative Out-of-Home'
   ];
