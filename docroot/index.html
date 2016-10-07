@@ -31,13 +31,28 @@
             this.results = [];
             // Setter for zipcode
             this.applyFilters = function() {
-                // Filter by zip
+                // Filter by lat/lng
                 var results = [];
                 if(this.activeFilters) {
-                    // Filter by zip
-                    if(this.activeFilters.zip) {
+                    // Filter by lat/lng
+                    if(this.activeFilters.lat && this.activeFilters.lng) {
+                      // Grab lat/log range, save first to avoid ~5000
+                      var degreeSpread = .02,
+                          activeLat = parseFloat(Number(this.activeFilters.lat).toFixed(2)),
+                          activeLng = parseFloat(Number((this.activeFilters.lng)).toFixed(2)),
+                          activeLatLow = activeLat - degreeSpread,
+                          activeLatHigh = activeLat + degreeSpread,
+                          activeLngLow = activeLng - degreeSpread,
+                          activeLngHigh = activeLng + degreeSpread;
                        results = this.fullResults.filter(function(item) {
-                            return parseInt(this.activeFilters.zip) === parseInt(item.PhysicalZipCode)
+
+                         var itemLat = parseFloat(Number(item.lat).toFixed(2)),
+                             itemLng =  parseFloat(Number(item.lng).toFixed(2));
+
+                         return ( activeLatLow < itemLat )
+                             && ( activeLatHigh > itemLat )
+                             && ( activeLngLow < itemLng )
+                             && ( activeLngHigh > itemLng );
                        }, this);
                     }
                     // filter by provider type
@@ -199,9 +214,13 @@
         $.getJSON(
             'api.json'
             , function( data ) {
+                var sameLatLng = [];
                 // add unique ids to objects, set fullResults
                 filteredResults.fullResults = data.map(function(item, key) {
                     item.id = key;
+                    // "Fuzz" the lat long values to get some variance
+                    item.lat = Number(item.lat) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
+                    item.lng = Number(item.lng) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
                     return item;
                 } );
                 callback();
@@ -231,7 +250,8 @@
         toggleMap();
         toggleLanding();
         var filters = {
-            zip: document.getElementById('zip-code').value
+            lat: localStorage.getItem('entryLat'),
+            lng: localStorage.getItem('entryLng')
         };
         // Got a new zip, so filter
         filterResults(filters, function() {
@@ -303,7 +323,7 @@
         $('#zip-code').keypress(function (ev) {
             var keycode = (ev.keyCode ? ev.keyCode : ev.which);
             if (keycode == '13') {
-                searchForZip();
+              renderMap();
             }
         });
         // Call once to populate
