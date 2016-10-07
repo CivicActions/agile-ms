@@ -23,7 +23,7 @@ function renderMap() {
   });
   setTimeout(function () {
     map = new google.maps.Map(document.getElementById('map-interior'), {
-      zoom: 11,
+      zoom: 10,
       center: new google.maps.LatLng(localStorage.getItem('entryLat'), localStorage.getItem('entryLng')),
       mapTypeId: 'roadmap',
     });
@@ -38,8 +38,8 @@ function renderMap() {
     var items = filteredResults.results;
 
     $.each(items, function (key, val) {
-      var lat = Number(val.lat) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
-      var lng = Number(val.lng) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
+      var lat = Number(val.lat) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
+      var lng = Number(val.lng) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
       var marker = new google.maps.Marker({
         position: {lat: lat, lng: lng},
         type: 'info',
