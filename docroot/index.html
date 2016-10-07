@@ -309,30 +309,20 @@
        */
       function renderMap() {
         toggleMap();
-        if (filteredResults.activeFilters && filteredResults.activeFilters.zip) {
-          var userSelect = filteredResults.activeFilters.zip;
-          getCoords();
-        }
-        else {
-          var userSelect = '39209';
-          getCoords();
-
-        }
-
+        var userSelect = $('#zip-code').val();
         var map;
-        var mapgeo;
-        function getCoords() {
-          mapgeo = new google.maps.Geocoder
-          mapgeo.geocode({'address': userSelect}, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-              var lat2 = results[0].geometry.location.lat();
-              var lng2 = results[0].geometry.location.lng();
-              localStorage.setItem('entryLat', lat2);
-              localStorage.setItem('entryLng', lng2);
-            }
-
-          })
-        }
+        var geocoder;
+        var lat;
+        var lng;
+        geocoder = new google.maps.Geocoder;
+        geocoder.geocode({'address': userSelect}, function (results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+            localStorage.setItem('entryLat', lat);
+            localStorage.setItem('entryLng', lng);
+          }
+        });
 
         map = new google.maps.Map(document.getElementById('map-interior'), {
           zoom: 11,
