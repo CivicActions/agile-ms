@@ -8,20 +8,30 @@ angular.module('app')
   // Init event emitter
   FilteredResults.resultEvent();
 
+  var filteredProviderTypes = [
+    'Daycare Center',
+    'Licensed Home-based Daycare',
+    'Quality Star Participating Daycare Center',
+    'Nanny',
+    'Un-licensed Home-based Daycare',
+    'Relative In-Home',
+    'Relative Out-of-Home'
+  ];
+
   // Function subscribes to results change
   $scope.respondFilterChange = function(scope) {
     $scope.$on('resultChange', function(event, data){
       $timeout(function () {
         scope.$apply(function () {
-          var filteredProviderTypes = [];
+          // var filteredProviderTypes = [];
 
-          // Loop over filtered data set and get unique set of types.
-          for (var i=0; i<data.results.length; i++) {
-            // Check if type is in providerType array.
-            if (filteredProviderTypes.indexOf(data.results[i].ProviderTypeDescription) == -1) {
-              filteredProviderTypes.push(data.results[i].ProviderTypeDescription);
-            }
-          }
+          // // Loop over filtered data set and get unique set of types.
+          // for (var i=0; i<data.results.length; i++) {
+          //   // Check if type is in providerType array.
+          //   if (filteredProviderTypes.indexOf(data.results[i].ProviderTypeDescription) == -1) {
+          //     filteredProviderTypes.push(data.results[i].ProviderTypeDescription);
+          //   }
+          // }
 
            scope.providerTypes = filteredProviderTypes;
         });

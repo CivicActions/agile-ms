@@ -18,4 +18,9 @@ angular.module('app')
       }) 
     });
   }
+
+  $scope.nameSearch = function(event) {
+    event.preventDefault();
+    searchForName();
+  }
 }]);
