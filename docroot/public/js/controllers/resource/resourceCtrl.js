@@ -44,6 +44,9 @@ angular.module('app')
   $scope.getStarHelp = function(item) {
     $text = '';
     switch(item.QualityRating) {
+      case '0':
+        $text = "This provider has not been reviewed by the state.";
+        break;
       case '1':
         $text = "A star rating is received through an evaluation process by the state.  One star signifies that the facility has a current MS child care license and has registered for the Quality Star program.";
         break;
@@ -68,20 +71,20 @@ angular.module('app')
   $scope.getProviderTypeHelp = function(item) {
     $text = '';
     switch(item.ProviderTypeDescription) {
-      case 'Center':
+      case 'Daycare Center':
         $text = "A non-residential facility providing care to children while parents are working or unavailable to care for their children.  Centers are licensed by the Mississippi Department of Health, meaning the center must adhere to state childcare regulations and ensure health and safety priorities.  Centers may voluntarily participate in MS' Quality Star program.  A higher star rating suggests higher quality program, which may include offering educational or development curriculum by trained staff.";
         break;
 
-      case 'Group Home':
+      case 'Licensed Home-based Daycare':
         $text = "A private residence in which two or more individuals provide child care services for 6 to 15 children who do not reside at the location.  Group homes are licensed by the state of Mississippi Department of Health,"
               + "meaning the center must adhere to state childcare regulations and ensure health and safety priorities.  Centers may voluntarily participate in MS' Quality Star program.  A higher star rating suggests higher quality program, which may include offering educational or development curriculum by trained staff.";
         break;
 
-      case 'Non-Relative In-Home':
+      case 'Nanny':
         $text = "An individual who provides child care services in the child's own home but maintains a separate residence."
         break;
 
-      case 'Non-Relative Out-of-Home':
+      case 'Un-licensed Home-based Daycare':
         $text = "A setting in which an individual is paid by parents for care for their children while they are working or unavailable.  This setting occurs in provider's home, providing small group care in a home-like environment for fewer than six children.  These homes are NOT licensed, monitored, or otherwise regulated by the Mississippi Department of Health. Minimal information is maintained about these programs by the Mississippi Department of Health to assist in emergency preparedness only. Registered Family Daycare Homes may choose to participate in the same quality evaluation program offered to Licensed Family Daycare Homes.";
 
         break;
@@ -95,7 +98,7 @@ angular.module('app')
 
         break;
 
-      case 'Slot contractor':
+      case 'Quality Star Participating Daycare Center':
         $text = "A child care center that participates in a public/private partnership to increase parental access to quality child care services.  Slot contractors receive subsidies and quality improvement funds from a lead agency to provide direct services.  These centers commit to achieving at least a 3 star rating and using a state-approved Child Assessment tool.";
         break;
   
