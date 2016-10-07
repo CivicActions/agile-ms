@@ -47,7 +47,7 @@ angular.module('app')
     link: function ($scope, $element, $attrs) {
       $element.bind("keydown", function (event) {
         if (event.which == 13) {
-          $scope.nameSearch(event);
+          $scope.nameSearchAction(event);
         }
       });
     }

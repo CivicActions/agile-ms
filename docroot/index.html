@@ -244,9 +244,10 @@
        * Searches name from input
        */
       function searchForName() {
-          filteredResults.activeFilters.ProviderName = document.getElementById('name-search').value
           // Got a new zip, so filter
-          filterResults(filteredResults.activeFilters, function() {
+          filterResults({
+            "ProviderName": document.getElementById('name-search').value
+          }, function() {
               renderNote();
              // renderMap();
               renderFilters();

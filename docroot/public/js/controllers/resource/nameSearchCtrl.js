@@ -5,6 +5,8 @@ angular.module('app')
 
   var self = this;
 
+  console.log('ummm');
+
   // Init event emitter
   FilteredResults.resultEvent();
 
@@ -19,7 +21,7 @@ angular.module('app')
     });
   }
 
-  $scope.nameSearch = function(event) {
+  $scope.nameSearchAction = function(event) {
     event.preventDefault();
     searchForName();
   }
