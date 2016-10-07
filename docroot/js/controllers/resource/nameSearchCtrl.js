@@ -19,7 +19,7 @@ angular.module('app')
     });
   }
 
-  $scope.nameSearch = function(event) {
+  $scope.nameSearchAction = function(event) {
     event.preventDefault();
     searchForName();
   }
