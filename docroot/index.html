@@ -18,34 +18,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script>
-        /**
-         * Sets our initial location.
-         */
-        function setPosition() {
-          toggleMap();
-          if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(showPosition);
-          }
-          else {
-            console.log('Geolocation is not available')
-          }
-          /**
-           * Gets user lat long.
-           * @param position
-           */
-          function showPosition(position) {
-            var entrygeo = new google.maps.Geocoder;
-            var latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
-            entrygeo.geocode({'location': latlng}, function (results, status) {
-              if (status == google.maps.GeocoderStatus.OK) {
-                localStorage.setItem('entryLat', position.coords.latitude);
-                localStorage.setItem('entryLng', position.coords.longitude);
-                $('#zip-code').val(results[0].formatted_address);
-              }
-
-            })
-          }
-        }
 
         // Global results object
         var filteredResults = new function () {
@@ -131,7 +103,7 @@
                           <div class="input-group">
                                 <input placeholder="Your zipcode or address" name="zip-code" class="form-control" type="text" id="zip-code" />
                                 <div class="input-group-btn">
-                                  <button type="button" class="btn btn-primary" onclick="searchForZip()">
+                                  <button type="button" class="btn btn-primary" onclick="renderMap()">
                                     <span class="glyphicon glyphicon-search"></span>
                                   </button>
                                 </div>
@@ -200,6 +172,8 @@
     <script src="public/js/ui-bootstrap-tpls.js"></script>
     <!-- App -->
     <script src="public/js/app.js"></script>
+    <!-- Mpp -->
+    <script src="public/js/map.js"></script>
     <!-- Providers -->
     <script src="public/js/providers/rawService.js"></script>
     <!-- Controllers -->
@@ -215,7 +189,7 @@
        * Querys JSON, populates global variable
        */
       function resetResults(callback) {
-        renderMap();
+        //renderMap();
         toggleMap();
         // Already have data
         if(filteredResults.fullResults && filteredResults.fullResults.length) {
@@ -239,6 +213,7 @@
        * Filters filter: { zip: 39202 }
        */
       function filterResults(filters, callback) {
+        toggleMap();
         // Data set empty, so grab
         resetResults(function() {
             // Filter by zip
@@ -254,7 +229,6 @@
        */
       function searchForZip() {
         toggleMap();
-        renderMap();
         toggleLanding();
         var filters = {
             zip: document.getElementById('zip-code').value
@@ -262,7 +236,6 @@
         // Got a new zip, so filter
         filterResults(filters, function() {
             renderNote();
-            renderMap();
             renderFilters();
         });
       }
@@ -275,7 +248,7 @@
           // Got a new zip, so filter
           filterResults(filteredResults.activeFilters, function() {
               renderNote();
-              renderMap();
+             // renderMap();
               renderFilters();
           });
       }
@@ -302,61 +275,6 @@
           'opacity': 1
         })
         $('#header .form-group').removeClass('full-width').addClass('col-sm-6');
-      }
-
-      /**
-       * Outputs google map and markers.
-       */
-      function renderMap() {
-        toggleMap();
-        var userSelect = $('#zip-code').val();
-        var map;
-        var geocoder;
-        var lat;
-        var lng;
-        geocoder = new google.maps.Geocoder;
-        geocoder.geocode({'address': userSelect}, function (results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            lat = results[0].geometry.location.lat();
-            lng = results[0].geometry.location.lng();
-            localStorage.setItem('entryLat', lat);
-            localStorage.setItem('entryLng', lng);
-          }
-        });
-
-        map = new google.maps.Map(document.getElementById('map-interior'), {
-          zoom: 11,
-          center: new google.maps.LatLng(localStorage.getItem('entryLat'), localStorage.getItem('entryLng')),
-          mapTypeId: 'roadmap',
-        });
-
-        var input = document.getElementById('zip-code');
-
-        var autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.bindTo('bounds', map);
-
-        var geo = new google.maps.Geocoder;
-        var items = filteredResults.results;
-
-        $.each(items, function (key, val) {
-              var lat = Number(val.lat) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
-              var lng = Number(val.lng) + Number((Math.random() * (0.120 - 0.0200) + 0.0200).toFixed(4));
-              var marker = new google.maps.Marker({
-                position: {lat: lat, lng: lng},
-                type: 'info',
-                icon: 'public/images/person.png',
-                map: map
-              });
-              var html = '<b>' + val.ProviderName + '</b><hr/>' + val.PhysicalCity + ',<br/>' + val.ProviderTypeDescription + '<br />'
-                + val.PhoneNumber + '<br />' + val.QualityRating + ' stars<hr />';
-
-              var infoWindow = new google.maps.InfoWindow;
-              google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.setContent(html);
-                infoWindow.open(map, this);
-              });
-
-        });
       }
 
       function renderFilters() {
@@ -396,8 +314,7 @@
 
       })(jQuery);
     </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHz-VCCJudAUffG24i9QOosAECS2aJSs&callback=renderMap&libraries=places">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHz-VCCJudAUffG24i9QOosAECS2aJSs&libraries=places">
     </script>
   </body>
 </html>
