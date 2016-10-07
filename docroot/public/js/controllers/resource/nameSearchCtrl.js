@@ -5,6 +5,8 @@ angular.module('app')
 
   var self = this;
 
+  console.log('ummm');
+
   // Init event emitter
   FilteredResults.resultEvent();
 
