@@ -23,7 +23,7 @@ function renderMap() {
   });
   setTimeout(function () {
     map = new google.maps.Map(document.getElementById('map-interior'), {
-      zoom: 10,
+      zoom: 12,
       center: new google.maps.LatLng(localStorage.getItem('entryLat'), localStorage.getItem('entryLng')),
       mapTypeId: 'roadmap',
     });
