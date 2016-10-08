@@ -37,7 +37,7 @@
                     // Filter by lat/lng
                     if(this.activeFilters.lat && this.activeFilters.lng) {
                       // Grab lat/log range, save first to avoid ~5000
-                      var degreeSpread = .02,
+                      var degreeSpread = .06,
                           activeLat = parseFloat(Number(this.activeFilters.lat).toFixed(2)),
                           activeLng = parseFloat(Number((this.activeFilters.lng)).toFixed(2)),
                           activeLatLow = activeLat - degreeSpread,
