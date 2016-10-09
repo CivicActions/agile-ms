@@ -82,3 +82,9 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 
 This will deploy a candidate instance to https://agile-ms.civicactions.com/.
 
+# The Story of our User Interactions
+
+We quickly learned from our pre-prototype interaction with the users that in some cases they wanted a map to show the location of providers. Only later did we realize that only certain provider types are places-of-business that have physcial address.  We quickly prototyped a map using "fake" addresses based around the geographic center of the ZipCodes, which we had for each provider.
+
+Showing this prototype to users who were social workers and parents in other states, it became apparent that the terminology, such as "Slot Contractor", and the "Rating" system, was very hard to understand. We began to put effort into developing.
+
