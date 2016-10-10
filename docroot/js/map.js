@@ -40,20 +40,72 @@ function renderMap() {
     var items = filteredResults.results;
 
     $.each(items, function (key, val) {
-      var marker = new google.maps.Marker({
-        position: {lat: val.lat, lng: val.lng},
-        type: 'info',
-        icon: 'public/images/person.png',
-        map: map
-      });
-      var html = '<b>' + val.ProviderName + '</b><hr/>' + val.PhysicalCity + ',<br/>' + val.ProviderTypeDescription + '<br />'
-        + val.PhoneNumber + '<br />' + val.QualityRating + ' stars<hr />';
+      /**
+       * ProviderType Legend
+       * 1) ?
+       * 2) Licensed Slot Contractor
+       * 3) Licensed Group Home (Home Based Day Care)
+       * 4) Licensed Daycare Center
+       * 5) Unlicensed Non-Relative In-Home
+       * 6) Unlicensed Relative In-Home
+       * 7) Unlicensed Non-Relative Out-of-Home
+       * 8) Unlicensed Relative Out-of-Home
+       */
+      var marker;
+      var icon;
+      var infoWindow;
 
-      var infoWindow = new google.maps.InfoWindow;
-      google.maps.event.addListener(marker, 'click', function () {
-        infoWindow.setContent(html);
-        infoWindow.open(map, this);
-      });
+      function markerBuild(icon) {
+        var options = {
+          position: {lat: val.lat, lng: val.lng},
+          icon: icon,
+          optimized: false,
+          map: map
+        };
+        return options;
+      }
+
+      function returnHtml(rating) {
+        var starStr = '<hr />';
+        if (parseInt(rating) > 0) {
+          var starStr = '<br />' + rating + ' stars <hr />';
+        }
+        return '<b>' + val.ProviderName + '</b><hr/>' + val.PostalAddress + ',<br/>' + val.ProviderTypeDescription + '<br />'
+          + val.PhoneNumber + starStr;
+      }
+
+      switch (val.ProviderType) {
+
+        case '3':
+          icon = 'public/images/square.gif';
+          if (val.QualityRatingDescription == 'Not Rated') {
+            icon = 'public/images/circle.gif';
+          }
+          if (val.PostalAddress) {
+            marker = new google.maps.Marker(markerBuild(icon));
+            infoWindow = new google.maps.InfoWindow;
+            google.maps.event.addListener(marker, 'click', function () {
+              infoWindow.setContent(returnHtml(val.QualityRating));
+              infoWindow.open(map, this);
+            });
+          }
+          break;
+
+        case '4':
+          icon = 'public/images/square.gif';
+          if (val.QualityRatingDescription == 'Not Rated') {
+            icon = 'public/images/triangle.png';
+          }
+          if (val.PostalAddress) {
+            marker = new google.maps.Marker(markerBuild(icon));
+            infoWindow = new google.maps.InfoWindow;
+            google.maps.event.addListener(marker, 'click', function () {
+              infoWindow.setContent(returnHtml(val.QualityRating));
+              infoWindow.open(map, this);
+            });
+          }
+          break;
+      }
 
     });
   }, 1000)
