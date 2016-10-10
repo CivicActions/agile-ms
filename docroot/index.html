@@ -106,76 +106,99 @@
     <div class="container page">
         <main>
           <!--
-          HEADER ROW
+          HEADER row
           -->
-          <div id="header">
-            <div id="naked-panel-item" class="naked-panel">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="form-group full-width">
-                          <div id="form-legend">Find safe and quality child care providers in the state of Mississippi.</div>
-
-                          <div class="input-group">
-                                <input placeholder="Your zipcode or address" name="zip-code" class="form-control" type="text" id="zip-code" />
-                                <div class="input-group-btn">
-                                  <button type="button" class="btn btn-primary" onclick="renderMap()">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                  </button>
-                                </div>
-                            </div>
-                          <div id="form-help">Search for providers near you</div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h5 id="result-note"></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-          <div id="post-landing-wrap" class="no-opacity hide">
-            <!--
-            MAP ROW
-            -->
-            <div id="map-toggle"><span class="toggle-map hide">Show Map</span><span class="toggle-map">Hide map</span></div>
-            <div id="map">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div id="map-interior" style="height:500px;"></div>
-                </div>
+          <header class="usa-header usa-header-extended" role="banner">
+            <div class="usa-navbar clearfix">
+              <div class="usa-logo" id="logo">
+                <em class="usa-logo-text">
+                  <a href="/" accesskey="1" title="Home" aria-label="Home"><img src="public/images/mdhs_logo.png" alt="Mississippi Department of Human Services" title="Mississippi Department of Human Services"></a>
+                </em>
               </div>
+              <h3 class="tagline">Find safe and quality child care providers in the state of Mississippi.</h3>
             </div>
+          </header>
+          <div id="post-landing-wrap">
+            <!--
+            FILTERS ACCORDION
+            -->
+            <ul id="advanced-search-filters" data-initial-hide class="hide usa-accordion-bordered">
+              <li>
+                <button class="usa-accordion-button" aria-expanded="true" aria-controls="filters-b-1">
+                  What type of child care provider(s) are you looking for?
+                </button>
+                <div id="filters-b-1" class="usa-accordion-content" aria-hidden="false">
+                  <div class="providers"><provider-filters></provider-filters></div>
+                  <div class="rating">
+                    <rating-filters></rating-filters>
+                    <div class="rating-more"><a target="_blank" href="http://www.mdhs.state.ms.us/early-childhood-care-development/child-care-resources/mississippi-quality-stars/">Learn more about daycare centers that have made an extra commitment to providing safe and quality care to children</a></div>
+                  </div>
+                </div>
+              </li>
+            </ul>      
 
             <!--
-            ADVANCED SEARCH ROW
+            SEARCH RESULTS
             -->
-            <div id="advanced-search" class="row">
+            <div id="advanced-search" class="usa-grid">
 
-              <!--
-              FILTERS COLUMN
-              -->
-              <div id="advanced-search-filters" class="col-sm-4 col-md-3">
-                  <div class="panel panel-default">
-                      <div class="panel-body">
-                          <h3>Narrow your search</h3>
-                          <name-search></name-search>
-                          <provider-filters></provider-filters>
-                          <rating-filters></rating-filters>
+              <section id="search" class="usa-width-one-whole">
+                <h2 data-initial-hide class="hide search-title">Search Results</h2>
+                <div class="usa-grid">
+                  <div data-initial-hide class="hide usa-width-one-half">
+                      <h5><span id="result-note"></span> (Independent Nannies and providers with unknown addresses are not displayed on the map).</h5>
+                  </div>
+                  <div id="search-wrap" class="usa-width-one-whole">
+                    <div class="usa-search usa-search-big" role="search">
+                        <label class="usa-sr-only" for="search-field-big">Your zipcode or address</label>
+                        <input placeholder="Your zipcode or address" class="usa-search-input" type="text" name="search" id="zip-code" />
+                        <button type="submit" onclick="renderMap()">
+                          <span class="usa-search-submit-text">Search</span>
+                        </button>
                       </div>
                   </div>
-              </div>
-
+                </div>
+              </section>
+              
               <!--
               LISTING COLUMN
               -->
-              <div id="advanced-search-listing" class="col-sm-8 col-md-9">
+              <div id="advanced-search-listing" data-initial-hide class="hide usa-width-one-half">
                 <resource-list />
               </div>
+
+              <!--
+              MAP COLUMN
+              -->
+              <div id="map" data-initial-hide class="hide usa-width-one-half">
+                <div id="map-interior" style="min-height:500px;"></div>
+              </div>
+
             </div>
           </div>
         </main>
     </div><!-- /.page -->
-
+    <footer class="usa-footer usa-footer-medium" role="contentinfo">
+      <div class="usa-grid usa-footer-return-to-top">
+        <a href="#">Return to top</a>
+      </div>
+      <div class="usa-footer-secondary_section">
+        <div class="usa-grid">
+          <div class="usa-footer-logo usa-width-one-third">
+            <a href="/" accesskey="1" title="Home" aria-label="Home"><img src="public/images/mdhs_logo.png" alt="Mississippi Department of Human Services" title="Mississippi Department of Human Services"></a>
+          </div>
+          <div class="usa-footer-contact-links usa-width-one-third">
+            <p>Looking for more information about our state subsidized child care programs?</p>
+            <p><a target="_blank" href="http://www.mdhs.state.ms.us/media/131318/eccd_0to2yrs_brochure.pdf">A Parent's Guide To Choosing Quality Child Care (Newborn to 2 Years)</a></p>
+            <p><a target="_blank" href="http://www.mdhs.state.ms.us/media/131321/eccd_3to5yrs_brochure.pdf">A Parent's Guide To Choosing Quality Child Care (Three to Five Years)</a></p>
+          </div>
+          <div class="usa-footer-contact-links usa-width-one-third">
+            <p>Interested in applying for the Mississippi childcare program?</p>
+            <p><a target="_blank" href="http://www.mdhs.state.ms.us/early-childhood-care-development/for-parents/application-forms-for-parents/">Application & Forms for Parents</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/bootstrap.js"></script>
     <script src="public/js/angular.js"></script>
@@ -288,11 +311,11 @@
        * Toggles landing block.
        */
       function toggleLanding() {
-        $('#naked-panel-item').removeClass('naked-panel').addClass('panel panel-default');
-        $('#post-landing-wrap').removeClass('hide').animate({
+        // $('#naked-panel-item').removeClass('naked-panel').addClass('panel panel-default');
+        $('[data-initial-hide]').removeClass('hide').animate({
           'opacity': 1
         })
-        $('#header .form-group').removeClass('full-width').addClass('col-sm-6');
+        $('#search-wrap').removeClass('usa-width-one-whole').addClass('usa-width-one-half');
       }
 
       function renderFilters() {

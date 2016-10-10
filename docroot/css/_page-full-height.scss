@@ -1,0 +1,25 @@
+
+@media screen and (min-width: $medium-screen) {
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .page {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px; 
+  }
+
+  .page:after {
+    content: "";
+    display: block;
+  }
+
+  .usa-footer, .page:after {
+    height: 305px; 
+  }
+}
