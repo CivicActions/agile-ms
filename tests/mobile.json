@@ -1,0 +1,16 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "local",
+      "path": "base-url.json"
+    },
+    {
+      "where": "local",
+      "path": "switch-to-mobile.json"
+    }
+  ],
+  "shareState": true
+}

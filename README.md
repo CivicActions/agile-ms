@@ -208,3 +208,28 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 ```
 
 This will deploy a candidate instance to https://agile-ms.civicactions.com/.
+
+## Testing 
+                                                                                                                                  
+To execute all the integration tests, build your environment as normal, then run: 
+```bash                                                                                       
+run-tests                                                                                                                           
+```                                                                                                                         
+The tests will indicate successes/failures on the screen. For integration into automation tools (e.g. Jenkins) a zero exit code (`echo $?`) indicates a successful run, a non-zero result indicates a test failure.                        
+                            
+The tests run 2 suites (mobile and desktop viewports), first on Google Chrome and then on Mozilla Firefox. All testing infrastructure and the test browsers run inside Docker containers, so no additional local setup is needed. 
+                                                    
+### Test Development                                                    
+                                                                                                    
+The tests use the open source [Selenium Builder](https://github.com/SeleniumBuilder/se-builder) Selenium 2 JSON test format, which is easy to version control and edit with the open source Selenium Builder Firefox extension (which can run/debug the tests manually). The tests are in the [tests](https://github.com/CivicActions/agile-ms/tree/master/tests) directory.  
+     
+To run/build tests with the Firefox extension you will need to:                                                                                  
+* Load the appropriate suite (desktop.json or mobile.json). 
+* Edit the tests/base-url.json file and set the address for your local web server (from the `build` command output).                            
+* Save the specific test files when you are done working on the tests.                                                                           
+* If you are working on tests that alter data you may also need to run `create-demo-users` between runs (as the `run-tests` script does). This will ensure a clean test environment.                                                                         
+                                 
+Tests are automated using the (se-interpreter)[https://github.com/Zarkonnen/se-interpreter] which is made available as a Docker container, together with the (SeleniumHQ Chrome and Firefox Docker images)[https://github.com/SeleniumHQ/docker-selenium].
+
+Test results are recorded in chrome.log and firefox.log files in the "tests" directory.  
+

@@ -40,6 +40,17 @@ docker-machine ssh "${NAME}" "sudo chown -R \${USER}:\${GROUP} ${PWD}"
   # Build container
   docker-compose build
   docker-compose up -d
+
+  # Run tests.
+  run-tests
+  if [ $? -eq 0 ]; then
+    echo "[deploy] Tests PASS, activating candidate build."
+  else
+    echo "[deploy] Tests FAIL, tagging 'candidate' as 'failed' - please review fails, fix and manually remove failed candidate before redeploying."
+    ${AWS} ec2 create-tags --resources "${INSTANCE_ID}" --tags "Key=Status,Value=${TAG_PREFIX}-failed"
+    echo "[deploy] Aborting build."
+    exit 1
+  fi
 )
 
 # Setup DNS and CDN.
