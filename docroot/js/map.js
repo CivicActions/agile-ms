@@ -15,10 +15,16 @@ function renderMap() {
   geocoder = new google.maps.Geocoder;
   geocoder.geocode({'address': userSelect}, function (results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
-      lat = results[0].geometry.location.lat();
-      lng = results[0].geometry.location.lng();
-      localStorage.setItem('entryLat', lat.toFixed(2));
-      localStorage.setItem('entryLng', lng.toFixed(2));
+      if (results[0].address_components[2].long_name == 'Mississippi') {
+        lat = results[0].geometry.location.lat();
+        lng = results[0].geometry.location.lng();
+        localStorage.setItem('entryLat', lat.toFixed(2));
+        localStorage.setItem('entryLng', lng.toFixed(2));
+      }
+      else {
+        localStorage.setItem('entryLat', 32.29);
+        localStorage.setItem('entryLng', -90.18);
+      }
     }
   });
   setTimeout(function () {
