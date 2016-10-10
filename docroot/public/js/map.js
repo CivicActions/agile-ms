@@ -142,11 +142,17 @@ function setPosition() {
     var latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
     entrygeo.geocode({'location': latlng}, function (results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
-        localStorage.setItem('entryLat', position.coords.latitude);
-        localStorage.setItem('entryLng', position.coords.longitude);
-        $('#zip-code').val(results[0].formatted_address);
+        if (results[0].address_components[2].long_name == 'Mississippi') {
+          localStorage.setItem('entryLat', position.coords.latitude);
+          localStorage.setItem('entryLng', position.coords.longitude);
+          $('#zip-code').val(results[0].formatted_address);
+        }
+        else {
+          localStorage.setItem('entryLat', 32.29);
+          localStorage.setItem('entryLng', -90.18);
+          $('#zip-code').val('Jackson, MS, United States');
+        }
       }
-
     })
   }
 }
