@@ -82,7 +82,7 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 
 This will deploy a candidate instance to https://agile-ms.civicactions.com/.
 
-# The Story of our User Interactions
+## The Story of our User Interactions
 
 We quickly learned from our pre-prototype interaction with the users that in some cases they wanted a map to show the location of providers. Only later did we realize that only certain provider types are places-of-business that have physcial address.  We quickly prototyped a map using "fake" addresses based around the geographic center of the ZipCodes, which we had for each provider.
 
@@ -92,9 +92,14 @@ Since we had developed a prototype early on, we were able to bring our prototype
 
 For parents, we implemented the feature of starting the map and search in their current location. We learned that for social works this was less valuable, but we implemented, using Google-maps, a Google like place search for finding things.
 
-# The Story of our Map
+## The Story of our Map
 
 One of the main features in our prototype is the use of a Google Map populated with *real* geolocated data. Many of the providers are commercial businesses that have a clearly defined place-of-business which can be determined with a Google search or the Google Places geo-location service. When our users told us that a map would be useful, and that they needed to know where providers were, we executed a script to geolocate Licensed providers. From the data set given to us, we found 352 likely physical addresses, which allowed us to accurately place those Centers, Group Homes, and Slot Contractors on the Google Map. Furthermore, we use a different marker for each provider type. We suspect that the data provided by the State for this exercise contains only a fraction of all the data, since all providers types are populated from the beginning of the alphabet to a particular letter. The full data may make the maps look more interesting and attractive than they do in our accurate prototype.
 
 We believe the privacy of the those providers that do not have a brick-and-mortar place of business must be protected. We believe that the State of Mississippi probably has a postal addresses for licensed providers which could enrich the user experience, and hope our prototype has demonstrated how to make use of this.  
+
+## A "Serverless" Architecture
+
+In this project we have employed the modern, so-called "Serverless" architecture.  That is, because this functionality is "stateless", there is no database. We read the data from a static file directly into the javascript which runs in the user's browser. This makes a much simpler implementation than using an unnecessarily database. In this model, the maintenance of the provider data could be as simple as editing a CSV file. However, any software engineer would understand how to connect this to a relational database if that is preferable.
+
 
