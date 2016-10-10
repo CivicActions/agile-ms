@@ -19,6 +19,7 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 
 ## Technical Architecture
 1. Bootstrap
+1. Google Maps (API Key required)
 1. Angular JS
 1. AWS Cloud Environments
 1. Docker
