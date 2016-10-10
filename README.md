@@ -86,5 +86,11 @@ This will deploy a candidate instance to https://agile-ms.civicactions.com/.
 
 We quickly learned from our pre-prototype interaction with the users that in some cases they wanted a map to show the location of providers. Only later did we realize that only certain provider types are places-of-business that have physcial address.  We quickly prototyped a map using "fake" addresses based around the geographic center of the ZipCodes, which we had for each provider.
 
-Showing this prototype to users who were social workers and parents in other states, it became apparent that the terminology, such as "Slot Contractor", and the "Rating" system, was very hard to understand. We began to put effort into developing.
+Showing this prototype to users who were social workers and parents in other states, it became apparent that the terminology, such as "Slot Contractor", and the "Rating" system, was very hard to understand. We began to put effort into developing new GUI wireframes that would clarify this and make it a prominent part of the searching, raising it to the top. We developed additional verbiage using a "plain language" approach that we hoped would clarify things.
+
+Since we had developed a prototype early on, we were able to bring our prototype into each user interview with screen-sharing technology to let users actually use our website. However, we asked open-questions first so as to get as much unbiased information from the users as possible.  Our users were parents and social workers who worked with foster youths.
+
+For parents, we implemented the feature of starting the map and search in their current location. We learned that for social works this was less valuable, but we implemented, using Google-maps, a Google like place search for finding things.
+
+
 
