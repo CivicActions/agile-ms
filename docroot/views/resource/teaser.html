@@ -1,20 +1,20 @@
 <div class="item panel"><div class="panel-body">
-  <div class="row">
-    <div class="col-sm-8 col-md-9">
+  <div class="usa-grid">
+    <div class="usa-width-two-thirds">
       <h4><a ui-sref="home.resource({ resourceID: item.id })" 
              ng-click="titleClick($event)" 
              ng-bind-html="item.ProviderName" /></h4>
       <p><span ng-if="item.LicenseType == 'LICENSED'" class="label label-info">Licensed</span> {{item.ProviderTypeDescription}} <i uib-tooltip="{{getProviderTypeHelp(item)}}" class="fa fa-question-circle"></i></p>
-      <div class="row">
-        <div class="col-sm-7 col-md-8">
+      <div class="usa-grid">
+        <div class="usa-width-two-thirds">
           <span>{{item.PhysicalCity}}</span> <span>{{item.PhysicalZipCode}}</span>
         </div>
-        <div class="col-sm-5 col-md-4">
+        <div class="usa-width-one-third">
           <i class="fa fa-phone"></i> <a href="tel:+{{item.PhoneNumber}}">{{item.PhoneNumber}}</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4 col-md-3">
+    <div class="usa-width-one-third">
       <div uib-tooltip={{getStarHelp(item)}} class="stars" ng-bind-html="getStars(item)"></div>
     </div>
   </div>

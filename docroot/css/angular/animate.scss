@@ -24,7 +24,7 @@ to prevent collapsing during animation*/
 // *
 // ******************************************************
 
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: #{($small-screen - 1)}) {
 
   .transform.ng-enter,
   .transform.ng-leave {
@@ -51,7 +51,7 @@ to prevent collapsing during animation*/
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@media screen and (min-width: $small-screen) {
   .transform.ng-enter,
   .transform.ng-leave {
     position: absolute;

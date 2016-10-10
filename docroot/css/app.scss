@@ -1,33 +1,93 @@
-// Bootstrap
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/theme";
-// Bourbon
-@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
-@import "angular/animate";
+// USWDS
+// local
+@import "uswds.scss";
+// Angular routing animate
+// @import "angular/animate";
 
-.full-width {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 5%;
-  .triggered {
+// Helpers --------------//
 
+.clearfix {
+  @include clearfix();
+}
+
+// 100% height ----------//
+
+@import "page-full-height";
+
+// Header -------------- //
+
+.usa-header {
+  background: $color-gray-light;
+
+  .usa-navbar {
+    height: auto!important;
   }
-  #form-legend {
-    font-size: 135%;
-    margin-bottom: 50px;
+
+  &, * {
+    color: white;
   }
-  .input-group {
-    position: relative;
-    display: table;
-    border-collapse: separate;
-    width: 50%;
+
+  .usa-logo {
+    float: none;
+    margin-left: 0;
     text-align: center;
-    margin: 0 auto;
   }
-  #form-help {
-    font-size: 95%;
-    margin-top: 15px;
+
+  .tagline {
+    padding: 0 1.5rem 0;
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .usa-header {
+    .usa-logo {
+      float: left;
+      max-width: 150px;
+      margin-left: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .tagline {
+      padding-left: 180px;
+      clear: none!important;
+      margin-top: 0;
+      padding: 4rem 0 0;
+    }
+  }
+}
+
+@include media($nav-width) {
+  .usa-header {
+
+    .usa-logo {
+      float: left;
+      max-width: 150px;
+    }
+
+    .tagline {
+      padding-left: 180px;
+      clear: none!important;
+      margin-top: 0;
+    }
+
+  }
+
+}
+
+
+// Search ---------------//
+
+
+#search-wrap {
+  // When full width
+  &.usa-width-one-whole {
+    .usa-search {
+      padding-top: 50px;
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
 
@@ -62,7 +122,6 @@
   display: none;
 }
 
-.no-opacity {
+[data-initial-hide] {
   opacity: 0;
 }
-
