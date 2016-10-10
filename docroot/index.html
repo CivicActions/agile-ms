@@ -218,9 +218,6 @@
                 // add unique ids to objects, set fullResults
                 filteredResults.fullResults = data.map(function(item, key) {
                     item.id = key;
-                    // "Fuzz" the lat long values to get some variance
-                    item.lat = Number(item.lat) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
-                    item.lng = Number(item.lng) + Number((Math.random() * (-0.20 - 0.0200) + 0.0900).toFixed(4));
                     return item;
                 } );
                 callback();
@@ -335,7 +332,7 @@
 
       })(jQuery);
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHz-VCCJudAUffG24i9QOosAECS2aJSs&libraries=places">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrHz-VCCJudAUffG24i9QOosAECS2aJSs&libraries=places&v=3.exp">
     </script>
   </body>
 </html>

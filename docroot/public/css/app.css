@@ -6366,6 +6366,23 @@ to prevent collapsing during animation*/
     font-size: 95%;
     margin-top: 15px; }
 
+#map-canvas {
+  height: 500px;
+  width: 960px;
+  margin: 0px;
+  padding: 0px; }
+
+img[src="public/images/circle.gif"] {
+  background: #205493;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; }
+
+img[src="public/images/square.gif"] {
+  background: #0071bc;
+  width: 20px;
+  height: 20p; }
+
 #map-toggle {
   position: relative; }
   #map-toggle .toggle-map {
