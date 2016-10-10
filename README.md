@@ -92,5 +92,7 @@ Since we had developed a prototype early on, we were able to bring our prototype
 
 For parents, we implemented the feature of starting the map and search in their current location. We learned that for social works this was less valuable, but we implemented, using Google-maps, a Google like place search for finding things.
 
+# The Story of our Map
 
+One of the main features in our prototype is the use of a Google Map populated with *real* geolocated data. Many of the providers are commercial businesses that have a clearly defined place-of-business which can be determined with a Google search or the Google Places geo-location service. When our users told us that a map would be useful, and that they needed to know where providers were, we executed a script to geolocate Licensed providers. From the data set given to us, we found 352 likely physical addresses, which allowed us to accurately place those Centers, Group Homes, and Slot Contractors on the Google Map. Furthermore, we use a different marker for each provider type.
 
