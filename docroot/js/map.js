@@ -75,12 +75,20 @@ function renderMap() {
       }
 
       switch (val.ProviderType) {
+        case '2':
+          icon = 'public/images/square.gif';
+          if (val.PostalAddress) {
+            marker = new google.maps.Marker(markerBuild(icon));
+            infoWindow = new google.maps.InfoWindow;
+            google.maps.event.addListener(marker, 'click', function () {
+              infoWindow.setContent(returnHtml(val.QualityRating));
+              infoWindow.open(map, this);
+            });
+          }
+          break;
 
         case '3':
-          icon = 'public/images/square.gif';
-          if (val.QualityRatingDescription == 'Not Rated') {
-            icon = 'public/images/circle.gif';
-          }
+          icon = 'public/images/circle.gif';
           if (val.PostalAddress) {
             marker = new google.maps.Marker(markerBuild(icon));
             infoWindow = new google.maps.InfoWindow;
@@ -92,10 +100,7 @@ function renderMap() {
           break;
 
         case '4':
-          icon = 'public/images/square.gif';
-          if (val.QualityRatingDescription == 'Not Rated') {
-            icon = 'public/images/triangle.png';
-          }
+          icon = 'public/images/triangle.png';
           if (val.PostalAddress) {
             marker = new google.maps.Marker(markerBuild(icon));
             infoWindow = new google.maps.InfoWindow;
