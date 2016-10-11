@@ -346,10 +346,10 @@ To run/build tests with the Firefox extension you will need to:
 * If you are working on tests that alter data you may also need to run `create-demo-users` between runs (as the `run-tests` script does). This will ensure a clean test environment.                                                                         
                                  
 Tests are automated using the
-(se-interpreter)[https://github.com/Zarkonnen/se-interpreter] which is
-made available as a Docker container, together with the (SeleniumHQ
+[se-interpreter](https://github.com/Zarkonnen/se-interpreter) which is
+made available as a Docker container, together with the [SeleniumHQ
 Chrome and Firefox Docker
-images)[https://github.com/SeleniumHQ/docker-selenium].
+images](https://github.com/SeleniumHQ/docker-selenium).
 
 Test results are recorded in chrome.log and firefox.log files in the "tests" directory.  
 
