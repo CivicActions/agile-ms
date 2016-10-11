@@ -1,0 +1,21 @@
+#!/bin/sh
+cd "$(git rev-parse --show-toplevel)/tests"
+docker-compose build
+docker-compose rm -f
+docker-compose up -d seleniumchrome seleniumfirefox
+sleep 5
+# Run mobile and desktop tests in Chrome and Firefox, recreating users after each test.
+echo "Tests: Chrome Mobile"
+docker-compose run --no-deps --rm seinterpreter se-interpreter --driver-host=seleniumchrome:4444 --browser-browserName="chrome" /usr/src/tests/mobile.json | tee chrome-mobile.log
+echo "Tests: Chrome Desktop"
+docker-compose run --no-deps --rm seinterpreter se-interpreter --driver-host=seleniumchrome:4444 --browser-browserName="chrome" /usr/src/tests/desktop.json | tee chrome-desktop.log
+echo "Tests: Firefox Mobile"
+docker-compose run --no-deps --rm seinterpreter se-interpreter --driver-host=seleniumfirefox:4444 --browser-browserName="firefox" /usr/src/tests/mobile.json | tee firefox-mobile.log
+echo "Tests: Chrome Desktop"
+docker-compose run --no-deps --rm seinterpreter se-interpreter --driver-host=seleniumfirefox:4444 --browser-browserName="firefox" /usr/src/tests/desktop.json | tee firefox-desktop.log
+docker-compose stop
+# Check for errors and return useful exit code.
+if fgrep -q 'Failed' chrome.log firefox.log; then
+  exit 1
+fi
+exit 0
