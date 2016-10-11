@@ -12,19 +12,26 @@
 
   .rating-more {
     background-color: $color-gray;
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+    position: relative;
 
     &:hover {
       background-color: darken($color-gray, 10%);
     }
 
     i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -14px;
       font-size: 2em;
-      float: right;
     }
   }
 }
@@ -79,12 +86,17 @@
 
     > :first-child {
       float: left;
-      width: 73%;
+      width: 67%;
     }
 
     .rating-more {
       float: right;
-      width: 25%;
+      min-height: 73px;
+      width: 33%;
+
+      p {
+        margin-top: 0;
+      }
     }
   } 
 }

@@ -22,11 +22,16 @@
 }
 
 #map-canvas {
-  min-height: 500px;
-  width:960px;
+  min-height: 300px;
+  width:100%;
   max-width: 100%;
   margin: 0px;
   padding: 0px
+}
+#map-interior {
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
 }
 img[src="public/images/circle.gif"] {
   background: #f99537;
@@ -40,6 +45,11 @@ img[src="public/images/square.gif"] {
   height: 20px;
 }
 
-#map-interior {
-  min-height: 500px;
+@media screen and (min-width: $medium-screen) {
+  #map-canvas {
+    min-height: 500px;
+  }
+  #map-interior {
+    min-height: 500px;
+  }
 }
