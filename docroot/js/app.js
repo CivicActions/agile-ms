@@ -99,14 +99,14 @@ angular.module('app', [
           title: 'Relative In-Home',
           filterTitle: '',
           class: 'provider-rel-in-home',
-          desc: ''
+          desc: 'An individual who provides child care services in the child\'s own home but maintains a separate residence.'
         },
         'Relative Out-of-Home': {
           key: 'Relative Out-of-Home',
           title: 'Relative Out-of-Home',
           filterTitle: '',
           class: 'provider-rel-out-home',
-          desc: ''
+          desc: 'A setting in which an individual is paid by parents for care for their children while they are working or unavailable.  This setting occurs in provider\'s home, providing small group care in a home-like environment for fewer than six children.  These homes are NOT licensed, monitored, or otherwise regulated by the Mississippi Department of Health. Minimal information is maintained about these programs by the Mississippi Department of Health to assist in emergency preparedness only. Registered Family Daycare Homes may choose to participate in the same quality evaluation program offered to Licensed Family Daycare Homes.'
         }
       }
 
@@ -119,6 +119,12 @@ angular.module('app', [
       $rootScope.providerInfoClass = function(key) {
         if ($rootScope.providerInfo[key]) {
           return $rootScope.providerInfo[key].class;
+        }
+      }
+
+      $rootScope.providerInfoDesc = function(key) {
+        if ($rootScope.providerInfo[key]) {
+          return $rootScope.providerInfo[key].desc;
         }
       }
     }
