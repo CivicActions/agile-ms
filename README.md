@@ -1,5 +1,17 @@
 # Agile Mississippi Project
 
+## Brief Description
+
+We approached this project as if we were actually going to deploy a usable, lasting, maintainable tool for Mississippians to find day care. Our project is a serverless, responsive implementation that presents a usable map of commercial day care centers in our data that enriches the user experience. Following our user testing, we significantly simplified and rearranged the user interface and rewrote it in plain language to maximize usability.
+
+We followed the USDS Playbook through 4 intense Sprints, each of which garnered better and better user feedback. The resulting site allows users to search on locales specified the way one does a Google map search for an area. We clarify and link to the State’s definitions of provider and quality star rating. We are confident that if provided with the complete set of data we believe the state has, it would be a compelling user experience.
+
+## Links to Working Prototype
+
+Our functioning prototype can be found here: https://agile-ms.civicactions.com.
+
+
+
 ## Key Assets
 1. Data endpoint: https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json
 1. Dev server: https://agile-ms-dev.civicactions.com
