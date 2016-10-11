@@ -80,6 +80,8 @@ We then scheduled three initial user sessions combining a contextual interview a
 
 We realized that to quickly convey convenient providers we could use a map to show the location of nearest providers. Later we realized that only certain provider types are places of business with physical addresses. We quickly prototyped a map using "fake" addresses based around the geographic center of the zipcodes, which we had for each provider.
 
+![sprint zero](https://cloud.githubusercontent.com/assets/5296671/19285906/839b8d56-8fc1-11e6-8c66-9a8df76ba4a3.png)
+
 During sprint zero user research we quickly identified the top ways in which parents and social workers conducted their searches:
 
  -- Location (address, zipcode) was critical. It was the first thing most users wanted to enter. Some offered to hop off the site and look in Google Maps to get better results. 
@@ -107,8 +109,9 @@ For parents, we implemented the feature of starting the map and search at their 
 In this second Sprint, we were fortunate to receive the support of Virginia Pryor, Director of the Georgia Department of Family and Children Services. We had multiple user participants—from the Adoption unit, the Permanency unit and the Resource department—who interacted with our iterative prototypes (now live websites), as well as a few returning participants from the prior phase. These workers conduct the Mississippi challenge’s use case regularly, so we thought that these users would give us a closer insight into whether the new application would address key concerns—and most importantly, be user friendly.
 
 
-![sprint zero](https://cloud.githubusercontent.com/assets/5296671/19285906/839b8d56-8fc1-11e6-8c66-9a8df76ba4a3.png)
 
+
+![devsprint](https://cloud.githubusercontent.com/assets/5296671/19285974/bb5f5998-8fc1-11e6-8bea-9ae9f03133c2.png)
 
 These Georgia child welfare staff were able to help us confirm that the terminology of provider types and ratings was hard to understand. Additionally, they helped us to identify the importance of ensuring that the site worked on all devices—essential, given that workers will be in many locations when conducting a search of this type. Although our prototype did not mature to the point of making it appropriate to use quantitative data collection, such as A/B testing, time-on-task testing, etc., we continually and iteratively used user interview data to guide our development decisions  (USDS Play #12).
 
@@ -116,9 +119,9 @@ Instead we heavily used qualitative data in order to collect it we asked open-en
 
 After these interviews in our third Sprint, we identified the need for a new visual approach that would emphasize provider type and quality star ratings and explain them to the user, while moving the map to a position parallel to the results lists. We had discovered that for a fraction (approximately one-fifth) of all providers we could discover the physical postal address of the businesses and place these on the map. We immediately started Sprint 4 with that in mind. Our automated deployment allowed us to rapidly deploy significant development changes with confidence (USDS Play #10).
 
-![devsprint](https://cloud.githubusercontent.com/assets/5296671/19285974/bb5f5998-8fc1-11e6-8bea-9ae9f03133c2.png)
 
 
+![final2days](https://cloud.githubusercontent.com/assets/5296671/19286190/5c02cfba-8fc2-11e6-89bb-91f417fc9908.png)
 
 ## The Story of our Map
 
