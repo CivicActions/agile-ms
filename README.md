@@ -10,6 +10,8 @@ We followed the USDS Playbook through 4 intense Sprints, each of which garnered 
 
 Our functioning prototype can be found here: https://agile-ms.civicactions.com.
 
+Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms
+
 
 
 ## Key Assets
