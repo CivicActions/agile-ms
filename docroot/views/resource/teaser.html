@@ -4,7 +4,7 @@
       <h4 ng-bind-html="item.ProviderName"></h4>
       <div class="stars" ng-bind-html="getStars(item)"></div>
       <rating-stars stars="item.QualityRating"></rating-stars>
-      <div><span ng-bind-html="$root.providerInfoTitle(item.ProviderTypeDescription)"></span></div>
+      <div><span ng-bind-html="$root.providerInfoTitle(item.ProviderTypeDescription)"></span> <i uib-tooltip="{{$root.providerInfoDesc(item.ProviderTypeDescription)}}" class="fa fa-question-circle"></i></div>
       <div class="usa-grid">
         <div class="usa-width-two-thirds">
           <span>{{item.PhysicalCity}}</span> <span>{{item.PhysicalZipCode}}</span>
