@@ -1,3 +1,17 @@
 #post-landing-wrap > *, #advanced-search > * {
   margin-bottom: 30px;
 }
+
+@media screen and (min-width: $medium-screen) {
+  $columns: container-span(6);
+
+  #advanced-search-listing {
+    float: left;
+    margin-right: flex-gutter($columns);
+  }
+
+  #map {
+    margin-right: 0;
+    float: right;
+  }
+}

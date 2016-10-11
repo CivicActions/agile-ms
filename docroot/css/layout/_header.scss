@@ -15,11 +15,29 @@
   .usa-logo {
     float: none;
     margin-left: 0;
+    padding-top: 0.8rem;
     text-align: center;
   }
 
   .tagline {
     padding: 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: ($medium-screen - 1)) {
+  .usa-header {
+
+
+    .usa-logo {
+      img {
+        max-width: 45%;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -31,13 +49,13 @@
       margin-left: 1.5rem;
       margin-top: 3rem;
       margin-bottom: 3rem;
+      padding-top: 0;
     }
 
     .tagline {
-      padding-left: 180px;
       clear: none!important;
       margin-top: 0;
-      padding: 4rem 0 0;
+      padding: 4rem 0 0 190px;
     }
   }
 }
@@ -51,9 +69,7 @@
     }
 
     .tagline {
-      padding-left: 180px;
-      clear: none!important;
-      margin-top: 0;
+      padding-top: 5rem;
     }
 
   }

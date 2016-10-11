@@ -1,0 +1,23 @@
+
+
+@media screen and (max-width: ($medium-screen - 1)) {
+  .usa-footer-logo {
+    text-align: center;
+
+    img {
+      max-width: 45%;
+    }
+  }
+
+  .usa-footer-contact-links {
+    * {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .usa-footer-contact-links {
+    text-align: left;
+  }
+}
