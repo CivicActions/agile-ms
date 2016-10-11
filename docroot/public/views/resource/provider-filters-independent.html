@@ -3,11 +3,11 @@
   <div class="provider-type-filters list-group">
     <a class="box"
        ng-repeat="(key, filter) in providerTypesIndependent"
-       ng-class="{active:filterActive( 'ProviderTypeDescription', filter.title )}"
-       ng-click="filterClick( $event, 'ProviderTypeDescription', filter.title )"
+       ng-class="{active:filterActive( 'ProviderTypeDescription', filter.key )}"
+       ng-click="filterClick( $event, 'ProviderTypeDescription', filter.key )"
        href="#" class="list-group-item provider-type-filter">
       <span ng-class="filter.class" class="box-header">
-        <span class="box-title">{{filter.title}} <span class="filter-count"></span></span>
+        <span class="box-title">{{filter.filterTitle}} <span class="filter-count"></span></span>
       </span>
       <span class="box-body">
         {{filter.desc}}
