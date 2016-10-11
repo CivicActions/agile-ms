@@ -142,10 +142,10 @@
               <div class="usa-width-one-whole">
                 <ul id="advanced-search-filters" data-initial-hide class="hide usa-accordion-bordered">
                   <li>
-                    <button class="usa-accordion-button" aria-expanded="true" aria-controls="filters-b-1">
+                    <button class="usa-accordion-button" aria-expanded="true" aria-controls="filters-b-1" ng-click="isNavCollapsed = !isNavCollapsed">
                       What type of child care provider(s) are you looking for?
                     </button>
-                    <div id="filters-b-1" class="usa-accordion-content" aria-hidden="false">
+                    <div id="filters-b-1" class="usa-accordion-content" aria-hidden="false" uib-collapse="isNavCollapsed">
                       <div class="usa-grid">
                         <div class="filter-group usa-width-one-half providers licensed box">
                           <provider-filters-licensed></provider-filters-licensed>
@@ -191,14 +191,6 @@
                   </div>
                 </div>
               </section>
-              
-              <!--
-              LISTING COLUMN
-              -->
-              <div id="advanced-search-listing" data-initial-hide class="hide usa-width-one-half">
-                <resource-list />
-              </div>
-
               <!--
               MAP COLUMN
               -->
@@ -206,6 +198,12 @@
                 <div id="map-interior" style="min-height:500px;"></div>
               </div>
 
+              <!--
+              LISTING COLUMN
+              -->
+              <div id="advanced-search-listing" data-initial-hide class="hide usa-width-one-half">
+                <resource-list />
+              </div>
             </div>
           </div>
         </main>
