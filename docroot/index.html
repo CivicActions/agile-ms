@@ -43,20 +43,6 @@
                     }
                   }
 
-                  // Sort by Provider type and alphabatize.
-                  this.fullResults.sort(function(a,b) {
-                    if(a.ProviderType > b.ProviderType) {
-                      return 1;
-                    }
-                    if(a.ProviderType < b.ProviderType) {
-                      return -1;
-                    }
-                    if(a.ProviderName == b.ProviderName) {
-                      return a.ProviderName > b.ProviderName ? 1 : a.ProviderName < b.ProviderName ? -1 : 0;
-                    };
-
-                  });
-
                   // Filter by lat/lng
                   var spread;
                     if(this.activeFilters.lat && this.activeFilters.lng) {
@@ -283,11 +269,19 @@
             'api.json'
             , function( data ) {
                 var sameLatLng = [];
-                // add unique ids to objects, set fullResults
-                filteredResults.fullResults = data.map(function(item, key) {
-                    item.id = key;
-                    return item;
-                } );
+                // sort results
+                filteredResults.fullResults = data.sort(function(a,b) {
+                  if(a.ProviderType > b.ProviderType) {
+                    return 1;
+                  }
+                  if(a.ProviderType < b.ProviderType) {
+                    return -1;
+                  }
+                  if(a.ProviderName == b.ProviderName) {
+                    return a.ProviderName > b.ProviderName ? 1 : a.ProviderName < b.ProviderName ? -1 : 0;
+                  };
+
+                });
                 callback();
             }
         );
