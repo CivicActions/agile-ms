@@ -35,6 +35,15 @@
                 var results = [];
                 if(this.activeFilters) {
                     // Filter by lat/lng
+                  var i = 0;
+
+                  // Filter out relative providers
+                  for (i; i < this.fullResults.length; i++) {
+                    if (this.fullResults[i].ProviderType == 6 || this.fullResults[i].ProviderType == 8) {
+                      this.fullResults[i] = '';
+                    }
+                  }
+
                   var spread;
                     if(this.activeFilters.lat && this.activeFilters.lng) {
                       if(localStorage.getItem('spread')) {
