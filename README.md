@@ -12,10 +12,6 @@ Our functioning prototype can be found here: https://agile-ms.civicactions.com.
 
 Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
-## How to Report Bugs
-
-To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issues
-
 
 
 ## Key Assets
@@ -26,6 +22,25 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 1. Slack channel: #agile-ms
 1. Dev deployment Slack command: /agile-ms-deploy-dev
 1. Prod deployment Slack command: /agile-ms-deploy-prod
+
+## How to Report Bugs
+
+To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue
+
+## Team Structure
+
+Robert L. Read was appointed the role Product Owner and was responsible for the overall success of the prototype.
+The overall team structure was:
+* Product Owner: Rob
+* Tech Lead: Adam
+* UX Lead: Nicole
+* Deployment Engineer: Josh
+* Software Engineer: Ethan
+* Software Engineer: Alex
+* UX Designer: Jen
+* Engagment Manager: Steve
+
+
 
 ## Development Workflow
 
