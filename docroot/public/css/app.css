@@ -3575,16 +3575,23 @@ fieldset {
   padding: 15px; }
   #filters-b-1 .rating-more {
     background-color: #5b616b;
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     text-decoration: none;
-    display: block; }
+    display: inline-block;
+    float: left;
+    margin-top: 0;
+    position: relative; }
     #filters-b-1 .rating-more:hover {
       background-color: #44484f; }
     #filters-b-1 .rating-more i {
-      font-size: 2em;
-      float: right; }
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -14px;
+      font-size: 2em; }
 
 .provider-type-filters a, .rating-filters a {
   text-decoration: none;
@@ -3626,10 +3633,13 @@ fieldset {
         margin-right: 0; }
   .rating.box > :first-child {
     float: left;
-    width: 73%; }
+    width: 67%; }
   .rating.box .rating-more {
     float: right;
-    width: 25%; } }
+    min-height: 73px;
+    width: 33%; }
+    .rating.box .rating-more p {
+      margin-top: 0; } }
 
 #search-wrap.usa-width-one-whole .usa-search {
   padding-top: 50px;
