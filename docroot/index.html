@@ -34,16 +34,30 @@
                 // Filter by lat/lng
                 var results = [];
                 if(this.activeFilters) {
-                    // Filter by lat/lng
-                  var i = 0;
 
                   // Filter out relative providers
+                  var i = 0;
                   for (i; i < this.fullResults.length; i++) {
                     if (this.fullResults[i].ProviderType == 6 || this.fullResults[i].ProviderType == 8) {
                       this.fullResults[i] = '';
                     }
                   }
 
+                  // Sort by Provider type and alphabatize.
+                  this.fullResults.sort(function(a,b) {
+                    if(a.ProviderType > b.ProviderType) {
+                      return 1;
+                    }
+                    if(a.ProviderType < b.ProviderType) {
+                      return -1;
+                    }
+                    if(a.ProviderName == b.ProviderName) {
+                      return a.ProviderName > b.ProviderName ? 1 : a.ProviderName < b.ProviderName ? -1 : 0;
+                    };
+
+                  });
+
+                  // Filter by lat/lng
                   var spread;
                     if(this.activeFilters.lat && this.activeFilters.lng) {
 
