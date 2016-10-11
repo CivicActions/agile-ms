@@ -35,9 +35,16 @@
                 var results = [];
                 if(this.activeFilters) {
                     // Filter by lat/lng
+                  var spread;
                     if(this.activeFilters.lat && this.activeFilters.lng) {
+                      if(localStorage.getItem('spread')) {
+                        spread = localStorage.getItem('spread');
+                      }
+                      else {
+                        spread = localStorage.getItem('spread');
+                      }
                       // Grab lat/log range, save first to avoid ~5000
-                      var degreeSpread = .06,
+                      var degreeSpread = Number(spread),
                           activeLat = parseFloat(Number(this.activeFilters.lat).toFixed(2)),
                           activeLng = parseFloat(Number((this.activeFilters.lng)).toFixed(2)),
                           activeLatLow = activeLat - degreeSpread,
@@ -168,7 +175,7 @@
                     <div class="usa-search usa-search-big" role="search">
                         <label class="usa-sr-only" for="search-field-big">Your zipcode or address</label>
                         <input placeholder="Your zipcode or address" class="usa-search-input" type="text" name="search" id="zip-code" />
-                        <button type="submit" onclick="renderMap()">
+                        <button type="submit" onclick="renderMap(), setDefaults()">
                           <span class="usa-search-submit-text">Search</span>
                         </button>
                       </div>
@@ -358,6 +365,12 @@
                  + " child care providers near " + $('#zip-code').val();
         }
         $('#result-note').text(text);
+      }
+
+      // Set default zoom and result radius for map.
+      function setDefaults() {
+        localStorage.setItem('zoom', 12);
+        localStorage.setItem('spread', .06);
       }
 
       (function($) {
