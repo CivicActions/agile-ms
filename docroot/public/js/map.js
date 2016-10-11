@@ -27,13 +27,13 @@ function renderMap() {
       }
     }
   });
+  var zoom = Number(localStorage.getItem('zoom'));
   setTimeout(function () {
     map = new google.maps.Map(document.getElementById('map-interior'), {
-      zoom: 12,
+      zoom: zoom,
       center: new google.maps.LatLng(localStorage.getItem('entryLat'), localStorage.getItem('entryLng')),
       mapTypeId: 'roadmap',
     });
-
 
     var input = document.getElementById('zip-code');
 
@@ -66,7 +66,7 @@ function renderMap() {
           position: {lat: val.lat, lng: val.lng},
           icon: icon,
           optimized: false,
-          map: map
+          map: map,
         };
         return options;
       }
@@ -118,6 +118,47 @@ function renderMap() {
           break;
       }
 
+    });
+
+    map.addListener('zoom_changed', function () {
+      console.log(map);
+      var spreadInt;
+      switch (map.zoom) {
+        case 17:
+        case 16:
+        case 15:
+        case 14:
+        case 13:
+        case 12:
+          spreadInt = .06;
+          break;
+        case 11:
+          spreadInt = .08;
+          break;
+        case 10:
+          spreadInt = 1.0;
+          break;
+        case 9:
+          spreadInt = 1.2;
+          break;
+        case 8:
+          spreadInt = 1.3;
+          break;
+        case 7:
+          spreadInt = 1.5;
+          break;
+        case 6:
+        case 5:
+        case 4:
+        case 3:
+        case 2:
+        case 1:
+          spreadInt = 2.4;
+          break;
+      }
+      localStorage.setItem('spread', spreadInt);
+      localStorage.setItem('zoom', map.zoom);
+      renderMap();
     });
   }, 1000)
 }
