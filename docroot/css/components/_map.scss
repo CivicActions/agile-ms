@@ -1,0 +1,46 @@
+#map-toggle {
+  position: relative;
+  .toggle-map {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    z-index: 9;
+    padding: 8px 25px;
+    border: thin solid #7F7F7F;
+    background: #cacaca;
+    cursor: pointer;
+    color: #484848;
+    &.position-relative {
+      position: relative;
+      top: -10px;
+    }
+    &:hover {
+      background: #aeaeae;
+      border: thin solid #7F7F7F;
+    }
+  }
+}
+
+#map-canvas {
+  min-height: 500px;
+  width:960px;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px
+}
+img[src="public/images/circle.gif"] {
+  background:#205493;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+img[src="public/images/square.gif"] {
+  background:#0071bc;
+  width: 20px;
+  height: 20p
+
+}
+
+#map-interior {
+  min-height: 500px;
+}
