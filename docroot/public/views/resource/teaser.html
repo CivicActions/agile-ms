@@ -1,9 +1,7 @@
 <div class="item panel" ng-class="providerDescClass(item)"><div class="panel-body">
   <div class="usa-grid">
     <div ng-class="$root.providerInfoClass(item.ProviderTypeDescription)" class="usa-width-one-whole">
-      <h4><a ui-sref="home.resource({ resourceID: item.id })" 
-             ng-click="titleClick($event)" 
-             ng-bind-html="item.ProviderName" /></h4>
+      <h4 ng-bind-html="item.ProviderName"></h4>
       <div class="stars" ng-bind-html="getStars(item)"></div>
       <rating-stars stars="item.QualityRating"></rating-stars>
       <div><span ng-bind-html="$root.providerInfoTitle(item.ProviderTypeDescription)"></span></div>
