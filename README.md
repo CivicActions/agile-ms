@@ -62,13 +62,61 @@ The overall team structure was:
 
 ## The Story of our User Interactions
 
-We quickly learned from our pre-prototype interaction with the users that in some cases they wanted a map to show the location of providers. Only later did we realize that only certain provider types are places-of-business that have physcial address.  We quickly prototyped a map using "fake" addresses based around the geographic center of the ZipCodes, which we had for each provider.
+Seeking first to understand what was really needed (USDS Play #1), we conducted a sprint “zero” during the week prior to our iterative development kickoff. In this pre-sprint research and planning phase, we built an initial prototype to identify any technical risks and to validate some initial technical assumptions.  This prototype and all work to follow was in pursuit of the goal that the state of MS team described in the caseworker Q+A session - to provide a way for social workers and parents to find safe and quality daycares in MS without training.  
 
-Showing this prototype to users who were social workers and parents in other states, it became apparent that the terminology, such as "Slot Contractor", and the "Rating" system, was very hard to understand. We began to put effort into developing new GUI wireframes that would clarify this and make it a prominent part of the searching, raising it to the top. We developed additional verbiage using a "plain language" approach that we hoped would clarify things.
+In parallel, we began conducting some initial policy and contextual research and recruiting our “users.” We based our initial research and outreach upon the initial input from the caseworker Q&A session hosted by the state. Because our target audiences are parents and social workers (or caseworkers) who work with foster parents, we reached out to individuals in the child welfare field, beginning with members of the Annie E. Casey Foundation’s Casey Strategic Consulting Group (CSCG) and staff at private providers. We also reached out to local daycare providers in order to identify parents who might have conducted daycare searches recently. Ideally, we were looking for a sampling of users who met a cross-section of criteria:
 
-Since we had developed a prototype early on, we were able to bring our prototype into each user interview with screen-sharing technology to let users actually use our website. However, we asked open-questions first so as to get as much unbiased information from the users as possible.  Our users were parents and social workers who worked with foster youths.
+ -- Job: social worker, someone working in a state child welfare agency or private provider or other organization providing child welfare-related services
 
-For parents, we implemented the feature of starting the map and search in their current location. We learned that for social works this was less valuable, but we implemented, using Google-maps, a Google like place search for finding things.
+ -- Parent: an adult with children under 6 currently in daycare, or looking for daycare
+
+ -- Age range: mid 20s to late 40s
+
+ -- Tech savvy: low to medium
+
+ -- Geographic area: ideally Mississippi, but if not possible then a range of states
+
+We then scheduled three initial user sessions combining a contextual interview and “think aloud” exercises focused on two websites: the MDHS site and the site hosting our initial sprint zero prototype.
+
+We realized that to quickly convey convenient providers we could use a map to show the location of nearest providers. Later we realized that only certain provider types are places of business with physical addresses. We quickly prototyped a map using "fake" addresses based around the geographic center of the zipcodes, which we had for each provider.
+
+
+
+During sprint zero user research we quickly identified the top ways in which parents and social workers conducted their searches:
+
+ -- Location (address, zipcode) was critical. It was the first thing most users wanted to enter. Some offered to hop off the site and look in Google Maps to get better results. 
+ 
+-- The hours of operation, curriculum, ages of children served and programs, and other information (other parents reviews, pictures, etc) that did not exist in our dataset.
+
+ -- Whether the providers are currently taking applications.
+
+This was our attempt to address the whole experience, from start to finish (USDS Play #2), although we had time in this exercise to address only the first, highest-priority item.
+
+We determined that users are most interested in identifying high quality, safe daycare providers convenient to their work or home location. The search function is used to identify state-licensed and registered providers and, ideally, to lessen the legwork needed in order to make a selection.
+ 
+This initial pre-sprint or sprint zero work enabled us to conduct our next phase of development with a few key areas for improvement in mind:
+
+We learned that users were confused by the terminology. Types of providers were unclear; this led users to make incorrect assumptions about search results and to completely drop slot contractors from their search although these centers, by definition, met the users’ criteria.  
+
+Users were also confused by the star ratings, believing falsely that most of the identified providers had a zero (0) rating when in fact they had no rating or were not participating in the rating system.
+
+Following the principle of keeping it simple and intuitive (USDS Play #3), we put effort into developing new GUI wireframes that would clarify this terminology and rating confusion and make it a prominent part of the searching, raising it to the top. We also developed additional verbiage using a "plain language" approach that we hoped would clarify terminology.
+
+Since we had developed a prototype early on, we were able to iterate on our prototype in each user interview with screen-sharing technology so that users could directly experience our website (USDS Plays #9 and #4). For the remaining user sessions, our experienced UX expert (USDS play #7) continued to follow a think-aloud approach which asked users to place themselves in a scenario where they are either social workers trying to find a daycare provider in order to get their kids a placement or a parent conducting a daycare search.
+
+For parents, we implemented the feature of starting the map and search at their current location. We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like place search for finding providers.
+
+In this second Sprint, we were fortunate to receive the support of Virginia Pryor, Director of the Georgia Department of Family and Children Services. We had multiple user participants—from the Adoption unit, the Permanency unit and the Resource department—who interacted with our iterative prototypes (now live websites), as well as a few returning participants from the prior phase. These workers conduct the Mississippi challenge’s use case regularly, so we thought that these users would give us a closer insight into whether the new application would address key concerns—and most importantly, be user friendly.
+
+
+
+These Georgia child welfare staff were able to help us confirm that the terminology of provider types and ratings was hard to understand. Additionally, they helped us to identify the importance of ensuring that the site worked on all devices—essential, given that workers will be in many locations when conducting a search of this type. Although our prototype did not mature to the point of making it appropriate to use quantitative data collection, such as A/B testing, time-on-task testing, etc., we continually and iteratively used user interview data to guide our development decisions  (USDS Play #12).
+
+Instead we heavily used qualitative data in order to collect it we asked open-ended questions first so as to get as much unbiased information from the users as possible. Our users were parents and social workers who worked with foster youths.
+
+After these interviews in our third Sprint, we identified the need for a new visual approach that would emphasize provider type and quality star ratings and explain them to the user, while moving the map to a position parallel to the results lists. We had discovered that for a fraction (approximately one-fifth) of all providers we could discover the physical postal address of the businesses and place these on the map. We immediately started Sprint 4 with that in mind. Our automated deployment allowed us to rapidly deploy significant development changes with confidence (USDS Play #10).
+
+
 
 ## The Story of our Map
 
