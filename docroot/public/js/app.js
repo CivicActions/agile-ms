@@ -111,11 +111,15 @@ angular.module('app', [
       }
 
       $rootScope.providerInfoTitle = function(key) {
-        return $rootScope.providerInfo[key].title;
+        if ($rootScope.providerInfo[key]) {
+          return $rootScope.providerInfo[key].title;
+        }
       }
 
       $rootScope.providerInfoClass = function(key) {
-		    return $rootScope.providerInfo[key].class;
+        if ($rootScope.providerInfo[key]) {
+          return $rootScope.providerInfo[key].class;
+        }
       }
     }
 	]
