@@ -42,7 +42,7 @@ docker-machine ssh "${NAME}" "sudo chown -R \${USER}:\${GROUP} ${PWD}"
   docker-compose up -d
 
   # Run tests.
-  run-tests
+  ./bin/run-tests
   if [ $? -eq 0 ]; then
     echo "[deploy] Tests PASS, activating candidate build."
   else

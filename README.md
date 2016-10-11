@@ -274,6 +274,7 @@ This deploys an instance of the application on Amazon Web Services, then configu
   * VPC configured (default OK)
   * Subnet within VPC
 1. CloudFlare account and API keys to automate interactions with CloudFlare.
+1. Chrome, Firefox, or IE 9+ web browser
 
 #### Instructions
 
