@@ -3342,8 +3342,30 @@ fieldset {
   .box h2:first-child, .box h3:first-child, .box h4:first-child, .box h5:first-child {
     margin-top: 0; }
   .box .box-title {
-    display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-left: 5px; }
+    .box .box-title:before {
+      float: left;
+      content: '';
+      width: 20px;
+      height: 20px; }
+  .box .provider-lic-day .box-title:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #112e51 transparent; }
+  .box .provider-lic-home-based-day .box-title:before {
+    background: #0f9c25; }
+  .box .provider-quality-star-day .box-title:before {
+    background: #f99537;
+    border-radius: 50%; }
+  .box .provider-nanny .box-title:before {
+    background: #5197e3;
+    border-radius: 50%; }
+  .box .provider-un-home-based-day .box-title:before {
+    background: #ffed26;
+    border-radius: 50%; }
   .box .box-body {
     display: block; }
 
@@ -3643,6 +3665,56 @@ img[src="public/images/square.gif"] {
 
 .resource-item {
   padding-bottom: 3rem; }
+  .resource-item .provider-lic-day {
+    padding-left: 30px; }
+    .resource-item .provider-lic-day:before {
+      position: absolute;
+      left: -10px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 20px 10px;
+      border-color: transparent transparent #112e51 transparent; }
+  .resource-item .provider-lic-home-based-day {
+    padding-left: 20px; }
+    .resource-item .provider-lic-home-based-day:before {
+      position: absolute;
+      left: -10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #0f9c25; }
+  .resource-item .provider-quality-star-day {
+    padding-left: 20px; }
+    .resource-item .provider-quality-star-day:before {
+      position: absolute;
+      left: -10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #f99537;
+      border-radius: 50%; }
+  .resource-item .provider-nanny {
+    padding-left: 20px; }
+    .resource-item .provider-nanny:before {
+      position: absolute;
+      left: -10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #5197e3;
+      border-radius: 50%; }
+  .resource-item .provider-un-home-based-day {
+    padding-left: 20px; }
+    .resource-item .provider-un-home-based-day:before {
+      position: absolute;
+      left: -10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #ffed26;
+      border-radius: 50%; }
   .resource-item + .resource-item {
     border-top: 1px solid #aeb0b5;
     padding-top: 3rem; }

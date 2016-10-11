@@ -12,8 +12,46 @@
   }
 
   .box-title {
-    display: block;
     margin-bottom: 10px;
+    padding-left:5px;
+    &:before {
+      float:left;
+      content: '';
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .provider-lic-day {
+    .box-title:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 20px 10px;
+      border-color: transparent transparent #112e51 transparent;
+    }
+  }
+  .provider-lic-home-based-day {
+    .box-title:before {
+      background: #0f9c25;
+    }
+  }
+  .provider-quality-star-day {
+    .box-title:before {
+      background: #f99537;
+      border-radius: 50%;
+    }
+  }
+  .provider-nanny {
+    .box-title:before {
+      background: #5197e3;
+      border-radius: 50%;
+    }
+  }
+  .provider-un-home-based-day {
+    .box-title:before {
+      background: #ffed26;
+      border-radius: 50%;
+    }
   }
 
   .box-body {

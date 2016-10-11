@@ -1,6 +1,66 @@
 // Resource items -----------//
 
 .resource-item {
+  .provider-lic-day {
+    padding-left:30px;
+    &:before {
+      position:absolute;
+      left:-10px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 20px 10px;
+      border-color: transparent transparent #112e51 transparent;
+    }
+  }
+  .provider-lic-home-based-day {
+    padding-left:20px;
+    &:before {
+      position:absolute;
+      left:-10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #0f9c25;
+    }
+  }
+  .provider-quality-star-day {
+    padding-left:20px;
+    &:before {
+      position:absolute;
+      left:-10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #f99537;
+      border-radius: 50%;
+    }
+  }
+  .provider-nanny {
+    padding-left:20px;
+    &:before {
+      position:absolute;
+      left:-10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #5197e3;
+      border-radius: 50%;
+    }
+  }
+  .provider-un-home-based-day {
+    padding-left:20px;
+    &:before {
+      position:absolute;
+      left:-10px;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #ffed26;
+      border-radius: 50%;
+    }
+  }
   padding-bottom: 3rem;
 
   + .resource-item {
@@ -21,4 +81,4 @@
     top: 0;
     right: 0;
   }
-} 
+}
