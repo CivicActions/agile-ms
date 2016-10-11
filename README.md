@@ -10,6 +10,7 @@
 * Team Structure
 * Story of our User Interaction
 * Story of our Map
+* "Serverless Architecture"
 * Build and Deploy Instructions
 
 
