@@ -14,7 +14,7 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
 ## How to Report Bugs
 
-To report a bug against this prototype, please enter a GitHub issue: 
+To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issues
 
 
 
