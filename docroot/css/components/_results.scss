@@ -1,11 +1,14 @@
 // Resource items -----------//
 
+$resource-icon-left: 0px;
+$resource-title-pad: 30px;
+
 .resource-item {
   .provider-lic-day {
-    padding-left:30px;
+    padding-left:$resource-title-pad;
     &:before {
       position:absolute;
-      left:-10px;
+      left:$resource-icon-left;
       content: '';
       width: 0;
       height: 0;
@@ -15,10 +18,10 @@
     }
   }
   .provider-lic-home-based-day {
-    padding-left:20px;
+    padding-left:$resource-title-pad;
     &:before {
       position:absolute;
-      left:-10px;
+      left:$resource-icon-left;
       content: '';
       width: 20px;
       height: 20px;
@@ -26,10 +29,10 @@
     }
   }
   .provider-quality-star-day {
-    padding-left:20px;
+    padding-left:$resource-title-pad;
     &:before {
       position:absolute;
-      left:-10px;
+      left:$resource-icon-left;
       content: '';
       width: 20px;
       height: 20px;
@@ -38,10 +41,10 @@
     }
   }
   .provider-nanny {
-    padding-left:20px;
+    padding-left:$resource-title-pad;
     &:before {
       position:absolute;
-      left:-10px;
+      left:$resource-icon-left;
       content: '';
       width: 20px;
       height: 20px;
@@ -50,10 +53,10 @@
     }
   }
   .provider-un-home-based-day {
-    padding-left:20px;
+    padding-left:$resource-title-pad;
     &:before {
       position:absolute;
-      left:-10px;
+      left:$resource-icon-left;
       content: '';
       width: 20px;
       height: 20px;
@@ -73,7 +76,7 @@
   }
 
   h4 {
-    padding-right: 80px
+    padding-right: 80px;
   }
 
   [stars] {

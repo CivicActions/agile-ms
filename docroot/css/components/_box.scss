@@ -3,7 +3,14 @@
   border: 1px solid $color-gray-lighter;
   display: inline-block;
   padding: 15px;
-  margin-bottom: 10px;
+
+  &, &:last-child {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: ($medium-screen - 1)) {
+    width: 100%;
+  }
 
   h2, h3, h4, h5 {
     &:first-child {
@@ -11,11 +18,24 @@
     }
   }
 
+  .button-title {
+    display: block;
+    text-align: left;
+    position: relative;
+    padding: 12px 15px 12px 38px;
+
+    @include media($nav-width) { 
+      min-height: 96px;
+    }
+  }
+
   .box-title {
-    margin-bottom: 10px;
-    padding-left:5px;
+    display: block;
+
     &:before {
-      float:left;
+      position: absolute;
+      left: 10px;
+      top: 10px;
       content: '';
       width: 20px;
       height: 20px;
@@ -57,17 +77,20 @@
   .box-body {
     display: block;
   }
-}
 
-a.box {
-  @include transition(0.2 ease);
+  a.usa-button {
+    @include transition(0.2 ease);
 
-  &.active, &:hover {
-    background: $color-gray-lightest;
-  }
-  &.active {
-    .box-title {
-      font-weight: $font-bold;
+    &.active, &:hover {
+      background: $color-gray-lightest;
+    }
+    &.active, &.active:hover {
+      background: $color-primary-darker;
+      color: white;
     }
   }
+
 }
+
+
+
