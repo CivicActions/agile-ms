@@ -1,17 +1,15 @@
 <div ng-if="providerTypesLicensed.length">
   <h5>Licensed Providers <i uib-tooltip="These providers are not licensed, monitored, or otherwise regulated by the Mississippi Department of Health. Minimal information is maintained about these programs by the Mississippi Department of Health to assist in emergency preparedness only." class="fa fa-question-circle"></i></h5>
   <div class="provider-type-filters list-group">
-    <a class="box"
-       ng-repeat="(key, filter) in providerTypesLicensed"
+    <div ng-repeat="(key, filter) in providerTypesLicensed" class="list-group-item provider-type-filter">
+      <a uib-tooltip="{{filter.desc}}" class="usa-button usa-button-outline button-title"
        ng-class="{active:filterActive( 'ProviderTypeDescription', filter.key )}"
        ng-click="filterClick( $event, 'ProviderTypeDescription', filter.key )"
-       href="#" class="list-group-item provider-type-filter">
-      <span ng-class="filter.class" class="box-header">
-        <span class="box-title">{{filter.filterTitle}} <span class="filter-count"></span></span>
-      </span>
-      <span class="box-body">
-        {{filter.desc}}
-      </span>
-   </a>
+       href="#">
+        <span ng-class="filter.class" class="box-header">
+          <span class="box-title">{{filter.filterTitle}} <span class="filter-count"></span></span>
+        </span>
+      </a>
+   </div>
   </div>
 </div>
