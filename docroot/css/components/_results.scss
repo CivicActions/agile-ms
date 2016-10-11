@@ -1,0 +1,24 @@
+// Resource items -----------//
+
+.resource-item {
+  padding-bottom: 3rem;
+
+  + .resource-item {
+    border-top: 1px solid $color-gray-light;
+    padding-top: 3rem;
+  }
+
+  .usa-width-one-whole {
+    position: relative;
+  }
+
+  h4 {
+    padding-right: 80px
+  }
+
+  [stars] {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+} 

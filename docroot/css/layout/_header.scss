@@ -1,0 +1,61 @@
+.usa-header {
+  background: $color-gray-light;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 100;
+
+  .usa-navbar {
+    height: auto!important;
+  }
+
+  &, * {
+    color: white;
+  }
+
+  .usa-logo {
+    float: none;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tagline {
+    padding: 0 1.5rem 0;
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  .usa-header {
+    .usa-logo {
+      float: left;
+      max-width: 150px;
+      margin-left: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .tagline {
+      padding-left: 180px;
+      clear: none!important;
+      margin-top: 0;
+      padding: 4rem 0 0;
+    }
+  }
+}
+
+@include media($nav-width) {
+  .usa-header {
+
+    .usa-logo {
+      float: left;
+      max-width: 150px;
+    }
+
+    .tagline {
+      padding-left: 180px;
+      clear: none!important;
+      margin-top: 0;
+    }
+
+  }
+
+}

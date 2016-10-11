@@ -103,7 +103,7 @@
 
   <body onload="setPosition()" role="document" page-ready>
     <base href="/">
-    <div class="container page">
+    <div id="page-wrap" class="container page">
         <main>
           <!--
           HEADER row
@@ -130,10 +130,22 @@
                       What type of child care provider(s) are you looking for?
                     </button>
                     <div id="filters-b-1" class="usa-accordion-content" aria-hidden="false">
-                      <div class="providers"><provider-filters></provider-filters></div>
-                      <div class="rating">
-                        <rating-filters></rating-filters>
-                        <div class="rating-more"><a target="_blank" href="http://www.mdhs.state.ms.us/early-childhood-care-development/child-care-resources/mississippi-quality-stars/">Learn more about daycare centers that have made an extra commitment to providing safe and quality care to children</a></div>
+                      <div class="usa-grid">
+                        <div class="filter-group usa-width-one-half providers licensed box">
+                          <provider-filters-licensed></provider-filters-licensed>
+                        </div>
+                        <div class="filter-group usa-width-one-half providers independent box">
+                          <provider-filters-independent></provider-filters-independent>
+                        </div>
+                      </div>
+                      <div class="usa-grid">
+                        <div class="filter-group usa-width-one-whole rating box">
+                          <rating-filters></rating-filters>
+                          <a class="rating-more" target="_blank" href="http://www.mdhs.state.ms.us/early-childhood-care-development/child-care-resources/mississippi-quality-stars/">
+                            Learn more about daycare centers that have made an extra commitment to providing safe and quality care to children
+                            <i class="fa fa-angle-double-right"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -181,6 +193,12 @@
             </div>
           </div>
         </main>
+        <div class="loading-screen">
+          <div class="loading-screen-inner">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="usa-sr-only">...Loading</span>
+          </div>
+        </div>
     </div><!-- /.page -->
     <footer class="usa-footer usa-footer-medium" role="contentinfo">
       <div class="usa-grid usa-footer-return-to-top">
@@ -337,7 +355,7 @@
         }
         else {
             text = "There are " + filteredResults.results.length
-                 + " child care providers within the " + filteredResults.activeFilters.zip + " zipcode.";
+                 + " child care providers near " + $('#zip-code').val();
         }
         $('#result-note').text(text);
       }

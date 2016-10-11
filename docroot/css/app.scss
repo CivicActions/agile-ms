@@ -10,132 +10,6 @@
   @include clearfix();
 }
 
-// 100% height ----------//
-
-@import "page-full-height";
-
-// Header -------------- //
-
-.usa-header {
-  background: $color-gray-light;
-
-  .usa-navbar {
-    height: auto!important;
-  }
-
-  &, * {
-    color: white;
-  }
-
-  .usa-logo {
-    float: none;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .tagline {
-    padding: 0 1.5rem 0;
-  }
-}
-
-@media screen and (min-width: $medium-screen) {
-  .usa-header {
-    .usa-logo {
-      float: left;
-      max-width: 150px;
-      margin-left: 1.5rem;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-    }
-
-    .tagline {
-      padding-left: 180px;
-      clear: none!important;
-      margin-top: 0;
-      padding: 4rem 0 0;
-    }
-  }
-}
-
-@include media($nav-width) {
-  .usa-header {
-
-    .usa-logo {
-      float: left;
-      max-width: 150px;
-    }
-
-    .tagline {
-      padding-left: 180px;
-      clear: none!important;
-      margin-top: 0;
-    }
-
-  }
-
-}
-
-
-// Search ---------------//
-
-
-#search-wrap {
-  // When full width
-  &.usa-width-one-whole {
-    .usa-search {
-      padding-top: 50px;
-      max-width: 500px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-}
-#map-canvas {
-  height: 500px;
-  width:960px;
-  margin: 0px;
-  padding: 0px
-}
-img[src="public/images/circle.gif"] {
-  background:#205493;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-img[src="public/images/square.gif"] {
-  background:#0071bc;
-  width: 20px;
-  height: 20p
-
-}
-
-#map-toggle {
-  position: relative;
-  .toggle-map {
-    position: absolute;
-    top: 23px;
-    left: 25px;
-    z-index: 9;
-    padding: 8px 25px;
-    border: thin solid #7F7F7F;
-    background: #cacaca;
-    cursor: pointer;
-    color: #484848;
-    &.position-relative {
-      position: relative;
-      top: -10px;
-    }
-    &:hover {
-      background: #aeaeae;
-      border: thin solid #7F7F7F;
-    }
-  }
-}
-
-#map-interior {
-  height: 500px;
-}
-
 .hide {
   display: none;
 }
@@ -143,3 +17,42 @@ img[src="public/images/square.gif"] {
 [data-initial-hide] {
   opacity: 0;
 }
+
+@import "components/grid";
+@import "components/box";
+@import "components/loading";
+
+// tooltips --------------//
+
+@import "bootstrap-tooltip";
+
+// 100% height ----------//
+
+@import "layout/page-full-height";
+
+// Header -------------- //
+
+@import "layout/header";
+
+// Content ---------------//
+
+@import "layout/content";
+
+// Filters -----------//
+
+@import "components/filters";
+
+
+// Search ---------------//
+
+@import "components/search";
+
+
+// Map
+
+@import "components/map";
+
+// Results
+
+@import "components/results";
+

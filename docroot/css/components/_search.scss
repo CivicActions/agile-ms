@@ -1,0 +1,11 @@
+#search-wrap {
+  // When full width
+  &.usa-width-one-whole {
+    .usa-search {
+      padding-top: 50px;
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

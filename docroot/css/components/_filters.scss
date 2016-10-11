@@ -1,0 +1,90 @@
+
+
+.provider-type-filters {
+
+}
+
+#filters-b-1 {
+  background-color: #f1f1f1;
+  font-size: .8em;
+  overflow: hidden;
+  padding: 15px;
+
+  .rating-more {
+    background-color: $color-gray;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: darken($color-gray, 10%);
+    }
+
+    i {
+      font-size: 2em;
+      float: right;
+    }
+  }
+}
+
+.provider-type-filters, .rating-filters {
+  a {
+    text-decoration: none;
+    color: $color-base;
+  }
+}
+
+.rating-filters {
+  a {
+    margin-right: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    i {
+      min-width: 1.01em;
+    }
+  }
+}
+
+@include media($medium-screen) { 
+ .providers.licensed {
+    margin-right: 2%;
+    width: 49%;
+  }
+  .providers.independent {
+    width: 49%;
+  }
+}
+
+@include media($nav-width) { 
+  .providers.licensed {
+    margin-right: 2%;
+    width: 55%;
+
+    .provider-type-filters > * {
+      @include span-columns(4);
+    }
+  }
+  .providers.independent {
+    width: 43%;
+
+    .provider-type-filters > * {
+      @include span-columns(6);
+    }
+  }
+
+  .rating.box {
+
+    > :first-child {
+      float: left;
+      width: 73%;
+    }
+
+    .rating-more {
+      float: right;
+      width: 25%;
+    }
+  } 
+}

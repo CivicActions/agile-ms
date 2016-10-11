@@ -1,0 +1,12 @@
+
+.usa-grid {
+  .usa-grid {
+    margin-left: -$site-margins-mobile;
+    margin-right: -$site-margins-mobile;
+   
+    @include media($medium-screen) {
+      margin-left: -$site-margins;
+      margin-right: -$site-margins;
+    }
+  }
+}
