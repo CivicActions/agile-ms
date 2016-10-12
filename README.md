@@ -165,9 +165,11 @@ For all phases of research, design and development, we documented our user resea
 
 For parents, we implemented the feature of starting the map and search at their current location. We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like location search for finding providers.
 
-In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (**Req. 4.4.2.1, 4.4.2.4**). We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensure that we used consistent language, iconography and patterns for all experiences (**Req. 4.4.2.5**).  
+In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (**Req. 4.4.2.1, 4.4.2.4**). We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensure that we used consistent language, iconography and patterns for all experiences (**Req. 4.4.2.5**).
 
-By following the US Web Design Standards, we were able to ensure that we followed accessibility standards. Additionally, we used distinct shapes (in addition to different colors) to represent the map markers for different types of providers (Req. **4.4.2.3**).
+![devsprint](https://cloud.githubusercontent.com/assets/7294004/19327283/c47bfee6-9093-11e6-8dc4-e2e3ea23a120.png)
+
+By following the US Web Design Standards, we were able to ensure that we followed accessibility standards. Additionally, in our coded prototype we used distinct shapes (in addition to different colors) to represent the map markers for different types of providers (Req. **4.4.2.3**).
 
 
 ----------
@@ -191,6 +193,8 @@ Following these interviews, in our third sprint, we identified the need for a ne
 ![final2days](https://cloud.githubusercontent.com/assets/7294004/19325170/7a41f910-908a-11e6-8473-dc5e6f9612df.png)
 
 ![final2days](https://cloud.githubusercontent.com/assets/5296671/19286190/5c02cfba-8fc2-11e6-89bb-91f417fc9908.png)
+
+----------
 
 ###Sprint 4
 
