@@ -96,7 +96,7 @@ The team was structured as follows:
 
 For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.
 
-Details regarding rates per role were submitted to the Program Officer as part of our response to RFP Section VIII, as instructed. 
+Details regarding rates per role were submitted to the Program Officer as part of our response to RFP Section X, as instructed. 
 
 
 ## Evaluation Criteria Point-by-Point
