@@ -1,0 +1,2320 @@
+[
+  {
+    "ProviderName": "Armed Services CDC",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "AMORY",
+    "PhysicalZipCode": "38821",
+    "CountyNumber": "48",
+    "CountyName": "MONROE",
+    "PhoneNumber": "662-332-4164",
+    "InProcess": "true",
+    "PostalAddress": "1105 Earl Frye Blvd, Amory, MS 38821, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1105 Earl Frye Blvd, Amory, MS 38821, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.977272,
+          "lng": -88.47637600000002
+        },
+        "viewport": {
+          "south": 33.97726105,
+          "west": -88.4782525,
+          "north": 33.97727565,
+          "east": -88.4757505
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "5774013df9100fff10b7c33fbd30ba913106b793",
+      "name": "Merit Health Gilmore Memorial",
+      "photos": [
+        {
+          "height": 1000,
+          "html_attributions": [
+            "Merit Health Gilmore Memorial"
+          ],
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJpY7DDf0Xh4gR1UvydeKygoI",
+      "reference": "CoQBcQAAAJbIzqYmYuoS2jrIXUh-6mLLbrDc3iGdOK5SEcMp1BHv1V7iscHLPbVCoMOqB9jZkUxP350mUBb8qCpinzsjXX9vOaimhSx97zxLn9bvwtZ8ANLLxqyMLFzTmZAAIg67KSGIJ8kECpbDZkzias3AorhQpTjPRwmCDcoFT8S5MH7eEhCQ7YlHUcp49_JRh23PuQ1bGhSabZqMgir-WM-zvGCKM6mJbjBsEw",
+      "types": [
+        "hospital",
+        "doctor",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Arooj Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "12",
+    "PhysicalCity": "WAYNESBORO",
+    "PhysicalZipCode": "39367",
+    "CountyNumber": "77",
+    "CountyName": "WAYNE",
+    "PhoneNumber": "662-332-8128",
+    "InProcess": "true",
+    "PostalAddress": "559 County Lake Denham Rd, Waynesboro, MS 39367, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "559 County Lake Denham Rd, Waynesboro, MS 39367, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.6750008,
+          "lng": -88.56290159999998
+        },
+        "viewport": {
+          "south": 31.67492815,
+          "west": -88.56293725,
+          "north": 31.67504435,
+          "east": -88.56288024999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "0f811522f4b2b5b50b4d499a441ae560b03ac877",
+      "name": "Taylor Daycare",
+      "place_id": "ChIJcd3QsIWzhIgR9O5MHR32yMs",
+      "reference": "CnRiAAAAy-wwG3cQm7xaIyVB1BQ8SGIdEzqlN4rF4aECZvu6S1dYIq_DCEdBPFZw7zZ_SJDVnBQY76ggACD9BTqqXa0L1KwgvmaMnm3N-QJ2jsDzgQP91eWuxSN-bnRTyIr5-Hbf5G-Fl4_jXiZ-DKgR3VtpoRIQN1CDOhBhNgWcre-rRTm9VRoUuNJ4RsFjWreVuhnwO-jAW90FPek",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Around The Clock",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "52",
+    "PhysicalCity": "GREENWOOD",
+    "PhysicalZipCode": "38930",
+    "CountyNumber": "42",
+    "CountyName": "LEFLORE",
+    "PhoneNumber": "662-332-8216",
+    "InProcess": "true",
+    "PostalAddress": "1407 Main St, Greenwood, MS 38930, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1407 Main St, Greenwood, MS 38930, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.5111485,
+          "lng": -90.17843849999997
+        },
+        "viewport": {
+          "south": 33.51108880000001,
+          "west": -90.17871839999998,
+          "north": 33.5111684,
+          "east": -90.17834520000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "6e6ba67b9dc2675ccdeea6aa0a56e775bfbc1725",
+      "name": "Around the Clock Towing & Recovery",
+      "place_id": "ChIJR74gS89tKoYRxgCLJ8zdcZ8",
+      "reference": "CoQBdgAAADj72C2StsmsYKzGp6Ry7zktxjdI9CoTi7a-qHjK8BWm-912LgFyNozLk9eE9eonKE1uRXNBmgJoB5thFMXPGjX4ijJH1yF4tIfgLjLZ7jXIdN08wD3T4IrdjyCO5AVwvG6ftN4l3MUNA5-VmDKX7u9-QqsswD8yXwE_6uDeRwHvEhAx1eJdZV6nVnjiapZyVvaYGhTxHVlnS-grelERe2Ek-7VnQRcYaw",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Arts & Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "MCCOMB",
+    "PhysicalZipCode": "39648",
+    "CountyNumber": "57",
+    "CountyName": "PIKE",
+    "PhoneNumber": "662-334-1654",
+    "InProcess": "true",
+    "PostalAddress": "1056 Highway 98 and 51, McComb, MS 39648, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1056 Highway 98 and 51, McComb, MS 39648, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.266582,
+          "lng": -90.47065700000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "f82c8b55511c621aa1e4f807dcb5c6097d76935f",
+      "name": "Mc Comb Learning Center Daycare",
+      "place_id": "ChIJD05zkSHIJ4YROloGVKHtng4",
+      "reference": "CoQBcgAAABNLte-A7G0e0c-1A5rUhlzuvEkj3oAQqoQBTXkBI4avBckYRL1hHhGve9Ez9H-GZvbdDJHTNYbnKWVsyYJZotK4LyjeZnB9TBOreNqzKYQzCs1_fdIw9T9WwSVbvx9MoNkaIFWT6BtQjwnnm4ueE7I_a0LvBo3A3WfcXLfEIFlfEhDm1X2U70WfTy8tjjufScypGhTOtZCp9sh6x3_RZJXGmK-PYLSRYg",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "ASAP After School Activities Program",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "90",
+    "PhysicalCity": "HATTIESBURG",
+    "PhysicalZipCode": "39401",
+    "CountyNumber": "18",
+    "CountyName": "FORREST",
+    "PhoneNumber": "662-334-3586",
+    "InProcess": "true",
+    "PostalAddress": "106 N 38th Ave, Hattiesburg, MS 39401, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "106 N 38th Ave, Hattiesburg, MS 39401, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.3259234,
+          "lng": -89.34590539999999
+        },
+        "viewport": {
+          "south": 31.3259097,
+          "west": -89.34610344999999,
+          "north": 31.32596449999999,
+          "east": -89.34531125000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "213f4e48e74bb415ac686c7690030c400b7e4c72",
+      "name": "After School Academics & Arts",
+      "place_id": "ChIJ7zfL2uvenIgRhRlyeisFC40",
+      "reference": "CoQBcQAAAEzTPqiSVkc0SjgoFahhtQbt7732aayCQR4o4aRDhV_dwLPJkLXtZgP9oW2ZK4eKzKsqz7OnVnbxhPW_8NrLyaS031-EHkk_2G1nJodT1PHwGUAxoC6ldfccIOwhUGo9NQZbpYQpoIP_ftZRM8SYm3ssmN11pOeAMWl9NLVrGLoxEhAYu6JYT5fTJKFYP_ePj93bGhRSvdAH8wi44Eb-W_B2ul14tXaDog",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Asbury Creative Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "94",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39203",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-334-3710",
+    "InProcess": "true",
+    "PostalAddress": "1439 W Capitol St, Jackson, MS 39203, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1439 W Capitol St, Jackson, MS 39203, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.309451,
+          "lng": -90.205331
+        },
+        "viewport": {
+          "south": 32.30929010000001,
+          "west": -90.20547779999998,
+          "north": 32.30993369999999,
+          "east": -90.2048906
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "7a34414a849e12ee3a0efe185523201ea179bf54",
+      "name": "Christian Mission Learning Center",
+      "place_id": "ChIJO8BrGaAzKIYRw2OfatLrJ8s",
+      "reference": "CoQBdQAAAG5wdOSisStSdIOTTqzp477_X88Wkc3KH8k3NttFUrmBW7gzbod3s9ssyw-S3rwbClKQnuDJbfUoJ0DVsn0vevOcIcPg5jSCsGA_ODyEmJtLG-Z6pOy9_ZdaiAbZdIa00HRFM5nwBo0MVxdLqF5dr2fBbEGwHaNOq12XwnYPdhhBEhDBQc5L5TPGLQsNc_-bZfPPGhQUXFJzW67eH0BgKQf0pGPj_RxpPQ",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ascension Day School",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "105",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39204",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-335-1020",
+    "InProcess": "true",
+    "PostalAddress": "2350 Oakhurst Dr, Jackson, MS 39204, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "2350 Oakhurst Dr, Jackson, MS 39204, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.2747906,
+          "lng": -90.21853390000001
+        },
+        "viewport": {
+          "south": 32.2747874,
+          "west": -90.218998,
+          "north": 32.27480020000001,
+          "east": -90.21837920000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b56995f4b18ca5605766baae849eda85c6272692",
+      "name": "Lester Elementary School",
+      "place_id": "ChIJTWaSFfozKIYRhj2QzLAXUwg",
+      "reference": "CnRrAAAADfY1NB-ZUpzWWjRnlEzcNhuSoofyGcTpKFyzxL2MXxplDDAiIYVVpmPWEb2ytk46oEIcIkZhaiJdUPkfIiDHoxxJzwuSt11Xojo4XIcMbVWFrxD4v_l6kedHKA8BtwF_4umNDi9-0iDzFe3fY_jNQhIQgsVqUboq6wr9hANrFHMimBoUIsTqOBLZo06P9XFvu-2hWSXeqdk",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ashlea   Ramirez",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "45",
+    "PhysicalCity": "GRENADA",
+    "PhysicalZipCode": "38901",
+    "CountyNumber": "22",
+    "CountyName": "GRENADA",
+    "PhoneNumber": "662-336-0787",
+    "InProcess": "true",
+    "PostalAddress": "1250 US-51, Grenada, MS 38901, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1250 US-51, Grenada, MS 38901, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.771668,
+          "lng": -89.80850199999998
+        },
+        "viewport": {
+          "south": 33.77165,
+          "west": -89.80916919999999,
+          "north": 33.771674,
+          "east": -89.80827959999999
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "f825c66d01dcfce7011210474ec643cb03e06afa",
+      "name": "Ashley Furniture HomeStore",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "Ashley Furniture HomeStore"
+          ],
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJcRUcJH8ygIgRKSnvTVq3aHM",
+      "price_level": 2,
+      "reference": "CnRtAAAAaW8J1SCe2V1i40VOMIuKiTR0852fl5DHa83TnCZ-n_7fUfFq7IHYCgwG67Ff33ceCoZRUiFPJxNkA9skWFJwvnh6lAk3hP9eXwXepmkY5F2T43DLqEFR4tofzfZTvBvFnT-6tGYV3OSS4L8VQvoFdBIQLSYWaa9gxWz430Q8JGQTShoUz6lzsZirFMa_XfquP11rgxlG60Q",
+      "types": [
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ashley  Moehnke",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "100",
+    "PhysicalCity": "OLIVE BRANCH",
+    "PhysicalZipCode": "38654",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "662-337-4355",
+    "InProcess": "true",
+    "PostalAddress": "7072 Ashley Cove, Olive Branch, MS 38654, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "7072 Ashley Cove, Olive Branch, MS 38654, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.96327,
+          "lng": -89.857394
+        },
+        "viewport": {
+          "south": 34.96261195,
+          "west": -89.85826505,
+          "north": 34.96348935000001,
+          "east": -89.85710365
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "f959b737c768ba1efc4585c5c28c1f587c3f4e49",
+      "name": "Enterprise Rent-A-Car",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1000,
+          "html_attributions": [
+            "Enterprise Rent-A-Car"
+          ],
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJ4QSM3BqOf4gR1pJKhRVHcRA",
+      "rating": 4.1,
+      "reference": "CnRoAAAAlBAJGYzbBUjgAUmwTvgCBGrPLXPm5NUDT_AHKB5tdHYNoSJBikJP4n8qxc1_8sM3wuAOP7uBCVU2xBNhlfbo4RCQJAG_6B5SOWIyuHNp5Sghw9y4L9j_BbJ8ic37ldnyHRS0lI6S8YH1y6c4Ku_VyBIQw3zQ15SuP347wpQ117vhqhoUOmdsTgKVlzWcDR-mUffYBPJTng8",
+      "types": [
+        "car_rental",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ashley Barrett",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "105",
+    "PhysicalCity": "VICKSBURG",
+    "PhysicalZipCode": "39180",
+    "CountyNumber": "75",
+    "CountyName": "WARREN",
+    "PhoneNumber": "662-342-8634",
+    "InProcess": "true",
+    "PostalAddress": "1808 Mission 66, Vicksburg, MS 39180, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1808 Mission 66, Vicksburg, MS 39180, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.3404492,
+          "lng": -90.86450590000004
+        },
+        "viewport": {
+          "south": 32.34042735,
+          "west": -90.86461225,
+          "north": 32.34051475,
+          "east": -90.86418685000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "4ae184f8586d55353286d4fb64d1b6e2893415c2",
+      "name": "William S. Ashley, OD",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJA_ZCmM3hKIYRjTKnTlVKkTQ",
+      "reference": "CnRoAAAA5G_U-yuZoApKFTmbxAvOTJQb_-x0HSvfwknwvOnqeb_IQKE1UwrX5l46FI1M4Cdk-PMp26F5q3aFZXHlVpyvVm1OChrXSoJRiP_sUROxmYcvxVCtJDPdV7lvoCv722oPWBaI7M79V6tT8dBhx78HChIQryoz8IbH86Ji-XhWyLtMhxoUIFkb3tXJsW_pnr5sHelWhvPzgqk",
+      "types": [
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ashley Paul",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "12",
+    "PhysicalCity": "CANTON",
+    "PhysicalZipCode": "39046",
+    "CountyNumber": "45",
+    "CountyName": "MADISON",
+    "PhoneNumber": "662-349-6718",
+    "InProcess": "true",
+    "PostalAddress": "148 E Peace St, Canton, MS 39046, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "148 E Peace St, Canton, MS 39046, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.6123726,
+          "lng": -90.03399430000002
+        },
+        "viewport": {
+          "south": 32.61225350000001,
+          "west": -90.0340079,
+          "north": 32.6127299,
+          "east": -90.0339535
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "a72bdb212b6b95d392fe8e5bb6691d7594bffdd7",
+      "name": "Hollowell Ashley D DDS",
+      "place_id": "ChIJKQSfFdnYKYYR7chFKaiKQNc",
+      "reference": "CnRqAAAAWL4eTo2h9LgbN7StgiLClx2ggdhF47jCDpkylkrPMeIKPHQ150x7h539HCMVke5Utw-LU7CxgpVik6WQnWVw4tabirBqEpFfVGTirP3px8oeDcyfuLUpahP7ibfAEsmGXajXVlxRz5vRCR2_0vCzCRIQXtAqQyZXnLb36_UA5O_gkhoUb0qVt-meHXfQ7v7ZoA5PjUHYx0k",
+      "types": [
+        "dentist",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Ashley Reece",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "2",
+    "QualityRatingDescription": "Average",
+    "ProviderCapacity": "44",
+    "PhysicalCity": "LOUISVILLE",
+    "PhysicalZipCode": "39339",
+    "CountyNumber": "80",
+    "CountyName": "WINSTON",
+    "PhoneNumber": "662-350-3400",
+    "InProcess": "true",
+    "PostalAddress": "905 W Main St, Louisville, MS 39339, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "905 W Main St, Louisville, MS 39339, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.1234247,
+          "lng": -89.06734870000003
+        },
+        "viewport": {
+          "south": 33.12338064999999,
+          "west": -89.0673597,
+          "north": 33.12355685000001,
+          "east": -89.0673157
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "958bfc91846f8c728d0fc8b483507b5fea51f6ab",
+      "name": "Ashley Wholesale Motors",
+      "place_id": "ChIJi2L2pk1egYgR-B8iBMnOjQk",
+      "reference": "CnRqAAAAkbzu5nmgMu06aXZqjZePuc29dpHP3BS5WWGbXSwtiyjUq_qmzwaQMt3dj6JDDBuJQmmi_iGzYMFt0jkTub9lKqIlx3XfXFf8WIjNRXuOlOhSjxTbJOZ6kj6lZy91hTBS3Tz30t9Mjq5RtYar9mUGSBIQRVG7FCXsBvBWY9dZDPwndRoUFhzag8oroIvWhmP_dLLxax7Miu8",
+      "types": [
+        "car_dealer",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Astros Learning & Daycare Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "60",
+    "PhysicalCity": "YAZOO CITY",
+    "PhysicalZipCode": "39194",
+    "CountyNumber": "82",
+    "CountyName": "YAZOO",
+    "PhoneNumber": "662-358-4867",
+    "InProcess": "true",
+    "PostalAddress": "1025 Lamar Ave, Yazoo City, MS 39194, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1025 Lamar Ave, Yazoo City, MS 39194, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.8621463,
+          "lng": -90.40647039999999
+        },
+        "viewport": {
+          "south": 32.8621147,
+          "west": -90.40652655000002,
+          "north": 32.8621687,
+          "east": -90.40639114999999
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b7148135d1682790cd708b399262b22c5f23a5a7",
+      "name": "Evans Inc",
+      "place_id": "ChIJExA6Q66RKYYRHlLjyYaeg50",
+      "reference": "CmRdAAAAGTxCelSqSjA1rFr95SetI_12q0tfZIfMdkqvpJcC7_kOdxvYYIlBuHFDyOSnPb0bDc4xtgij_OxFWRuoiHTg0uuzWR8FA0DrKCfYTELevn8oAhcEzYG1CpluYeOasHp7EhCAqqnQMN_doNKPrwIRprlkGhQL0XnYolBJzjp04nubPeQrwSJsTg",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Aunt Missys Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "135",
+    "PhysicalCity": "WEST POINT",
+    "PhysicalZipCode": "39773",
+    "CountyNumber": "13",
+    "CountyName": "CLAY",
+    "PhoneNumber": "662-378-8003",
+    "InProcess": "true",
+    "PostalAddress": "539 E Brame Ave, West Point, MS 39773, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "539 E Brame Ave, West Point, MS 39773, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.5978849,
+          "lng": -88.64421279999999
+        },
+        "viewport": {
+          "south": 33.59765285,
+          "west": -88.64421325,
+          "north": 33.59796225,
+          "east": -88.64421145
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b0f902b8aea4a6df6f6981be6e51b9a72c9a025a",
+      "name": "Clay County Day Care Center",
+      "place_id": "ChIJeTmule_PhogRgRbTduwCta8",
+      "reference": "CnRvAAAAlcDFRVDdN_FWhx_ZdD_rG5AP8nAg6m1gI_zhyYzU6P41Nm52NQxCixsjpCQZq8osdKV3Hpd0rGTLScG1jKv9y57aMzbt1qxWmBI7erHGBKk76EjxXs7QuoHyOMfj5222aJRqlg6dnLNXvcuiwRRyShIQNZz7yFHFJg8HTlgPUdL04BoUUxnoZxiGrVvtLBgx-elSWhvzeQI",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Aunt Rosies Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "PHILADELPHIA",
+    "PhysicalZipCode": "39350",
+    "CountyNumber": "50",
+    "CountyName": "NESHOBA",
+    "PhoneNumber": "662-378-9355",
+    "InProcess": "true",
+    "PostalAddress": "562 Line St, Philadelphia, MS 39350, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "562 Line St, Philadelphia, MS 39350, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.7612726,
+          "lng": -89.10401360000003
+        },
+        "viewport": {
+          "south": 32.76113555,
+          "west": -89.104015,
+          "north": 32.76168375,
+          "east": -89.1040094
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "a32ba21219e7be7e32900e0341468b464d94e2fb",
+      "name": "New Beginnings Adult Day Care",
+      "place_id": "ChIJV6T6Z83Bg4gR2SXfGdhcv2g",
+      "reference": "CnRwAAAAMkWVLPbI69qe0I_wYojFbMMfQNdEkClZjLRDIBxMo_p0s_-Ib2J_Ok2HbVvijU--DsQykYN3h3vAdjRp3yw-bVY6TlBfi3d6HEmsokxT8Uh5AaTTT80yMLxssUJilUn3hgvIPTTcFo_As2iaW7OJ7hIQDCjYPcOovrn-PbnEg5u7qBoUQ5cCHwwcIUl1Vx9Xu5YxjtTzJP0",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Aunt Susis School House",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "40",
+    "PhysicalCity": "MYRTLE",
+    "PhysicalZipCode": "38650",
+    "CountyNumber": "73",
+    "CountyName": "UNION",
+    "PhoneNumber": "662-378-9530",
+    "InProcess": "true",
+    "PostalAddress": "1139 Co Rd 67, Myrtle, MS 38650, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1139 Co Rd 67, Myrtle, MS 38650, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.5332125,
+          "lng": -89.0785998
+        },
+        "viewport": {
+          "south": 34.53312234999999,
+          "west": -89.07864044999997,
+          "north": 34.53324255,
+          "east": -89.07847785000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "a1ddb9e593f4d55289406a7840c623b6d7dd6c80",
+      "name": "Watkins & Shepard Trucking",
+      "place_id": "ChIJASJEG5MffogR26tezVon678",
+      "reference": "CnRuAAAAjqgB16NpcbSOFjF_Z37e_yS7ijq8xTgkMuX_2dHEiLOsI8wScrpPrAJUvl3uFnxIP-FLrwVYQrP6kLeHel8-DMFZa_rzJdM4ucmi1493byXiT1l_YjGTe5yKj1t6qWxqdTvhuc1P1vRgXFPzNOqbfRIQDnJ2F9tXVlxxFxijPRJwRhoUKnf_HVD-QiTBtAqoYV2q6JXRTVo",
+      "types": [
+        "moving_company",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Auntie Audreys House Daycare",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "120",
+    "PhysicalCity": "MADISON",
+    "PhysicalZipCode": "39110",
+    "CountyNumber": "45",
+    "CountyName": "MADISON",
+    "PhoneNumber": "662-379-3941",
+    "InProcess": "true",
+    "PostalAddress": "642 Mannsdale Rd, Madison, MS 39110, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "642 Mannsdale Rd, Madison, MS 39110, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.5235278,
+          "lng": -90.19101990000001
+        },
+        "viewport": {
+          "south": 32.5231624,
+          "west": -90.19103984999998,
+          "north": 32.524624,
+          "east": -90.19101325000003
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "a3a026831bb8fd40923bba612026ff0df98be1e8",
+      "name": "Montessori Children's House School at Chapel of the Cross",
+      "place_id": "ChIJC8YBsnDPKYYRGPrHxYggyTQ",
+      "reference": "CpQBjQAAAHBwAiE0VR3hBW6VqDXoLwLdtccNDVeBHFsQ17_K3HlqrKCYhAjWaTnnx-W90AzzR_w_MNBSYR5TTu_JLHLVAW8j4qBmdXMjKRWjTT72mZNNow1TXyiQck2RDeXHN5k5tsDFFjAWBIXu16wzZj_47aTFtLpQqHWSmbZiZWEDaEsxsDxtk_c80xxgxpEBjzF6dBIQhZSSxkzPPVFKVvlPi2gnzxoU7pdNSFnQucBnQ5qRuWlUASFwAW8",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Auntie's Place",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "15",
+    "PhysicalCity": "GULFPORT",
+    "PhysicalZipCode": "39501",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-382-7040",
+    "InProcess": "true",
+    "PostalAddress": "8420 US 49, Gulfport, MS 39501, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "8420 US 49, Gulfport, MS 39501, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.4102004,
+          "lng": -89.09224419999998
+        },
+        "viewport": {
+          "south": 30.41010385,
+          "west": -89.09310879999998,
+          "north": 30.41049005000001,
+          "east": -89.09195599999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id": "8f9fd66d5ba9ee510032229c8ee3fd91949e8c7a",
+      "name": "Value Place",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "Value Place"
+          ],
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJsUetjx8WnIgRTx36wqBo4lc",
+      "rating": 2.5,
+      "reference": "CmReAAAA_CHNSTnU2-E8vpYfp8LjybsUqa3tdXFXKT0P6afpiX_8jsZAonYXTBJmkGrMrJYCLffsqLES90HJMz0DMVTEf40SQsK-vWPlDiEpRE_3pSDzbhWl6yeqyC-Z0pajtXErEhDJPoREkoXwjN0VGG7eA1UuGhROA9UpJ0FaIJBnaZEmIXxzqHMz_A",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Auntie's Place",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "41",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39204",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-382-7263",
+    "InProcess": "true",
+    "PostalAddress": "1129 Langley Ave, Jackson, MS 39204, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1129 Langley Ave, Jackson, MS 39204, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.2876143,
+          "lng": -90.1962297
+        },
+        "viewport": {
+          "south": 32.28758954999999,
+          "west": -90.19641904999997,
+          "north": 32.28762255,
+          "east": -90.19566164999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "4d0407c94ddc38e3fa06b3c2c98a8b31815d2fe7",
+      "name": "Community Place",
+      "place_id": "ChIJ6ZwfAsgzKIYRT67jS4YhmOU",
+      "reference": "CnRjAAAABrvc2I8-yDpbN5SAYOAJ0mA-FZgI4Y7RFquOQLC0AAI3DcM3OC4uSy76ULLxHK-I0nMrgxYfqD5Ry_TKeX73ognnmrq1jwRDvAzb7a_UXoJw0MW41zuctnhP_ry8_vUP5ZFir52ZPo8fNHuYLoerOBIQXFhrPL0mL-l63kdpZzcwthoUTt7yjw5EGN5d2qjq_8vSHzWzQb0",
+      "types": [
+        "hospital",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Aurora's Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "400",
+    "PhysicalCity": "DIBERVILLE",
+    "PhysicalZipCode": "39540",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-383-5504",
+    "InProcess": "true",
+    "PostalAddress": "4322 Popps Ferry Rd, D'Iberville, MS 39540, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "4322 Popps Ferry Rd, D'Iberville, MS 39540, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.4435006,
+          "lng": -88.91020170000002
+        },
+        "viewport": {
+          "south": 30.44338300000001,
+          "west": -88.91020590000005,
+          "north": 30.4435398,
+          "east": -88.91018909999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "d56e6f8f81aeaf94237d9df07909af0559b3ae1d",
+      "name": "Noah's Ark Child Care Center",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJ7XhbLc4NnIgRfB8gi_l8ucA",
+      "reference": "CnRwAAAAA8jai_TG5D94T8IfZDOadACD4yK8cL6wWrMWVKz11M0iUf7rMS92866z9TqUTKB956OW5auZLudHTHQH5ZSvXxScs71G_lFvjOLIvILof2W8OQdJj2hVXgX5wg_FPyiE8w3kzGVVCVLBLJ6TCZ5t8BIQgQt8hud_6ZcZd27knthSqRoUKJt9WhRtsvT9ZBgtOWCgqAlHhhQ",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Austin Head Start",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "100",
+    "PhysicalCity": "RIPLEY",
+    "PhysicalZipCode": "38663",
+    "CountyNumber": "70",
+    "CountyName": "TIPPAH",
+    "PhoneNumber": "662-392-9514",
+    "InProcess": "true",
+    "PostalAddress": "40 Co Rd 562, Ripley, MS 38663, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "40 Co Rd 562, Ripley, MS 38663, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.7728872,
+          "lng": -88.9148381
+        },
+        "viewport": {
+          "south": 34.77288595,
+          "west": -88.91488119999997,
+          "north": 34.77288775000001,
+          "east": -88.91472800000003
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "922307af9f088ed0bde750762c192b2c60e1f21f",
+      "name": "Prather Center Homebase",
+      "place_id": "ChIJx6RYptkNfogR5oXuNWLZzhQ",
+      "reference": "CnRqAAAA_9FzLSDFcxWwRTBgJP7o8uD1Lk9LcIKvTJQEL9negMZyzKtNDF5Sq9n_uOI-ooEOUoie7gsG77YK2IjfGHnojMSC5oDECvk1aMz4llMhrxPFrCi7LEDBhXprgGWadwTAKoJlbAfXaogTDJFwGwKtpxIQ3BYT5B2mo74dBS42w01rLhoUsQv8hb6Ljd-Vu2BWBdfhCEueVv0",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Avalon Academy",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "15",
+    "PhysicalCity": "COLUMBUS",
+    "PhysicalZipCode": "39702",
+    "CountyNumber": "44",
+    "CountyName": "LOWNDES",
+    "PhoneNumber": "662-423-2356",
+    "InProcess": "true",
+    "PostalAddress": "Columbus, MS 39702, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "Columbus, MS 39702, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.5053957,
+          "lng": -88.331704
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "36ec747c30322534b7376f7dfb842eb4e24655e5",
+      "name": "Victory Christian Academy",
+      "place_id": "ChIJB9MGBvDthogR9zv4Kh9O05k",
+      "reference": "CnRtAAAAAzM-r2aCjV78_lRnqaQjnK-p3zy8oDTcp1S9EAWNWW41ZJccVDgSBLnZf4o8v2R30atz66nY9NCwWQTKUHuwdfiVpl_Z1GBR8zgSOTq6qjC1S5Wdgrn2SgZPI-9nzCMPvl7um7KiEHIK9_bdL3Y24xIQEGIsq1Ahy-nsv7mk5ujPARoUuSQxl3EfIIdEbC-tJZT3xeiEsL0",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Azle Head Start",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "3",
+    "QualityRatingDescription": "Good",
+    "ProviderCapacity": "72",
+    "PhysicalCity": "MOSS POINT",
+    "PhysicalZipCode": "39563",
+    "CountyNumber": "30",
+    "CountyName": "JACKSON",
+    "PhoneNumber": "662-457-0251",
+    "InProcess": "true",
+    "PostalAddress": "5343 Jefferson Ave, Moss Point, MS 39563, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "5343 Jefferson Ave, Moss Point, MS 39563, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.3909855,
+          "lng": -88.5212067
+        },
+        "viewport": {
+          "south": 30.38908979999999,
+          "west": -88.52122170000001,
+          "north": 30.3916174,
+          "east": -88.5212017
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "a837bc8e24b97694a17dac46f4acfce1c0ffb8a8",
+      "name": "Head Start",
+      "place_id": "ChIJawEHfsvom4gRAWRRdZ3eSLg",
+      "reference": "CmReAAAARvgH4hqrTreaYDJP3RqIf2YZFMQCkqSr9bmkIvYBLU2GOgtNftYBR6RambdvabppbXT24ToLj_EW4FIVNZnONp62K6227C4W9OUlV4mYXblJbDVqGuU-tWin5N0kfRhbEhBnoGFj0MqkW0R9EFbbHvCnGhQVJykt2rallLpm37SWIgPqdPIcWQ",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baby Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "140",
+    "PhysicalCity": "HATTIESBURG",
+    "PhysicalZipCode": "39402",
+    "CountyNumber": "37",
+    "CountyName": "LAMAR",
+    "PhoneNumber": "662-468-2263",
+    "InProcess": "true",
+    "PostalAddress": "115 Sandy Run Rd, Hattiesburg, MS 39402, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "115 Sandy Run Rd, Hattiesburg, MS 39402, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.287411,
+          "lng": -89.36399999999998
+        },
+        "viewport": {
+          "south": 31.2872826,
+          "west": -89.36433749999998,
+          "north": 31.2877962,
+          "east": -89.36298749999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "c4ce67227278a6350b6051651d07bd3336f9c235",
+      "name": "Kangeroo Pouch Child Care Center",
+      "place_id": "ChIJPyvwSLTfnIgR9Uofb55391U",
+      "reference": "CoQBcwAAADMbXRgeeNqms5Qr2aSIUAdHax1QbpEMehnjqVEiO5YPsinu1loipstBQP7g_8Tsozsuj9RefV815whbzGlG66VzJ8bEYTI2W5fMy0vPR_6NvV9STOmm0bqpgv2ouiVK-lk_jALJhkdrbfs6aUXh4BcENSUUBQ1PXZJwwwwz_IsnEhCSMfwwj198BAlZxMAZJ8YMGhTViFaF1m4rCflr_jjnVwtDWkwEeg",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baby Love Child Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "95",
+    "PhysicalCity": "PHILADELPHIA",
+    "PhysicalZipCode": "39350",
+    "CountyNumber": "50",
+    "CountyName": "NESHOBA",
+    "PhoneNumber": "662-468-2777",
+    "InProcess": "true",
+    "PostalAddress": "209 Walton Ave, Philadelphia, MS 39350, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "209 Walton Ave, Philadelphia, MS 39350, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.7700822,
+          "lng": -89.09407870000001
+        },
+        "viewport": {
+          "south": 32.7700792,
+          "west": -89.09417250000001,
+          "north": 32.77008399999998,
+          "east": -89.09402289999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "701b537573b13eaafdd73a99bc5bc1bdf39887dc",
+      "name": "Happy Hippos Early Learning and Development Center",
+      "place_id": "ChIJb2Z3C3jqg4gR_VtbSqzUIHE",
+      "reference": "CpQBhgAAAPMLiVLtEneFjDUftMx7y8fhAbnJ2PphCG2bCGfE_MU18jVyKwtscbSpRAVNN_Tq5T4ru_wmzSXR0rTuf6Z3CLGBEiDwm5hnRsCcLQIGcygUQNE5TlHpEa2x36utwPVgpXb1vCFZUjIb3fp-1eQUaSHJZ8nzYsmrQiAIFfNpQdqvSfDNkOEsdheg1g34QQZ9IhIQWFmrXFcZnmh3-SXP3b0erRoU0gwU__QlA1gCDQojolcXK50q3Gc",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baby Palace",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "28",
+    "PhysicalCity": "BRANDON",
+    "PhysicalZipCode": "39042",
+    "CountyNumber": "61",
+    "CountyName": "RANKIN",
+    "PhoneNumber": "662-468-2777",
+    "InProcess": "true",
+    "PostalAddress": "1580 W Government St, Brandon, MS 39042, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1580 W Government St, Brandon, MS 39042, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.2849577,
+          "lng": -90.02401809999998
+        },
+        "viewport": {
+          "south": 32.28324139999999,
+          "west": -90.02423605000001,
+          "north": 32.28552980000001,
+          "east": -90.02336424999999
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "b6ac1aa1f1dfe5ff63c29b7848566799f0026ab8",
+      "name": "Dragon Palace III",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJv9s3FTkqKIYRQewgiCBaEgU",
+      "price_level": 2,
+      "rating": 3.6,
+      "reference": "CnRkAAAAc6isD9X49wrrNomraZVDNZiFB4m7LYKqAXDQ7L2bdugLNuKdsq8nzYS7VEHbzZkQPCHNW4tTRXxeCz7xoGunVXUTXU30KwCQmnskLDVesdRtaKNHQlFV6lmI_IPpG-Su06BdFqjb9DXEuhKFCPQtlRIQ-hJQFU4mkHhnf7-TCnghPBoUMr6W_8hVAac36_PR6FGCtwmSn4c",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baby's First Steps Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "85",
+    "PhysicalCity": "PEARL",
+    "PhysicalZipCode": "39208",
+    "CountyNumber": "61",
+    "CountyName": "RANKIN",
+    "PhoneNumber": "662-473-2900",
+    "InProcess": "true",
+    "PostalAddress": "5635 US-80, Pearl, MS 39208, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "5635 US-80, Pearl, MS 39208, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.28229100000001,
+          "lng": -90.0426976
+        },
+        "viewport": {
+          "south": 32.28226759999998,
+          "west": -90.04273955000002,
+          "north": 32.28229880000001,
+          "east": -90.04257174999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "96424386d8eedb2127735651a9cfe1e0deec7383",
+      "name": "Sunshine Learning Center",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 845,
+          "html_attributions": [
+            "Sunshine Learning Center"
+          ],
+          "width": 846
+        }
+      ],
+      "place_id": "ChIJeVU4vectKIYR-gAuV35zm7k",
+      "reference": "CnRsAAAAoEzK7MPS5uFZ82NhoUzfWwnBLACGk-DcUxabc2FFRSIVXa00dNbviFY5u3OmAdGUKl5FdFgpGHXLaoQgXUs9-VoZDILepD1A0-zqdRtwz4SFNRx24efnInqGuzaFZ3YV8Q_t8OPrml61_z_HAiecNBIQ7VbPfgY5C3zSlgl7acmFAxoU0PzgBbnyf98lqG2P3m2yRpaSoqk",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bagdad Head Start Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "63",
+    "PhysicalCity": "LAUREL",
+    "PhysicalZipCode": "39440",
+    "CountyNumber": "34",
+    "CountyName": "JONES",
+    "PhoneNumber": "662-494-0692",
+    "InProcess": "true",
+    "PostalAddress": "152 Brown Cir, Laurel, MS 39440, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "152 Brown Cir, Laurel, MS 39440, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.6651608,
+          "lng": -89.14561659999998
+        },
+        "viewport": {
+          "south": 31.66516065,
+          "west": -89.14577515000002,
+          "north": 31.66516085000001,
+          "east": -89.14556375000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "da45763d3d2a3c02a24df42032fdcdb51c983b67",
+      "name": "Early Headstart",
+      "place_id": "ChIJr-pPSvE0g4gRAa0NihbzxfM",
+      "reference": "CnRjAAAA1SUY8vmiUGm-0fwZL-spAl25nlnvMMlO-OK_mZTP_BeSMC6YCHMO20nhlfhIEusGeqUqZUFkpi8jqQKNI6rGXZCzVZgiE6FuBospV6aNiG2wDD54-cgk4_sYCFijE_m2q8tWQ0p__lrl17VadyMaixIQYHlPJ8G-O0s6X5c34KZWJBoUKouojI9z0zIHIJ901V8Lbkz3_sw",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baileys Academy",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "15",
+    "PhysicalCity": "HATTIESBURG",
+    "PhysicalZipCode": "39402",
+    "CountyNumber": "18",
+    "CountyName": "FORREST",
+    "PhoneNumber": "662-494-1851",
+    "InProcess": "true",
+    "PostalAddress": "6173 US-98, Hattiesburg, MS 39402, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "6173 US-98, Hattiesburg, MS 39402, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.323704,
+          "lng": -89.38735299999996
+        },
+        "viewport": {
+          "south": 31.32306395,
+          "west": -89.38753674999998,
+          "north": 31.32391734999999,
+          "east": -89.38729175000003
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "86bca863ba68c423c361f619fca8be01bed0774a",
+      "name": "Academy Sports + Outdoors",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 1836,
+          "html_attributions": [
+            "Paul MCKEAN Sr"
+          ],
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJeXF-O8ognYgRzYZIYylrDps",
+      "rating": 4.2,
+      "reference": "CnRtAAAAJOEpyo55wME_r1f_EHBIWTLCgoEs7jn74vGqU76TbswMJpmQPS6qWv8kAhvZERq85SSOC8dNYmBA6G943g43yZFaziEYYfPTVgR9Jqo9tHdEFftSZyuEQZx65c_VwqDofCaXlmA1kTvPMdnVII1uXxIQIfyXEGeXgaoRDPb0__41XhoUKZbsbcX3gpMhD2GaA34eMy_hUXY",
+      "types": [
+        "shoe_store",
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baileys Babies",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "3",
+    "QualityRatingDescription": "Good",
+    "ProviderCapacity": "88",
+    "PhysicalCity": "HAMILTON",
+    "PhysicalZipCode": "39746",
+    "CountyNumber": "48",
+    "CountyName": "MONROE",
+    "PhoneNumber": "662-494-6752",
+    "InProcess": "true",
+    "PostalAddress": "40201 Hamilton Rd, Hamilton, MS 39746, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "40201 Hamilton Rd, Hamilton, MS 39746, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.7422875,
+          "lng": -88.41069729999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b5124afbcb283f6ebac54f07abd69a432b9ae59a",
+      "name": "Hamilton School",
+      "photos": [
+        {
+          "height": 648,
+          "html_attributions": [
+            "Meradith Gaudet"
+          ],
+          "width": 486
+        }
+      ],
+      "place_id": "ChIJAUk29XfhhogRLbhMHb9Id44",
+      "reference": "CnRjAAAA6T9uF--iqIyqtXecuu0NuTiM30rIxiVQpLo50eBOdUhKstoPi7AxeT8Evzk3ZZSaXgFXnUz-pxLObO_ppNoFAzmAAW7-w7MKsZjwXVW0zPy8JjhMZd6jZ7jZ8Xsp8qftMDC4dum9-3RAx_pGzcFXUhIQUuwt3lZtlyt7awYT0PzbIhoUgn4Q58pUAReKKDPiNT_hSH6H5rQ",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baker-Ripley Early Head Start",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "GREENVILLE",
+    "PhysicalZipCode": "38701",
+    "CountyNumber": "76",
+    "CountyName": "WASHINGTON",
+    "PhoneNumber": "662-528-4192",
+    "InProcess": "true",
+    "PostalAddress": "546 Gamari Rd, Greenville, MS 38701, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "546 Gamari Rd, Greenville, MS 38701, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.360822,
+          "lng": -91.046155
+        },
+        "viewport": {
+          "south": 33.35960954999999,
+          "west": -91.0462738,
+          "north": 33.36122614999999,
+          "east": -91.04611539999996
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "0b78a976934c17bf5988f141a8a44d95f18c2186",
+      "name": "Washington County Headstart",
+      "place_id": "ChIJk-8Rg-7tK4YR9XhcR-J_ihM",
+      "reference": "CnRuAAAAlKK3238uH7SpFS7TwiY7Y8nbH9lJ6N_DYhuvrvIbyxEarObBXxIG2vuWnTDW02EjqeZTYJSKV1-z0WSY0YOmEggkh8zUzuoaOaP_Ul5neADs06CY22kOCtCGaKRZMSGAEl_woUV2O1EDCCDiFukTEBIQtobbyUn_gklO6PpR6LMZBhoUOGRZJejhKBXd55oRhqRy5MV-cz0",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Balderrama Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "PORT GIBSON",
+    "PhysicalZipCode": "39150",
+    "CountyNumber": "11",
+    "CountyName": "CLAIBORNE",
+    "PhoneNumber": "662-528-4213",
+    "InProcess": "true",
+    "PostalAddress": "309 Church St, Port Gibson, MS 39150, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "309 Church St, Port Gibson, MS 39150, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.96124649999999,
+          "lng": -90.98142089999999
+        },
+        "viewport": {
+          "south": 31.96122269999998,
+          "west": -90.98166839999999,
+          "north": 31.96131790000001,
+          "east": -90.98133839999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "2b4e60137f0e96953212dc204aae1926c677367f",
+      "name": "Heavenly Angels Daycare Center",
+      "place_id": "ChIJqR0hsDS_KIYRcWBhCld4FFk",
+      "reference": "CoQBcQAAAD5s3S7b_94TcdJ6y5zXxHF7Bz8-OL7MStQkhYfxWbupQE7nhd2wZ2gobQVMTcPPHd1FvfuOsp7kFSFhsqa8StH6f3OTBKOla3bP7PMsT9qn1t9A-XbTWLd0J7T0xrpml6l-Neov8rOumJx1gevFonSa2hXj1nwYcByMWkNG83YmEhBkcSEpXaFHTn7Z1YvU8cYoGhTMmzSP0_8NzSHwQYGBqXEjhh2ucw",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baptist Community Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "100",
+    "PhysicalCity": "BILOXI",
+    "PhysicalZipCode": "39530",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-537-4772",
+    "InProcess": "true",
+    "PostalAddress": "575 Division St, Biloxi, MS 39530, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "575 Division St, Biloxi, MS 39530, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.40285780000001,
+          "lng": -88.88071769999999
+        },
+        "viewport": {
+          "south": 30.40268630000001,
+          "west": -88.88075805,
+          "north": 30.40337229999999,
+          "east": -88.88059665000003
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "d4ed10e345eb89cec2ea3a4e9277a637bcf687a8",
+      "name": "The Salvation Army Ray and Joan Kroc Corps Community Center",
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "Lourdes Gonzalez"
+          ],
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJ0ZqZacEOnIgRrcg827xy7u0",
+      "rating": 4.6,
+      "reference": "CpQBkAAAAI0enp6VhJsb0QAVjd3eSeNbZn-tCEAuB9mhLyQSOCWHKGGKwiceL_TIe38ri1cgzF0RvC7U4RZLe6Na7lAD87oR4-kAJ8O48lFBf6TTLnhPSofPyHiiWia2Qh4p9PblIsEA2OB8BSUKqgJkXqBrsfBWOKY99WIhC3Mi0p2AwQUq4I23MSGQKKI64EP6P8m_QhIQfB4Md_OTsUGtNUlXd-z2KRoUlXofO9rlyYexDby-1Q0gcMciBmg",
+      "types": [
+        "gym",
+        "church",
+        "place_of_worship",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Baptist Temple Day Care Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "50",
+    "PhysicalCity": "BAY SPRINGS",
+    "PhysicalZipCode": "39422",
+    "CountyNumber": "31",
+    "CountyName": "JASPER",
+    "PhoneNumber": "662-537-4776",
+    "InProcess": "true",
+    "PostalAddress": "25 E 8th Ave, Bay Springs, MS 39422, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "25 E 8th Ave, Bay Springs, MS 39422, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.97426369999999,
+          "lng": -89.28061149999996
+        },
+        "viewport": {
+          "south": 31.97418494999999,
+          "west": -89.28061464999996,
+          "north": 31.97431075,
+          "east": -89.28060965000003
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "8f8be4b6abc6a076d28627ec89b218a0fd0a4eb3",
+      "name": "Heavenly Tots II",
+      "place_id": "ChIJTWeIWokig4gRCvqBVRCmez4",
+      "reference": "CnRjAAAArfltZSt2busiThaAIVr67PQI2Xdm2F3GBXn5xU_kVzhr16N1gS7zwaQbnNizEV3CDhTIVvoykSJzNHR0Sm_0oZhoT2xxi_twXUwaT_DQ3VRS1fAN_JAYzP9OrInDAYgtj-NlJlxPXds26ZolZ8DJgBIQwPriAP1fgqR1XHsVX30vvBoUJXkgH9JGJVp8MxkwnL6gNOquSoc",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara   Moore",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "90",
+    "PhysicalCity": "SENATOBIA",
+    "PhysicalZipCode": "38668",
+    "CountyNumber": "69",
+    "CountyName": "TATE",
+    "PhoneNumber": "662-537-7762",
+    "InProcess": "true",
+    "PostalAddress": "216 S Ward St, Senatobia, MS 38668, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "216 S Ward St, Senatobia, MS 38668, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.616907,
+          "lng": -89.96520299999997
+        },
+        "viewport": {
+          "south": 34.61681565000001,
+          "west": -89.96574614999997,
+          "north": 34.61693745,
+          "east": -89.96502195
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "16482362129a6569fccacafcee8c9930ea8be750",
+      "name": "Kirk Moore Rentals",
+      "place_id": "ChIJMym1R974f4gR4MwSpEyEBy0",
+      "reference": "CnRlAAAAhabodAkYCXKuKaRmAwdENDztLfdq8bd9GnjiqFkfxGGAOUKRfFkYb8OR5XNz04RPbMEv-XpCnQSR8cnIN16V5kHH1drsYLURp-Z1A64Q-ZS2QxadlSoup9wKaeREU6M0rK6CaOEVbiXnnHibTpB2shIQeu79ADQDurNUcFJ0P5weKRoUyq3aeJ5FmY581dCvFRRWVodj2OY",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara Angton",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "50",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39209",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-537-8502",
+    "InProcess": "true",
+    "PostalAddress": "5422 Clinton Blvd, Jackson, MS 39209, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "5422 Clinton Blvd, Jackson, MS 39209, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.3314029,
+          "lng": -90.26785230000002
+        },
+        "viewport": {
+          "south": 32.33071795,
+          "west": -90.26815195,
+          "north": 32.33345775,
+          "east": -90.26695335
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "e96f90355118c26eb5e9c027739686d8e45896bd",
+      "name": "Northrop Laura M",
+      "place_id": "ChIJ3T3iVCI1KIYRjzRb-Bzkzco",
+      "reference": "CnRkAAAAdpnh0wIfolYZWIZESY00CytjfN6r_CPqQrf8_GukixhDBc5zi3-4Vwz-g9sYEzoUFska3IT0-VBPlVBKQZ397mswDwTBsot9NoP2xdxfM-DRef-fRkyKBv9hbEI-lbsqBMv_McJfOH5gYsNanzcJIhIQnKnLInrx09hj748NZV3SnxoUfXiI3KNS3uC59GYr1nOCYCZzceg",
+      "types": [
+        "doctor",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara Copeland",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "24",
+    "PhysicalCity": "GREENVILLE",
+    "PhysicalZipCode": "38703",
+    "CountyNumber": "76",
+    "CountyName": "WASHINGTON",
+    "PhoneNumber": "662-547-9781",
+    "InProcess": "true",
+    "PostalAddress": "1513 E Union St, Greenville, MS 38703, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1513 E Union St, Greenville, MS 38703, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.40960500000001,
+          "lng": -91.03371399999997
+        },
+        "viewport": {
+          "south": 33.40944265000001,
+          "west": -91.03372390000004,
+          "north": 33.41009205,
+          "east": -91.03371069999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "5ca3b8e59829f73e0214ec3748be9b7d45c4d90c",
+      "name": "Delta Regional Family Care: Adams Barbara P",
+      "place_id": "ChIJ43y-aBbtK4YRMQdUHeIWejU",
+      "reference": "CoQBfgAAAORIZ22Ujk0AF2KYod3IkscVh5aX4V7APqE8Mj8mPx2e_QMkYBUXLycn44DQibffOiZzl9uwhbkrIiKwpVSuKy_Zr6syXEBz_CkPZXyDCZNWYM70FWKH0AXFZh2l-dq3dDf6L2qnPri08NYWyo9v0kTYuHQm1NsaBKx8rz-hMgGcEhBHbjPe-eHZ2iiN6ZuMuZUgGhQY5BBQFkvWewwGZG-4239MQLerTA",
+      "types": [
+        "doctor",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara Gaddis",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "4",
+    "QualityRatingDescription": "Very Good",
+    "ProviderCapacity": "240",
+    "PhysicalCity": "STARKVILLE",
+    "PhysicalZipCode": "39759",
+    "CountyNumber": "53",
+    "CountyName": "OKTIBBEHA",
+    "PhoneNumber": "662-552-6772",
+    "InProcess": "true",
+    "PostalAddress": "501 Hospital Rd, Starkville, MS 39759, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "501 Hospital Rd, Starkville, MS 39759, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.4746194,
+          "lng": -88.82219179999998
+        },
+        "viewport": {
+          "south": 33.47447335,
+          "west": -88.82220285,
+          "north": 33.47505755,
+          "east": -88.82215865
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "49c3a420c6cb3c904c99395af53bb4d4205f6404",
+      "name": "Family Clinic: Fleetwood Barbara A MD",
+      "place_id": "ChIJAbdWggE1gYgR7g0T-ZyW-YM",
+      "reference": "CoQBeQAAAN0lGWp3SvSvGlrjSMrF_QVgbbJnK-ZZbiZ8d-XTpZYJ0I2AhvC-fTdZxJKK2N4DSAunwiwtq1zHcVx5e2jv8PgFIngdWX-__TkL18sol_KvpoZOKJiBa35Qo40Ie1KuTVtYKV-4ZfVc_ReVgeidOZ1v5tuVFezVKkYW2xOEmd1cEhDUJ1Z0ECBbaGY1WifCe1AhGhTCFoefTYz_k13mz5FO85dar44BlA",
+      "types": [
+        "doctor",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara Grissom",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "GULFPORT",
+    "PhysicalZipCode": "39501",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-560-1994",
+    "InProcess": "true",
+    "PostalAddress": "1816 23rd Ave, Gulfport, MS 39501, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1816 23rd Ave, Gulfport, MS 39501, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.3727792,
+          "lng": -89.08991839999999
+        },
+        "viewport": {
+          "south": 30.37277880000001,
+          "west": -89.09024195,
+          "north": 30.3727804,
+          "east": -89.08981055000004
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "b17e7df77b1dada3cb3b7dd27b844ab9389d3a50",
+      "name": "Grissom's Domestic Law Firm",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJQTfgiNkXnIgRlhHMmW3xsaM",
+      "reference": "CnRvAAAAC2vfJxq1sbfF-hw0mEsAevBQ0UHrWdzrxjsar_Pav8QZwfnR9-v_9o-jgipJMp_dA-5o__rgFeRme5jobn8xLpJW6D7jB1Aaqim7j_TuYb_7pBjRfR-CpIZbQz2Pn5iIKGOvOMhb3wsShVExuQ77gRIQkZ8O4vl8pQUyS0jwj6fLRBoUaWZOl4JwD7YfEfMhzBXOd4sRM6k",
+      "types": [
+        "lawyer",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara Sullivan",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "73",
+    "PhysicalCity": "GULFPORT",
+    "PhysicalZipCode": "39503",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-566-1104",
+    "InProcess": "true",
+    "PostalAddress": "12266 Ashley Dr, Gulfport, MS 39503, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "12266 Ashley Dr, Gulfport, MS 39503, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.462817,
+          "lng": -89.09935200000001
+        },
+        "viewport": {
+          "south": 30.46281590000001,
+          "west": -89.09974110000002,
+          "north": 30.4628203,
+          "east": -89.09922230000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "2c576e3b27a71f73d4a1a0932486b0ad04fc42d2",
+      "name": "Memorial Behavioral Health: Murray Barbara MD",
+      "place_id": "ChIJP7Y4HyQ-nIgRYI4EwOYacCU",
+      "reference": "CoQBgAAAAAgIRFJbc6HSyk_i4tQZs_90TpPcXFiP7BFGU3oVMlehK__6gINixAmuUEtHdCdDNReLYUvyu3kv2Qr58nkqyGq0w-2gu0-K9RJLu2WNoE2awHleNAut3fpvsLnvFjCxaAWXPVQdvukXXp5NShLDtxaxJKOcKV6FLSwzGfji9s0fEhDNqyWqtjbaZ9cMMfJHjQxgGhShOgzRncxhmEMMwSYPAaa3lEMN5w",
+      "types": [
+        "doctor",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbara's Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "225",
+    "PhysicalCity": "OLIVE BRANCH",
+    "PhysicalZipCode": "38654",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "662-566-7836",
+    "InProcess": "true",
+    "PostalAddress": "8745 Goodman Rd, Olive Branch, MS 38654, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "8745 Goodman Rd, Olive Branch, MS 38654, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.9612361,
+          "lng": -89.8353778
+        },
+        "viewport": {
+          "south": 34.96076045,
+          "west": -89.83538650000003,
+          "north": 34.96266305,
+          "east": -89.83537489999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+      "id": "e0a5ff285c80131905404aa169139ada6d6137ee",
+      "name": "Maples Learning Center",
+      "place_id": "ChIJ7YpBhe2Rf4gRDB-o_K07hqI",
+      "reference": "CnRqAAAA4yUjIhcf8CPWqYMbldDRvaImoejIxxoB6I0FxBs1FOsRhaD2MJ69kC6Hwu1HzVfOTsd12OLcpsW7Fv9FdBp26uIG1f3BJZr1rxdJVO8uUOC8m31dcmAUmX-kLpQ_jNcuItHK4-_X1qe9EAf-kXIaJBIQSF4lEPqidDDtHEenJa98fRoUWsFGCvFAITj-QKWPY7d2cJHERWc",
+      "types": [
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barbaras Day Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "58",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39204",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-566-8500",
+    "InProcess": "true",
+    "PostalAddress": "1717 Raymond Rd, Jackson, MS 39204, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1717 Raymond Rd, Jackson, MS 39204, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.278047,
+          "lng": -90.262225
+        },
+        "viewport": {
+          "south": 32.27790305000001,
+          "west": -90.26246830000002,
+          "north": 32.27847885,
+          "east": -90.26214390000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "42dd145094cb619eb83777ad92f1c04197bd384b",
+      "name": "Children's Educare Day Care",
+      "place_id": "ChIJ05zKNc01KIYRLayCQ7_8HY4",
+      "reference": "CnRvAAAAI57weXZI4LxEKrxAoOexAP05CAGojPsPWQMA92gZZwDT27tq87WoOhlsetUglABThLtZ3pX2fpT1DpzkqZ7rychF2QWCOzS7RNGtHWkxzd8n4ptr5ta2WT5nZDNvmvEmlxR0CDJ1DzO7wkQJylAYEhIQUoo76QwdybpVwBWW8ZUpKRoUbVTWq8K4UYPnGB4mBVYDJOWcFlI",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barcelona Head Start Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "97",
+    "PhysicalCity": "GRENADA",
+    "PhysicalZipCode": "38901",
+    "CountyNumber": "22",
+    "CountyName": "GRENADA",
+    "PhoneNumber": "662-571-2073",
+    "InProcess": "true",
+    "PostalAddress": "1102 Telegraph St, Grenada, MS 38901, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1102 Telegraph St, Grenada, MS 38901, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.78215540000001,
+          "lng": -89.81614009999998
+        },
+        "viewport": {
+          "south": 33.7820204,
+          "west": -89.81614015000002,
+          "north": 33.78220040000001,
+          "east": -89.81613994999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "bd312f5392ac317f461f2c68b5ee4f3e62525ae9",
+      "name": "Grenada Headstart",
+      "place_id": "ChIJVYXc9ibNgYgRqovfDy380rY",
+      "reference": "CnRlAAAAHPlXml8tduYFjFm--i7TIlMfuPKRW6LFRMfIBTIlEU8Ko1buufRwYAKyvTy-aLyp9PhObuPSmi-BxdJPYYBgrHi_6CEhHGBMd19NgD7WIWE_bkRYwgnLP8lUItUBKXvVEDREIP3sJ94Z7zpqAINoihIQo83EB-GQKXyCt0At94Z0GxoU8HOM1hav-L__Xo-cPDnefhchiws",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barnyard Buddies Daycare and Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "72",
+    "PhysicalCity": "COLUMBUS",
+    "PhysicalZipCode": "39702",
+    "CountyNumber": "44",
+    "CountyName": "LOWNDES",
+    "PhoneNumber": "662-571-4224",
+    "InProcess": "true",
+    "PostalAddress": "538 Alabama St, Columbus, MS 39702, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "538 Alabama St, Columbus, MS 39702, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.494048,
+          "lng": -88.37567899999999
+        },
+        "viewport": {
+          "south": 33.49382005,
+          "west": -88.37573685000001,
+          "north": 33.49473184999999,
+          "east": -88.37550544999999
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "cced7f6c2ff548629129bbfa0b238acecfc8627f",
+      "name": "SAL'S Childcare & Learning Center",
+      "place_id": "ChIJb2P1bkfshogRwrwYIXW9dwU",
+      "reference": "CoQBdAAAAMeeJI7XKquBC2DMapGWUNMXnVlBVIjTWPC4SLyT8cz8KokaVvSqwSEb44OPge0BAt8qhaKqZBMHNFZfkXY2R_C_GC7kd-umB9Za7sm0DxRafWF6RUN3BklLLoz01SvaBhBmRFidLSmw-Q0XLHppJrNh5qqBTfVP2nwR9cOfDsXnEhD2FXQnbLNZtvyjmV4yuTAEGhTIHvcyedEAKPsGhDYt5H3S3ohz9g",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Barton Creek Early Preschool Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "82",
+    "PhysicalCity": "PHILADELPHIA",
+    "PhysicalZipCode": "39350",
+    "CountyNumber": "50",
+    "CountyName": "NESHOBA",
+    "PhoneNumber": "662-578-2558",
+    "InProcess": "true",
+    "PostalAddress": "245 W Tucker Cir, Philadelphia, MS 39350, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "245 W Tucker Cir, Philadelphia, MS 39350, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.7019828,
+          "lng": -89.06254339999998
+        },
+        "viewport": {
+          "south": 32.70177695,
+          "west": -89.06255494999999,
+          "north": 32.70260035,
+          "east": -89.06253955
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "2d9179bc92d614d24c18e8b720ad7f02fb9783d8",
+      "name": "Tucker Early Childhood Center",
+      "place_id": "ChIJm2oDxcTqg4gR3HBVbNXCEdA",
+      "reference": "CoQBcQAAABmIfzPHp_1OJuKkPnwR8wR3wlrBHiifxhbFITP2oZK2mWLLGGfLD6ldaf-DV5-wTwSaNKvzwb8xI3Hf9sBff1AblJVHh11knDEVlYkrOqiz1QT74IZfhCmyIpkDGjEez0aP8g1XlABKQfLLPyja95uWyPeWIsfmcmwCwReIQx-oEhA6w_QbOMbJwXWOgLhrWV8UGhThghkz73zyRUE9WV2JP2AIy1-UQA",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bastian Elementary Head Start Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "53",
+    "PhysicalCity": "LELAND",
+    "PhysicalZipCode": "38756",
+    "CountyNumber": "76",
+    "CountyName": "WASHINGTON",
+    "PhoneNumber": "662-588-3799",
+    "InProcess": "true",
+    "PostalAddress": "1301 N Main St, Leland, MS 38756, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1301 N Main St, Leland, MS 38756, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.4119662,
+          "lng": -90.89339960000001
+        },
+        "viewport": {
+          "south": 33.4118954,
+          "west": -90.8934365,
+          "north": 33.41198980000001,
+          "east": -90.89328890000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "bdc9200bbfd2e8bb0d02a5aba750209317e43906",
+      "name": "Page-Moore Head Start Center",
+      "place_id": "ChIJl9FEmz3AK4YRLwXZ13WGpvk",
+      "reference": "CnRwAAAAvVeIqtY5NVq0cTiQeIiRovLA-fTxq6_xbwuTaJxHfU7ZjPM_WF9eaNQ31JxdIXgyOxrDXjJCucBvq6XyA62EzmDrUMO7zYJVXExTWySuEzyZdJUDws15ZVPpBAA-BSFPeCwU5slNx5gYKTHQDIHqlBIQZwYYc8FuHpHNrTvP0T1dOxoUn4yLMuMrIxhV54UD2l6upUOgOcw",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bayshore Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "135",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39216",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-590-7248",
+    "InProcess": "true",
+    "PostalAddress": "621 Duling Ave, Jackson, MS 39216, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "621 Duling Ave, Jackson, MS 39216, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.335485,
+          "lng": -90.175659
+        },
+        "viewport": {
+          "south": 32.3352848,
+          "west": -90.17566099999999,
+          "north": 32.3360856,
+          "east": -90.17565300000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b81350f1abadb25a28d6400724762df7f0f80dc2",
+      "name": "St Luke's Early Learning Center",
+      "place_id": "ChIJw2PtVcIyKIYRD_gtQO1QPVo",
+      "reference": "CoQBcgAAAOyLyL7APvrPsDcLxEfqg3ZkpuBvfNGpmLJ4x79YZa-YshdlsDiq02ux6RHF6tsxXqHIaqnlzCtWma-UVX7R3P8GSqMoH4WDdEjBCHFXx8EjT7Zh0w6yvd0wkLyU7dYJGsUCAHqK00oQ-nTVn8B5Ag3hGvkNaPKVsYvG6lAnbxVCEhCl0E6Y-OU43UeU9o1rRF0LGhTTaGWJExQ0DXs47BoeXvCRSiCFsw",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Be Thi Le",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "CLINTON",
+    "PhysicalZipCode": "39056",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-615-6111",
+    "InProcess": "true",
+    "PostalAddress": "406 Springridge Rd, Clinton, MS 39056, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "406 Springridge Rd, Clinton, MS 39056, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.3296959,
+          "lng": -90.3276151
+        },
+        "viewport": {
+          "south": 32.32953444999999,
+          "west": -90.32837239999998,
+          "north": 32.33018024999999,
+          "east": -90.32534319999996
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "f37bfb853d77ea70bc7ed5b4d2901eadda5b5be9",
+      "name": "Planet Fitness",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 517,
+          "html_attributions": [
+            "Planet Fitness"
+          ],
+          "width": 909
+        }
+      ],
+      "place_id": "ChIJ4TsQGuhKKIYRxUcF2OlSln0",
+      "rating": 4.4,
+      "reference": "CnRhAAAA73LCIvbUyHjpSc5nYSsQKv58r09OdWa73pz98q763B5_GdJ-LYVsVeglRzPnB8tfWEHUdEwR_xqMH0iKCkSWy6Kuf9clCD68AMPvgeqZJMWmaPWNiUFrccmdETGZP2R98c_FKhGMJNrweduoHVa-aRIQSIbspppFPrvDxnnvUXEnChoUq4Yy3DQryu6cSiRhFNtEghRm5wI",
+      "types": [
+        "gym",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bea Reily",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "1",
+    "QualityRatingDescription": "Low",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "COLUMBIA",
+    "PhysicalZipCode": "39429",
+    "CountyNumber": "46",
+    "CountyName": "MARION",
+    "PhoneNumber": "662-617-3203",
+    "InProcess": "true",
+    "PostalAddress": "752 US-98, Columbia, MS 39429, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "752 US-98, Columbia, MS 39429, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.23719299999999,
+          "lng": -89.821145
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "18d9ff124a724d50afc4e4f21189ed951eef6dc6",
+      "name": "O'Reilly Auto Parts",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 400,
+          "html_attributions": [
+            "O'Reilly Auto Parts"
+          ],
+          "width": 400
+        }
+      ],
+      "place_id": "ChIJh2RPyzJonYgRI8OBfh7rjko",
+      "reference": "CnRmAAAA2pWIc4djbIZOai8LMIfUBgiGCU2lTSJia8LtDawwCcljtup0eDXLQxwuneptl1qAv3lypc62dWmkRdpjbBk1Z9tGAcaKclMc6pqwdSpEBJrHg9v99b6tpDE3RZJIAvll6kWImJoqvp-hmi7dMVkpkhIQntBkf6Pwm8vN9COB0ZkOdhoUngnpIc_hxgw2bUwcJFWwdWWM0n4",
+      "types": [
+        "car_repair",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Beanie Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "60",
+    "PhysicalCity": "INDIANOLA",
+    "PhysicalZipCode": "38751",
+    "CountyNumber": "67",
+    "CountyName": "SUNFLOWER",
+    "PhoneNumber": "662-621-1653",
+    "InProcess": "true",
+    "PostalAddress": "413 2nd St, Indianola, MS 38751, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "413 2nd St, Indianola, MS 38751, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.4497386,
+          "lng": -90.64523259999999
+        },
+        "viewport": {
+          "south": 33.44969385,
+          "west": -90.64524955000002,
+          "north": 33.44981405000001,
+          "east": -90.64520414999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "6005d4c14968e283c7f0a7a1d59f18b49616f325",
+      "name": "Be Be Kids Learning Center",
+      "place_id": "ChIJI_LAbJu1K4YRrZIL0Mnc1xE",
+      "reference": "CnRtAAAAsqoR2MI6IbuUfr0rmfmJPGX-rCOY2Eg7xLN8HYyVFibRR2rt0nGBV7_YzX01H1eB3fTOeh58wVThVVGzm8LS81o5hV8qSiUZjgA5Oatj44i3tgZxqcvFm4eCpZYzQOj9WH2cjrzCKznhCkFZevEFwxIQaVvQ5vEkcNcmMXt-RikhFBoU2o3e6WkD71FrfI89gYXsy7qWm4E",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bear Blvd Child Care Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "60",
+    "PhysicalCity": "OLIVE BRANCH",
+    "PhysicalZipCode": "38654",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "662-621-1653",
+    "InProcess": "true",
+    "PostalAddress": "9215 Pigeon Roost Rd, Olive Branch, MS 38654, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "9215 Pigeon Roost Rd, Olive Branch, MS 38654, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.9605833,
+          "lng": -89.82673060000002
+        },
+        "viewport": {
+          "south": 34.96052795000001,
+          "west": -89.82682080000001,
+          "north": 34.96074934999999,
+          "east": -89.82646
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "2505cff6f4b405f22e84ae9ff5b6f92940e4471d",
+      "name": "Club Z! In-Home Tutoring Services",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 374,
+          "html_attributions": [
+            "Club Z! In-Home Tutoring Services"
+          ],
+          "width": 373
+        }
+      ],
+      "place_id": "ChIJnfuWUeSJf4gRUrPQX-RT-Aw",
+      "reference": "CoQBdAAAAKlcBOCVF21AhAs_P_6Iu8O8rDbAZNYXa_Yllj1A8z67oxcm071CzBiPU-1p2Mw2-tUa2tw5CjMOlZhg0flo57cbXlDn8S57KQp3IfNYC1NdKf2ZEa6nUfNJ9osWu7CjI3EBRd_FXMPgaZJNbh2tMaR6MGd9qeqoCqY5ChL0phRxEhDq2k-u9n1rOZsy_lBj8B-eGhQJxqJi69SoCU-2WPbToJLk53yKnQ",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bearly Beginning Day Care Center # 2",
+    "LicenseType": "LICENSED",
+    "ProviderType": "4",
+    "ProviderTypeDescription": "Center",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "23",
+    "PhysicalCity": "GREENVILLE",
+    "PhysicalZipCode": "38701",
+    "CountyNumber": "76",
+    "CountyName": "WASHINGTON",
+    "PhoneNumber": "662-624-5522",
+    "InProcess": "true",
+    "PostalAddress": "e, 544 W Gloster St, Greenville, MS 38701, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "e, 544 W Gloster St, Greenville, MS 38701, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.4094334,
+          "lng": -91.0436444
+        },
+        "viewport": {
+          "south": 33.40939535,
+          "west": -91.04367724999997,
+          "north": 33.40949755,
+          "east": -91.04358905000004
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "a23f5d0418561a32932048ca1e09d10a9ed3648f",
+      "name": "SunShine Daycare",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJQ4YBMGrtK4YR9CFMNyZHyE8",
+      "reference": "CnRjAAAAIVEH8yAMFgdl9lwckI7NAb77uLuZmVd19WgYDymNctF8S5BKIgiqiLRR5XgvYnhPSp372OB9wXVrhtFg6080mU7OwXh7-oU0yBfGqjCNFdeU6vMmmqPCtxz6yZ3qbRrbrGGB9uNTqlXivqpF_8k2FRIQoLdJu8zSXQdHcliwN_vythoU3OXTajABpCPNa1qpnEpyEBbuuSU",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  }
+]

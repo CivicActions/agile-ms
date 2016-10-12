@@ -1,0 +1,588 @@
+[
+  {
+    "ProviderName": "1.2..me...Childcare",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "98",
+    "PhysicalCity": "HERNANDO",
+    "PhysicalZipCode": "38632",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "228-206-1393",
+    "InProcess": "true",
+    "PostalAddress": "455 Riley St, Hernando, MS 38632, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "455 Riley St, Hernando, MS 38632, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.8303345,
+          "lng": -89.98163599999998
+        },
+        "viewport": {
+          "south": 34.829982,
+          "west": -89.98165625000001,
+          "north": 34.83139199999999,
+          "east": -89.98162924999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b71764c01be906a531101d33a0af9e4a09fe03dd",
+      "name": "Hernando Elementary School",
+      "place_id": "ChIJX7R1Pm31f4gR4wUnhU_9m9A",
+      "rating": 4.2,
+      "reference": "CnRuAAAAc0DIJxibyPrbbqHdBsruRQ_aILKxP7BD4rYlgB3_RboB11n5SX2wne-scSbNKBwJTIKRVVdxQVdtvjNNuHeeLU443jsN3rcuv2UdJ21slbXMmwoM-IijcFLO8oGYm0kvt2ELv4vk1pKz1RPd-2mQcRIQGhUWTajOaXEAZ9JOP0lKjhoUqiSj8f0GcfIWZrglVovFuJ5mrfU",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "1st Step University Child Care",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "91",
+    "PhysicalCity": "BILOXI",
+    "PhysicalZipCode": "39532",
+    "CountyNumber": "30",
+    "CountyName": "JACKSON",
+    "PhoneNumber": "228-207-6395",
+    "InProcess": "true",
+    "PostalAddress": "14835 Jim Byrd Rd, Biloxi, MS 39532, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "14835 Jim Byrd Rd, Biloxi, MS 39532, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.50032899999999,
+          "lng": -88.98294399999997
+        },
+        "viewport": {
+          "south": 30.50009449999999,
+          "west": -88.98295919999998,
+          "north": 30.5010325,
+          "east": -88.98289839999995
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "3e6c5d389da78b2cc70d3113624d24ef3bf31405",
+      "name": "Judy's Day Care",
+      "place_id": "ChIJT-rbZR8TnIgRAn7VXRoYlXs",
+      "reference": "CnRiAAAAXRzZF4ijleUl4EJO4u7KuVGcj5tNa_2Es-RySWS6BNvY5ZkUXPhl8HxO3_m5CNNH-K6jfpfNnN_PNy8Ss4vR3HJsmU5zAqd7Z1AqtW5Zmng7oLm4_Osfx52CkcQmsx8ao7jqQ06O3hQFwKtsEzDosRIQ7iYeyIWGaZjij46ZmkEebxoU2n92HSUtBE1CCzRITjEHYpvgGUE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "A & J's Learning Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "48",
+    "PhysicalCity": "MOSS POINT",
+    "PhysicalZipCode": "39563",
+    "CountyNumber": "30",
+    "CountyName": "JACKSON",
+    "PhoneNumber": "228-224-7387",
+    "InProcess": "true",
+    "PostalAddress": "4407 Main St, Moss Point, MS 39563, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "4407 Main St, Moss Point, MS 39563, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.404777,
+          "lng": -88.53923199999997
+        },
+        "viewport": {
+          "south": 30.40474720000001,
+          "west": -88.53956685000003,
+          "north": 30.4048664,
+          "east": -88.53822745000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "b6a46b1ac838cdbfe0d48a7cfb81c4188ef7b6d2",
+      "name": "Little People Learning Center",
+      "place_id": "ChIJ050feUDpm4gRoe40LrbGRkQ",
+      "reference": "CnRwAAAA9bKM32Kb6o8zqiukcKc8GXopa77k0gyiXLogZceKzDg_SzH4__qM6a07CbhjgbrF0J7wLXP8-N689hublCdjYyqo7Xw6oVuGoqtP_u4pUtctW6nTOiy4zA8TThXlGT2QFFTkq61wgHJTwqaC4ZG04hIQAG2EsM_A69y2j9JPzwnn4BoUz7qpyUENu1AppDlKQyMlodpdSQ0",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "A and M Child Care Center",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39209",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "228-234-0970",
+    "InProcess": "true",
+    "PostalAddress": "4213 Wainwright Ave, Jackson, MS 39209, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "4213 Wainwright Ave, Jackson, MS 39209, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.315664,
+          "lng": -90.237909
+        },
+        "viewport": {
+          "south": 32.31558055,
+          "west": -90.23801334999996,
+          "north": 32.31591435,
+          "east": -90.23759595000001
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "c96c8608df0ac3641f668b27aa2e4483cdbe82a9",
+      "name": "M Tec Child Care Center Inc",
+      "place_id": "ChIJyzHNT4k0KIYRWM6rX4pg5BQ",
+      "reference": "CnRuAAAA49fqCJs2XIOoiy7yHtgzXw--SN-tX7WyBuZ6-apkz3V4PNV-2nRHg7C8BaEuTL6c0CbCXAkOvpCl3jxd9jxXAnCqvBT3PrkotHIduDOVqYWQ15yeKafJrQCcNoRE-gSQe-1QPbIcnO9oD5E4gR74tBIQENT51MtE1jyEroKsA8GNyBoUG2xXGCs6jN72YM-Cyv4hUvUX2DQ",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "A Child's View",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "94",
+    "PhysicalCity": "OLIVE BRANCH",
+    "PhysicalZipCode": "38654",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "228-282-2918",
+    "InProcess": "true",
+    "PostalAddress": "10900 Nichols Blvd, Olive Branch, MS 38654, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "10900 Nichols Blvd, Olive Branch, MS 38654, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.967527,
+          "lng": -89.79682200000002
+        },
+        "viewport": {
+          "south": 34.96660810000001,
+          "west": -89.7969372,
+          "north": 34.9678333,
+          "east": -89.79647640000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "7c7947d8c946ba89e25874362266520c04033ea7",
+      "name": "La Petite Academy of Olive Branch, MS",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "place_id": "ChIJ2d08gGmRf4gRzNiKYsmGIk4",
+      "rating": 4.3,
+      "reference": "CoQBeAAAABTZjbdZxUrlkT5Swc9iGAd6YLZ5CaWuGHybsnKfHe4tjlWesalIIsK3jebEFhIyrfTe9XO3IXQOUeImpHWnvzlc7QgY5OHdcbYCoIiHCK7RoP9mbWCvTFf_F8HQ9j_jJHu0jWJ_5R-jl9Ek40Dbyw1CSthaCp5QBA46q6UIsg38EhCIurOHjkdkEwdHbzJN8vn_GhTN-hQ9Q3y2d556nV6HUr6GzDuEWg",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "A Christian Academy",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "29",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39206",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "228-297-4408",
+    "InProcess": "true",
+    "PostalAddress": "485 W Northside Dr, Jackson, MS 39206, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "485 W Northside Dr, Jackson, MS 39206, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.35488,
+          "lng": -90.18624699999998
+        },
+        "viewport": {
+          "south": 32.35442525,
+          "west": -90.18624944999999,
+          "north": 32.35624425,
+          "east": -90.18623965
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "f138083bfc274c08c3ac537f473a9d784344a137",
+      "name": "Abundant Life Christian Academy",
+      "place_id": "ChIJMZR-Q9UyKIYRa9-Ce7rXTWk",
+      "reference": "CoQBcgAAAH-TuBqHjClw5Ae5VISurOrl9hiu-2ojmjOnwHAsBhjP1WnHQWmHU0NoF6hrM5NVrI4bMNGGDs5WEbcXTs0IL4_9oqLd9o0-mZCR5hB_S3Rsfi-C_uiF2CLBoUcwMar1IWQTGgxIHHvAlt63NfOfUWxLBA9PEaEjA--gvYjqo5HeEhB76wCAVbgmOcJ34brkbF1bGhSyODcFGJEjcGxPio82Pu_kxiDplQ",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "A Creative Learning Center LLC",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "100",
+    "PhysicalCity": "OLIVE BRANCH",
+    "PhysicalZipCode": "38654",
+    "CountyNumber": "17",
+    "CountyName": "DESOTO",
+    "PhoneNumber": "228-313-7456",
+    "InProcess": "true",
+    "PostalAddress": "8745 Goodman Rd, Olive Branch, MS 38654, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "8745 Goodman Rd, Olive Branch, MS 38654, United States",
+      "geometry": {
+        "location": {
+          "lat": 34.9612361,
+          "lng": -89.8353778
+        },
+        "viewport": {
+          "south": 34.96076045,
+          "west": -89.83538650000003,
+          "north": 34.96266305,
+          "east": -89.83537489999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+      "id": "e0a5ff285c80131905404aa169139ada6d6137ee",
+      "name": "Maples Learning Center",
+      "place_id": "ChIJ7YpBhe2Rf4gRDB-o_K07hqI",
+      "reference": "CnRqAAAAjFBsmziGl2wnFNy97v3I-aA6Rim7-1Izy58pxlghguextK2Q-Qyyut1p-vGkwrl2O8FMwCWdmugR5WaZyHW7jF8LFbgiyoZqC5yGccPuZ7NQK11RhusL6bsiLyqKv1Y7zcWwG1KFpGb7s92aEiVw3xIQfxnoqaTA9iU655hI_oaZIhoU-qxOba1-5mv53hYNP-eYW5Z1rtY",
+      "types": [
+        "church",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "ASYMCA @ House Creek",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "85",
+    "PhysicalCity": "JACKSON",
+    "PhysicalZipCode": "39206",
+    "CountyNumber": "25",
+    "CountyName": "HINDS",
+    "PhoneNumber": "662-369-0298",
+    "InProcess": "true",
+    "PostalAddress": "5255 Manhattan Rd, Jackson, MS 39206, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "5255 Manhattan Rd, Jackson, MS 39206, United States",
+      "geometry": {
+        "location": {
+          "lat": 32.369667,
+          "lng": -90.16107999999997
+        },
+        "viewport": {
+          "south": 32.36957099999999,
+          "west": -90.1614874,
+          "north": 32.369699,
+          "east": -90.16094420000002
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "1bc63a7c130837fa6ea59bb7877822f6f6a9fd82",
+      "name": "Pebble Creek Apartments",
+      "opening_hours": {
+        "open_now": false,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 597,
+          "html_attributions": [
+            "Pebble Creek Apartments"
+          ],
+          "width": 597
+        }
+      ],
+      "place_id": "ChIJ_cAEB0XNKYYRcq9Wt8FvttI",
+      "reference": "CnRrAAAAh85pXPm683UP7tjUcB5M6u0EJFn11Jvtw0JrEXDuUdi73iS1im5FzTDJArpy0G43UShfcphY4n_Gj6osC9sYuzY8A_qoK61e7al_MFVKHlQEo35lYKMGFHeqx-qnCmMpWRLpXnW1w6A4FuPpI8g6ShIQTfMvAedLcEG6yAi9RgWaXBoUSABPX7GSXZHMoiccyv2mQv8xtBw",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Avance - Wesley Early Head Start",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "30",
+    "PhysicalCity": "DREW",
+    "PhysicalZipCode": "38737",
+    "CountyNumber": "67",
+    "CountyName": "SUNFLOWER",
+    "PhoneNumber": "662-447-3600",
+    "InProcess": "true",
+    "PostalAddress": "120 S Church St, Drew, MS 38737, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "120 S Church St, Drew, MS 38737, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.8096658,
+          "lng": -90.52951480000002
+        },
+        "viewport": {
+          "south": 33.80965320000001,
+          "west": -90.5297041,
+          "north": 33.80970360000001,
+          "east": -90.52945169999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "c8c69ff449485f882a097c57da74418d0e061eb2",
+      "name": "Drew Community Headstart Center",
+      "place_id": "ChIJPbOyNkz_KoYRPinpEEtIHLo",
+      "reference": "CoQBcwAAABCQ_FIrYlLIUlV3UsQNF_To4MXtbhT9PmDqISJyxxrF8WRjiv0J6O065U_rzLVQcZaEIHnsC2qTo1QyhrzPVaiphMBB08JTzz4opLW8TtUXRG6BFu6zD8UVROc2ekDzJq1kjiDO5o3Swv9sl2S4HuPV41km5U920Ff5iUgWjj0QEhARd8mSGDsxh7Yb--Up51ncGhTN5QSYXRSR8DQfaNkRGH2B9Qv7sg",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Avance - Oxford HS",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "90",
+    "PhysicalCity": "LONG BEACH",
+    "PhysicalZipCode": "39560",
+    "CountyNumber": "24",
+    "CountyName": "HARRISON",
+    "PhoneNumber": "662-449-7649",
+    "InProcess": "true",
+    "PostalAddress": "298 E Railroad St, Long Beach, MS 39560, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "298 E Railroad St, Long Beach, MS 39560, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.35263059999999,
+          "lng": -89.14713590000002
+        },
+        "viewport": {
+          "south": 30.35216380000001,
+          "west": -89.14727570000002,
+          "north": 30.35278619999999,
+          "east": -89.14671649999997
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "4a4e0812e0b9294a9842375666aa99ff3628eeda",
+      "name": "Advance Auto Parts",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 381,
+          "html_attributions": [
+            "Advance Auto Parts"
+          ],
+          "width": 640
+        }
+      ],
+      "place_id": "ChIJ4djT-MU8nIgRGnYcupoDLCU",
+      "reference": "CnRlAAAAqitjiZPEqrdoYxVp8iQccLrjzQTlMFAV-GG5oDshLUXehSKMyNm5ImqgpvKF-PPEb1NQZYzZ2T8E1cSjy2RGK7JEdQV2q7vaZdGYghBFFJL6fZDlCh88UrI-X-JTLJhmwj894dKRXwGuTHK5A2ik2BIQjAI9E1VQQI-v9xXkdFZduBoUx4m52EGlZvgn223kp6TvP2yV9Ik",
+      "types": [
+        "electronics_store",
+        "car_repair",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Avance - Rocksprings",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "2",
+    "QualityRatingDescription": "Average",
+    "ProviderCapacity": "150",
+    "PhysicalCity": "HATTIESBURG",
+    "PhysicalZipCode": "39402",
+    "CountyNumber": "37",
+    "CountyName": "LAMAR",
+    "PhoneNumber": "662-450-7516",
+    "InProcess": "true",
+    "PostalAddress": "5060 Hardy St, Hattiesburg, MS 39402, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "5060 Hardy St, Hattiesburg, MS 39402, United States",
+      "geometry": {
+        "location": {
+          "lat": 31.321781,
+          "lng": -89.37312700000001
+        },
+        "viewport": {
+          "south": 31.32176015,
+          "west": -89.37354429999999,
+          "north": 31.32178795,
+          "east": -89.3729879
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "d411aa596571852009c6becb5f700a26b383ecc9",
+      "name": "Advance Auto Parts",
+      "opening_hours": {
+        "open_now": true,
+        "weekday_text": []
+      },
+      "photos": [
+        {
+          "height": 381,
+          "html_attributions": [
+            "Advance Auto Parts"
+          ],
+          "width": 640
+        }
+      ],
+      "place_id": "ChIJa1b9EBHfnIgRUH_ubelFJRc",
+      "reference": "CnRlAAAANGQS_pxPR3DgxEUhn3jonuV_BZglNYcS1OUabMgjhNDBbnto5YJr0QUTONzT73SQBfZK7YWLBJHEQAEKCAIjQ24Tc_dF_VJhbeROzC15KyTIOgAUXva0CM_9BF3hEmbfYPFmYOcBHTy4j1-vllM4ghIQHGKFZOTK1fOtghHD7HRjmxoUyIwryV7KpMB7FbVusQSkhpj5q-4",
+      "types": [
+        "electronics_store",
+        "car_repair",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Bilingual Childcare",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "35",
+    "PhysicalCity": "CLEVELAND",
+    "PhysicalZipCode": "38732",
+    "CountyNumber": "6",
+    "CountyName": "BOLIVAR",
+    "PhoneNumber": "662-836-6181",
+    "InProcess": "true",
+    "PostalAddress": "1291 Crosby Rd, Cleveland, MS 38732, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "1291 Crosby Rd, Cleveland, MS 38732, United States",
+      "geometry": {
+        "location": {
+          "lat": 33.76101480000001,
+          "lng": -90.76519689999998
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "4a23e4c8f3e937d4d78b3cd87aed7aa1b2a6ae8e",
+      "name": "Bayou Academy",
+      "place_id": "ChIJ_SYsTMWnK4YRhI3yJ1CpvOA",
+      "reference": "CnRhAAAA-qG5PXSpkz2o5JuyHiezRLPmst3FhWGI5YGtrMGjfB3T2PeBDWa031BPWP2HW_p8f7zi5pkFmt5Gb8FWRgFs_1FAL30TpAcXr_375WAQxOcEVQvTbseb3gGeIXADULu2nlRk6wZW8KFQDc7cmboGXxIQt9u30I0CQAmAUMjPVE9hAxoU9Uip-d1TkzEV7zHW1GkJxhkmg3s",
+      "types": [
+        "school",
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  },
+  {
+    "ProviderName": "Boys & Girls Club of Brazoria Club at Ney",
+    "LicenseType": "LICENSED",
+    "ProviderType": "2",
+    "ProviderTypeDescription": "Slot Contractor",
+    "QualityRating": "0",
+    "QualityRatingDescription": "Not Rated",
+    "ProviderCapacity": "39",
+    "PhysicalCity": "BAY ST LOUIS",
+    "PhysicalZipCode": "39520",
+    "CountyNumber": "23",
+    "CountyName": "HANCOCK",
+    "PhoneNumber": "601-329-8683",
+    "InProcess": "true",
+    "PostalAddress": "310 Old Spanish Trail, Bay St Louis, MS 39520, United States",
+    "GeoPlaceResult": {
+      "formatted_address": "310 Old Spanish Trail, Bay St Louis, MS 39520, United States",
+      "geometry": {
+        "location": {
+          "lat": 30.3096697,
+          "lng": -89.34302889999998
+        },
+        "viewport": {
+          "south": 30.30948685,
+          "west": -89.34373585000003,
+          "north": 30.31021825,
+          "east": -89.34279325
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "4af0e45e734ab4c4f81ca9e6fca8af3d267aae00",
+      "name": "Boys & Girls Club of America",
+      "place_id": "ChIJL-OOUbgtnIgRpwQGLq4kPoA",
+      "reference": "CnRwAAAA7iyMrBj34_YTE-cbs5ED4hayzWHJ6Mnhm2lWzd5t_hDvtpHA8VSbDWbm8TiRbI0f8-gt1sZsYsGJWVZXoTAZUhL0kgv_S9r31vtjQDVPd4xIku_WKIFY2gHWE00O-RBm29H6KKpxVfoI1Gx8gvslQBIQKTIEdCjjjsC9C6lcYoeSNhoUlitie5pO3uQwlo144kWtiAlhEEQ",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "html_attributions": []
+    }
+  }
+]

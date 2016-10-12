@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Chhs-geojson by RobertLRead</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+          
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOURKEYGOESHERE&libraries=places"></script>
+
+
+</head>
+
+    <style>
+    .floatright {
+	float: right;
+    }
+
+    
+
+    </style>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Find Day Care in Mississippi</h1>
+    <h2>(An Exploratory Program, a Work in Progress!)</h2>
+	 <h3 id="message"> </span>
+        </header>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
+    <div>
+
+    <input id="trytoplace" type="button" onclick="geoplace()" value="GeoPlace"></input>
+<br>
+    <input id="stoptimer" type="button" onclick="stop_timer()" value="StopTimer"></input>
+<br>
+    <input id="renderall" type="button" onclick="renderall()" value="RenderAll"></input>
+<br>    
+    <div>
+    Provider Name: <input type="text" id="providername">
+    </div>
+
+    <div>
+    Provider Type:
+</div>
+    <select class="selectpicker show-tick">
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Relish</option>
+</select>
+
+    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Provider Type
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="providertype">
+    <li id="action-1"><a href="#">Any</a></li>
+    <li id="action-2"><a href="#">Group Home</a></li>
+    <li id="action-3"><a href="#">Center</a></li>
+    <li id="action-4"><a href="#">Non Relative In Home</a></li>
+    <li id="action-5"><a href="#">Non Relative Out of Home</a></li>
+    <li id="action-6"><a href="#">Slot Contractor</a></li>        
+    </ul>
+    </div>
+
+
+    Zip Code: (Valid zip in MS : 39218,39194)
+    <input type="text" id="zipcode">
+    <input id="searchbutton" type="button" onclick="redraw_with_zip(this)" value="Search"></input>
+    <div id="map">
+    </div>
+    </div>
+    <div id="facmap" style="width: 600px; height: 400px"></div>
+	  <div id="faclist">
+	    <p>
+	  </div>
+        </section>
+      </div>
+    </div>
+    <pre id="geo_list" style="{font-size: small;}">
+    </pre>
+  </body>
+    <script>
+
+$('div.dropdown ul.dropdown-menu li a').click(function (e) {
+    var $div = $(this).parent().parent().parent(); 
+    var $btn = $div.find('button');
+    $btn.html($(this).text() + ' <span class="caret"></span>');
+    $div.removeClass('open');
+    e.preventDefault();
+    search();
+    return false;
+});
+
+// $( "#providertype" ).change(function() {
+//     search();
+// });
+
+
+// $("#action-1").click(function(e){
+//     alert(e);
+//     search();
+// });
+// $("#action-2").click(function(e){
+//     alert(e);
+//     search();
+// });
+// $("#action-3").click(function(e){
+//     alert(e);
+//     search();
+// });
+// $("#action-4").click(function(e){
+//     alert(e);
+//     search();    
+// });
+// $("#action-5").click(function(e){
+//     alert(e);
+//     search();    
+// });
+// $("#action-6").click(function(e){
+//     alert(e);
+//     search();    
+// });
+
+$("#zipcode").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#searchbutton").click();
+    }
+});
+
+$("#providername").keyup(function(event){
+    if(event.keyCode == 13){
+	search();
+    }
+});
+
+
+
+// This is the zip for Jackson
+    var default_zip = "39218";
+var zip = "39218";
+
+
+function redraw_with_zip() {
+    zip = $("#zipcode").val();
+    near_facilities = all_data.filter(x =>
+				      {
+					  return (x.PhysicalZipCode === zip);
+				      }
+				     );
+    console.log(near_facilities);
+    render_data(near_facilities);
+    set_map_view(near_facilities);
+    // now change map...
+}
+
+function search() {
+    var pn = $("#providername").val();
+
+    var tp = $('#providertype option:selected').text();
+        near_facilities = all_data.filter(x =>
+				      {
+					  return (x.ProviderName === pn);
+				      }
+				     );
+    render_data(near_facilities);
+    set_map_view(near_facilities);
+
+}
+
+var socrata_url = "https://chhs.data.ca.gov/resource/mffa-c6z5";
+var geojson_snippet = ".geojson";
+var facility_zip = "facility_zip";
+
+// NOTE: This is for Jackson, MS!!!
+var home_long = -90.194039;
+var home_lat = 32.285642;
+
+// So this will be a geoJSON object, but for the first story I will just take it apart and render it...
+var all_data;
+var near_facilities;
+var MSCODES;
+
+var mapboxgl_accessToken = 'pk.eyJ1Ijoicm9iZXJ0bHJlYWQiLCJhIjoiY2lvcTkyejZtMDAxdHUzbTB0Z3R5MmIxZyJ9.wabsdiW8W9nY-48LRiclmw';
+
+var map;
+
+function render_near_facilities(near_facilities) {
+    L.mapbox.accessToken = 'pk.eyJ1Ijoicm9iZXJ0bHJlYWQiLCJhIjoiY2lvcTkyejZtMDAxdHUzbTB0Z3R5MmIxZyJ9.wabsdiW8W9nY-48LRiclmw';
+    
+    if (map) {
+	map.remove();
+    }
+    
+    map = L.mapbox.map('facmap', 'mapbox.streets')
+    .setView([home_lat,home_long], 7);
+
+    // Rather than do a geolocation, I'll take the means of the lat/longs in the feature list to center
+    // the map...
+    var cur_lat = 0.0;
+    var cur_lon = 0.0;
+    var num_features = near_facilities.length;
+    var cnt = 0;
+    for(var i = 0; i < num_features; i++) {
+	var feature = near_facilities[i];
+	var nfeature = { properties: [], geometry: {coordinates : []} };
+	nfeature.properties["title"] = feature["ProviderName"];
+	nfeature.properties["marker-symbol"] = "cafe";
+	nfeature.properties["marker-size"] = "large";
+	var local_zip = feature["PhysicalZipCode"];
+	var latx = Number(MSCODES[local_zip].Lat);
+	var lony = Number(MSCODES[local_zip].Long);
+
+	if (isNaN(latx) || isNaN(lony)) {
+	    debugger;
+	}
+
+	var ransize = 0.1;
+	latx += (Math.random() * ransize) - (ransize/2.0);
+	lony += (Math.random() * ransize) - (ransize/2.0);	
+
+	nfeature.coordinates = [];
+	nfeature.type = 'Point';
+	nfeature.coordinates[0] = lony;
+	nfeature.coordinates[1] = latx;
+	cnt++;
+	cur_lon += lony;
+	cur_lat += latx;
+
+	
+	L.mapbox.featureLayer(
+	    nfeature
+	).addTo(map);
+    }
+    if (cnt) {
+	map.setView([cur_lat/cnt,cur_lon/cnt], 7);
+    }
+}
+
+function set_map_view(near_facilities) {
+    L.mapbox.accessToken = 'pk.eyJ1Ijoicm9iZXJ0bHJlYWQiLCJhIjoiY2lvcTkyejZtMDAxdHUzbTB0Z3R5MmIxZyJ9.wabsdiW8W9nY-48LRiclmw';
+    
+
+    // Rather than do a geolocation, I'll take the means of the lat/longs in the feature list to center
+    // the map...
+    var cur_lat = 0.0;
+    var cur_lon = 0.0;
+    var num_features = near_facilities.length;
+    var cnt = 0;
+    for(var i = 0; i < num_features; i++) {
+	var feature = near_facilities[i];
+	var nfeature = { properties: [], geometry: {coordinates : []} };
+	nfeature.properties["title"] = feature["ProviderName"];
+	nfeature.properties["marker-symbol"] = "cafe";
+	nfeature.properties["marker-size"] = "large";
+	var local_zip = feature["PhysicalZipCode"];
+	var latx = Number(MSCODES[local_zip].Lat);
+	var lony = Number(MSCODES[local_zip].Long);
+
+	// now we will add a tiny bit of random jitter to prevent two markers at the same side
+	nfeature.coordinates = [];
+	nfeature.type = 'Point';
+	nfeature.coordinates[0] = lony;
+	nfeature.coordinates[1] = latx;
+	cnt++;
+	cur_lon += lony;
+	cur_lat += latx;
+    }
+    // Note the scale here needs to be chosen far better!
+    if (cnt) {
+	map.setView([cur_lat/cnt,cur_lon/cnt], 11);
+    }
+}
+
+
+$(document).ready(function () {
+    $("#zipcode").val(zip);
+		       });
+
+
+var data_url = "https://raw.githubusercontent.com/RobertLRead/chhs-geojson/gh-pages/MS%20ITS%20RFP%203717-Vendor%20Challenge%20Dataset%20FINAL.json";
+var other_data_url = "https://raw.githubusercontent.com/CivicActions/agile-ms/master/data/places_final.json";
+
+function when_ready_render_map() {
+    if ((typeof all_data != 'undefined') &&
+	(typeof MSCODES != 'undefined')) {
+        render_near_facilities(all_data);
+	redraw_with_zip();
+    }
+}
+
+function render_one_day_care(key,obj) {
+    var html = "";
+    var name = obj.ProviderName;
+    var phone = obj.PhoneNumber;
+    var stars = obj.QualityRating;
+    var city = obj.PhysicalCity;
+    var county = obj.CountyName;
+    var type = obj.ProviderTypeDescription;
+    var zip = obj.PhysicalZipCode;
+    var rating = obj.QualityRatingDescription;
+
+    html += '<div class="list-group" id="' + key + ">";
+    html += '<a href="#" class="list-group-item active">';
+    html += '<span class="list-group-item-heading">'+name +'</span><span class="floatright">'+phone +'</span>';
+    html += '<p>';
+    html += '<span class="list-group-item-text">Type: ' + type + '</span>';
+    html += '<span class="list-group-item-text" class="floatright"> Rating: ' + rating + '</span>';
+    var src = "";
+    var alt = rating;
+    switch(stars) {
+	case "0": 
+	src = "./images/0-star-small.jpg";
+	break;
+	case "1":
+	src = "./images/1-star-small.jpg";
+	break;	
+	case "2":
+	src = "./images/2-star-small.jpg";
+	break;	
+	case "3":
+	src = "./images/3-star-small.jpg";
+	break;	
+	case "4":
+	src = "./images/4-star-small.jpg";
+	break;	
+	case "5":
+	src = "./images/5-star-small.jpg";
+	break;	
+    default:
+	src = "./images/0-star-small.jpg";
+    };
+
+    html += '<img class="floatright" src="'+src+'" alt="Zero Rating"></img>';    
+    html += '</p>';
+    html += '<span class="list-group-item-text">City: ' + city +', County:' + county + '</span>';
+    html += '<span class="floatright">Zip: '+zip +'</span>';
+	html += "</div><br>";
+    html += '</div>';
+    
+    return html;
+}
+
+function render_data(data) {
+
+    var items = [];
+    
+    $.each( data.slice(0,100), function( key, val ) {
+	items.push( render_one_day_care(key,val));
+    });
+
+    $("#faclist").empty();
+    
+    $( "<div>", {
+	"class": "my-new-list",
+	html: items.join( "" )
+    }).appendTo( "#faclist" );
+}
+
+$.get("http://ipinfo.io", function(response) {
+    console.log(response.postal);
+    zip = response.postal;
+    if (response.region != 'Mississippi') {
+	$("#message").text("Hmm, you seem to be in " + response.region + ", not the great state of Mississippi. We'll start your search centered in Jackson.");
+	zip = default_zip;
+    } else {
+	$("#message").text("You seem to me in Zip Code : "+zip +", so we will start you there.");
+    }
+    $("#zipcode").val(zip);
+
+}, "jsonp");
+
+
+function get_data(url) {
+    $.getJSON( url, function( data ) {
+	all_data = data;
+	near_facilities = data;
+	render_data(data);
+	when_ready_render_map();
+    })
+	.done(function() {
+	    console.log( "second success" );
+	})
+	.fail(function(jqXHR, textStatus,errorThrown ) {
+	    console.log( "error"  );
+	})
+	.always(function() {
+	    console.log( "complete" );
+	});
+
+}
+
+get_data(other_data_url);
+
+var ms_zips_url = "https://raw.githubusercontent.com/RobertLRead/chhs-geojson/gh-pages/MississippiZipCodes.json";
+
+function get_MS_zips(url) {
+    $.getJSON( url, function( data ) {
+	MSCODES = [];
+	$.each( data, function( key, val ) {
+	    console.log(val.Zipcode);
+	    MSCODES[val.Zipcode] = val;
+	});
+	when_ready_render_map();
+    })
+	.done(function() {
+	    console.log( "second success" );
+	})
+	.fail(function(jqXHR, textStatus,errorThrown ) {
+	    console.log( "error"  );
+	})
+	.always(function() {
+	    console.log( "complete" );
+	});
+
+}
+
+get_MS_zips(ms_zips_url);
+
+
+
+var gmap;
+var service;
+var infowindow;
+var jackson = new google.maps.LatLng(32.303922, -90.198574);
+
+function initialize() {
+
+  gmap = new google.maps.Map(document.getElementById('map'), {
+      center: jackson,
+      zoom: 15
+    });
+
+  var request = {
+    location: jackson,
+    radius: '500',
+    query: 'day care'
+  };
+
+//  service = new google.maps.places.PlacesService(gmap);
+//  service.textSearch(request, callback);
+}
+
+//function callback(results, status) {
+//  if (status == google.maps.places.PlacesServiceStatus.OK) {
+//    for (var i = 0; i < results.length; i++) {
+//      var place = results[i];
+//      createMarker(results[i]);
+//    }
+//  }
+//}
+
+function put_gmap_on_zip(zip) {
+    var latx = Number(MSCODES[zip].Lat);
+    var lony = Number(MSCODES[zip].Long);
+    var location = new google.maps.LatLng(latx, lony);
+    gmap = new google.maps.Map(document.getElementById('map'), {
+	center: location,
+	zoom: 15
+    });
+    return [location,gmap];
+}
+
+function place_one(obj) {
+    var query = obj.ProviderName + ", " + obj.PhysicalCity +" MS "+ obj.PhysicalZipCode;
+    var location_and_map = put_gmap_on_zip(obj.PhysicalZipCode);
+    
+  var request = {
+    location: location_and_map[0],
+    radius: '50000',
+    query: query
+  };
+
+  service = new google.maps.places.PlacesService(location_and_map[1]);
+    service.textSearch(request,
+		       function f(results,status) {
+			   place_one_callback(results,status,obj);
+		       }
+		      );
+}
+
+function place_one_callback(results, status,obj) {
+    alert(status + " " + JSON.stringify(results));
+    if (status == "ZERO_RESULTS")
+	obj.PostalAddress = "NA";
+    else     if (status == google.maps.places.PlacesServiceStatus.OK) {
+	obj.PostalAddress = results[0].formatted_address;
+    }
+}
+
+initialize();
+
+
+
+// Idea here is to try to get physical addresses for records we don't have
+// address for 
+function geoplace() {
+    var possible
+         = all_data.filter(x =>
+				      {
+					  return ((typeof x.PostalAddress == 'undefined')
+						  &&
+						  (x.LicenseType != "UNLICENSED")
+						 );
+				      }
+			  );
+    if (possible) {
+	var next = possible[0];
+	var address = place_one(next);
+    } else {
+	alert("no records");
+    }
+
+}
+function place_one_callback(results, status,obj) {
+    // alert("Requested: " + JSON.stringify(obj) + "Got: " + JSON.stringify(results));
+    // document.getElementById('geo_list').innerHTML = "Requested: " + JSON.stringify(obj) + "Got: " + JSON.stringify(results);
+    console.log("status: "+status);
+    if (status == "ZERO_RESULTS")
+	obj.PostalAddress = "NA";
+    else     if (status == google.maps.places.PlacesServiceStatus.OK) {
+	obj.PostalAddress = results[0].formatted_address;
+	for(var i = 0; i < results.length; i++) {
+	    if (results[i].formatted_address.indexOf(obj.PhysicalZipCode) !== -1) {
+		obj.PostalAddress = results[i].formatted_address;
+		obj.GeoPlaceResult = results[i];
+		break;
+	    }
+	}
+	if (!obj.PostalAddress) {
+	    console.log("found one!");
+	}
+    } else {
+	obj.InProcess = null;
+    }
+}
+function renderall() {
+    var found = all_data.filter(x =>
+			  {
+			      return ((typeof x.GeoPlaceResult != 'undefined')
+				     );
+			  });
+    document.getElementById('geo_list').innerHTML = JSON.stringify(found,null,2) + "\n";
+}
+
+initialize();
+
+var TIMER_FOR_TEN_MS = 12000;
+// Idea here is to try to get physical addresses for records we don't have
+// address for
+// I think in this way we can build up the file!
+
+var init = 0;
+var fin = 6000;
+
+// Next to 3000 - 5000, then 0 - 1500
+
+function geoplace10() {
+    var myslice = all_data.slice(init,fin);
+    var possible
+        = myslice.filter(x =>
+			  {
+			      return ((typeof x.PostalAddress == 'undefined')
+				      &&
+				      ((typeof x.InProcess == 'undefined') || (x.InProcess == null))
+				      &&
+				      (x.ProviderTypeDescription == "Slot Contractor")
+				      &&
+				      (x.LicenseType != "UNLICENSED")
+				     );
+			  }
+			 );
+    console.log("possible = "+possible.length);
+			     
+    if (possible) {
+	for (i = 0; i < Math.min(5,possible.length); i++) {
+	    var next = possible[i];
+	    next.InProcess = "true";
+	    place_one(next);
+	}
+	timer = setTimeout(geoplace10, TIMER_FOR_TEN_MS);
+    } else {
+	alert("no records");
+	stop_timer();
+    }
+
+}
+var timer;
+function geoplace() {
+    timer = setTimeout(geoplace10, TIMER_FOR_TEN_MS);
+}
+function stop_timer() {
+    clearTimeout(timer);
+}
+
+    </script>
+</html>
