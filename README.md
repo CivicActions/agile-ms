@@ -47,6 +47,7 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 1. Dev server: https://agile-ms-dev.civicactions.com
 1. Production server: https://agile-ms.civicactions.com
 1. CI server: http://ci.civicactions.net
+1. Trello board (Project backlog and Sprint backlogs): https://trello.com/b/ajnQPxSx/agile-ms-prototype
 1. Slack channel: #agile-ms
 1. Dev deployment Slack command: /agile-ms-deploy-dev
 1. Prod deployment Slack command: /agile-ms-deploy-prod
