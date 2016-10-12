@@ -107,46 +107,6 @@ Details regarding rates per role were submitted to the Procurement Team Leader a
 In an effort to make the burdern of evaluating our effort easier, we have organized some of documentation in
 the form of the criteria provided to us:
 
-### 4.3. Research and Discovery
-
-NICOLE -- Please answer the points here, but briefly---if we have something long, let's put it in a secondary
-document. I would like this section to be quickly readable. We'll put an anchor/bookmark to the long narrative that
-you wrote (which I do intend to leave included in this docuemnt).
-
-* 4.3.1. Initiate a research phase to explore the existing tool and pinpoint the needs of the
-       people who will use the service, and the ways the service will fit into their lives.
-       Document the process and findings. (see: https://playbook.cio.gov/#play1)
-* 4.3.2. Criteria for evaluation
-* 4.3.2.1. Spend time with current and prospective users of the service.
-* 4.3.2.2. Use qualitative and quantitative research methods to determine
-	 people’s goals, needs, and behaviors; be thoughtful about the time
-	 spent.
-* 4.3.2.3. Test prototypes of solutions with prospective users you do not have a
-	 current direct relationship with (e.g. friends, coworkers, family, etc).
-	 Explain how you found them in the documentation.
-* 4.3.2.4. Document the findings about user goals, needs, behaviors, and
-	 preferences.
-4.3.2.5. Create a prioritized list of tasks the user is trying to accomplish.
-
-
-#### 4.4. Design
-
-JEN -- Please answer the points here, but briefly---if we have something long, let's put it in a secondary
-document. I would like this section to be quickly readable.
-
-* 4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
-       use the service.
-* 4.4.2. Criteria for evaluation
-* 4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
-	 Web Design Standards*4).
-* 4.4.2.2. Give users clear information about where they are in each step of the
-	 process.
-* 4.4.2.3. Follow accessibility best practices to ensure all people can use the
-	 service.
-* 4.4.2.4. Use language that is familiar to the user and easy to understand.
-* 4.4.2.5. Use language and design consistently throughout the service,
-	 including online and offline touch points.
-
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
 ###Sprint 0
@@ -205,7 +165,13 @@ This initial pre-sprint or sprint zero work enabled us to conduct our next phase
  - We learned that users were confused by the terminology. Types of providers were unclear; this led users to make incorrect assumptions about search results and to completely drop Slot Contractors from their search although these centers, by definition, met the users’ criteria.
  - Users were also confused by the star ratings, believing falsely that most of the identified providers had a zero (0) rating when in fact they had no rating or were not participating in the rating system.
 
-Following the principle of keeping it simple and intuitive (USDS Play #3), we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would clarify this terminology and rating confusion and make it a prominent part of the searching, raising it to the top. We also developed additional verbiage using a "plain language" approach that we hoped would clarify terminology (Req. 4.4.2.4).
+Following the principle of keeping it simple and intuitive (USDS Play #3), we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would clarify this terminology and rating confusion and make it a prominent part of the searching, raising it to the top. We also developed additional verbiage using a "plain language" approach that we hoped would clarify terminology (Req. 4.4.2.4):
+
+- Slot Contractor = Quality Star participating Daycare Center
+- Center = Daycare Center
+- Group Home = Licensed Home-based Daycare
+- Non-relative In-Home = Nanny
+- Non-relative Out-of-Home = Un-licensed Home-based Daycare
 
 Since we had developed a prototype early on, we were able to iterate on our prototype in each user interview with screen-sharing technology so that users could directly experience our website (USDS Plays #9 and #4). For the remaining user sessions, our experienced UX expert (USDS play #7) continued to follow a think-aloud approach which asked users to place themselves in a scenario where they are either social workers trying to find a daycare provider in order to get their kids a placement or a parent conducting a daycare search.
 
