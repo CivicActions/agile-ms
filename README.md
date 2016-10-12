@@ -63,13 +63,14 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 
 ## The USDS Playbook Checklist
 
-ROB: Rob is going to make short answers here, but we need to add references to the plays through our other material,
-which I think will be easy.
+CivicActions has been following the USDS Playbook since the 18F Agile BPA and using it as a checklist on all projects.
+Here is a brief summary of how we followed the playbook; specific examples are called out throughout this document.
 
-1. Understand what people need
-2. Address the whole experience, from start to finish
-3. Make it simple and intuitive
-4. Build the service using agile and iterative practices
+1. Understand what people need -- We did no less than 9 user interviews, leading us to a layout significantly different
+   than that currently used by the state. We discovered a new terminology.
+2. Address the whole experience, from start to finish -- Our users had us add links to make phone calls and a map.
+3. Make it simple and intuitive -- We polished and removed features. We utilize Google-like search to find locations.
+4. Build the service using agile and iterative practices -- We had 4 formal sprints with daily scrum and sprint planning meetings.
 5. Structure budgets and contracts to support delivery
 6. Assign one leader and hold that person accountable
 7. Bring in experienced teams
