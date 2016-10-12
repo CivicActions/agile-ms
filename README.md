@@ -66,22 +66,20 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 CivicActions has been following the USDS Playbook since the 18F Agile BPA and using it as a checklist on all projects.
 Here is a brief summary of how we followed the playbook; specific examples are called out throughout this document.
 
-1. **Understand what people need** -- We did no less than 9 user interviews, leading us to a layout significantly different
+1. Understand what people need -- We did no less than 9 user interviews, leading us to a layout significantly different
    than that currently used by the state. We discovered a new terminology.
-2. **Address the whole experience, from start to finish** -- Our users had us add links to make phone calls and a map.
-3. **Make it simple and intuitive** -- We polished and removed features. We utilize Google-like search to find locations.
-4. **Build the service using agile and iterative practices** -- We had 4 formal sprints with daily scrum and sprint planning meetings.
-5. **Structure budgets and contracts to support delivery** -- We budgeted a part-time team with the necessary skills.
-6. **Assign one leader and hold that person accountable** -- We empowered a single Product Owner for all prioritization.
-7. **Bring in experienced teams** -- Every member of our team had years of experience.
-8. **Choose a modern technology stack** -- In addition to using modern technology such as Angular, we used a "serverless" architecture
-   that significantly simplified our implementation.
-9. **Deploy in a flexible hosting environment** -- We used Amazon Web Services.
-10. **Automate testing and deployments** -- We used Docker and a Jenkins Continuous Integration Server. We use Selenium Builder to run-tests.
-11. **Manage security and privacy through reusable processes** -- Because this application collects no information from the user, privacy is not an issue.
-    Security of the AWS server is handled by Amazon, the cloud provider, and reasonable practices.
-12. **Use data to drive decisions** -- We used user interviews to iteratively and readically develop our new approach.
-13. **Default to open** -- Our repo has been public since the start of the project.
+2. Address the whole experience, from start to finish -- Our users had us add links to make phone calls and a map.
+3. Make it simple and intuitive -- We polished and removed features. We utilize Google-like search to find locations.
+4. Build the service using agile and iterative practices -- We had 4 formal sprints with daily scrum and sprint planning meetings.
+5. Structure budgets and contracts to support delivery
+6. Assign one leader and hold that person accountable
+7. Bring in experienced teams
+8. Choose a modern technology stack
+9. Deploy in a flexible hosting environment
+10. Automate testing and deployments
+11. Manage security and privacy through reusable processes
+12. Use data to drive decisions
+13. Default to open
 
 ## Team Structure
 
@@ -98,7 +96,7 @@ The team was structured as follows:
 
 For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.
 
-Details regarding rates per role were submitted to the Program Officer as part of our response to RFP Section X, as instructed. 
+Details regarding rates per role were submitted to the Procurement Team Leader as part of our response to RFP Section X, as instructed. 
 
 
 ## Evaluation Criteria Point-by-Point
