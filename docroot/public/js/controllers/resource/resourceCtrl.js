@@ -18,16 +18,4 @@ angular.module('app')
       }) 
     });
   }
-}])
-
-.controller('ResourceItemController', ['$scope', '$filter', '$sce', '$rootScope', '$timeout', 'FilteredResults', 
-                         function(  $scope,   $filter,   $sce,   $rootScope ,  $timeout,   FilteredResults) {  
-
-  var self = this;
-
-    // titleClick
-  $scope.titleClick = function(event) {
-    console.log(event);
-  }
-
 }]);
