@@ -1,6 +1,6 @@
 # Agile Mississippi Project 
 
-## Table of Conents
+## Table of Contents
 
 * Overview
  * Brief Description
@@ -59,8 +59,7 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
 ### How to Report Bugs
 
-To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue.
-At present, there are a small number of issues because we used a [public Trello board](https://trello.com/b/ajnQPxSx/agile-ms-prototype) to manage our development.
+To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue
 
 ## The USDS Playbook Checklist
 
@@ -147,164 +146,96 @@ document. I would like this section to be quickly readable.
 * 4.4.2.5. Use language and design consistently throughout the service,
 	 including online and offline touch points.
 
-
-
-
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
-Seeking first to understand what was really needed ([USDS Play #1](https://playbook.cio.gov/#play1)), we
-conducted a sprint “zero” during the week prior to our iterative
-development kickoff. In this pre-sprint research and planning phase (Req. 4.3.2.1-4),
-we built an initial prototype to identify any technical risks and to
-validate some initial technical assumptions.  This prototype and all
-work to follow was in pursuit of the goal that the state of MS team
-described in the caseworker Q+A session - to provide a way for social
-workers and parents to find safe and quality daycares in MS without
-training.
+###Sprint 0
+Seeking first to understand what was really needed (USDS Play #1), we conducted a sprint “zero” during the week prior to our iterative development kickoff. In this pre-sprint research and planning phase (Req. 4.3.2.1-4), we built an initial prototype to identify any technical risks and to validate some initial technical assumptions.  This prototype and all work to follow was in pursuit of the goal that the state of MS team described in the caseworker Q+A session - to provide a way for social workers and parents to find safe and quality daycares in MS without training.
 
-In parallel, we began conducting some initial policy and contextual
-research and recruiting our “users.” We based our initial research and
-outreach upon the initial input from the caseworker Q&A session hosted
-by the state. Because our target audiences are parents and social
-workers (or caseworkers) who work with foster parents, we reached out
-to individuals in the child welfare field, beginning with members of
-the Annie E. Casey Foundation’s Casey Strategic Consulting Group
-(CSCG) and staff at private providers. We also reached out to local
-daycare providers in order to identify parents who might have
-conducted daycare searches recently. Ideally, we were looking for a
-sampling of users who met a cross-section of criteria (Req. 4.3.2.1, 4.3.2.3):
+In parallel, we began conducting some initial policy and contextual research and recruiting our “users.” We based our initial research and outreach upon the initial input from the caseworker Q&A session hosted by the state. Because our target audiences are parents and social workers (or caseworkers) who work with foster parents, we reached out to individuals in the child welfare field, beginning with members of the Annie E. Casey Foundation’s Casey Strategic Consulting Group (CSCG) and staff at private providers. We also reached out to local daycare providers in order to identify parents who might have conducted daycare searches recently. Ideally, we were looking for a sampling of users who met a cross-section of criteria (Req. 4.3.2.1, 4.3.2.3):
 
- -- Job: social worker, someone working in a state child welfare agency or private provider or other organization providing child welfare-related services
-
- -- Parent: an adult with children under 6 currently in daycare, or looking for daycare
-
- -- Age range: mid 20s to late 40s
-
- -- Tech savvy: low to medium
-
- -- Geographic area: ideally Mississippi, but if not possible then a range of states
+ - Job: social worker, someone working in a state child welfare agency or private provider or other organization providing child welfare-related services
+ - Parent: an adult with children under 6 currently in daycare, or looking for daycare
+ - Age range: mid 20s to late 40s
+ - Tech savvy: low to medium
+ - Geographic area: ideally Mississippi, but if not possible then a range of states
 
 We then scheduled three initial user sessions combining a contextual interview and “think aloud” exercises (Req.4.3.2.2) focused on two websites: the MDHS site and the site hosting our initial sprint zero prototype (Req. 4.3.2.1 - 4.3.2.4)
 
-We realized that to quickly convey convenient providers we could use a map to show the location of nearest providers. Later we realized that only certain provider types are places of business with physical addresses. We quickly prototyped a map using "fake" addresses based around the geographic center of the zipcodes, which we had for each provider.
+We realized that to quickly convey convenient providers we could use a map to show the location of nearest providers. Later we realized that only certain provider types are places of business with physical addresses. We quickly prototyped a map using "fake" addresses based around the geographic center of the zip codes, which we had for each provider.
+
+![sprint zero](https://cloud.githubusercontent.com/assets/7294004/19325366/6ac87c1a-908b-11e6-90ee-27ec22b7d4b0.jpg)
 
 ![sprint zero](https://cloud.githubusercontent.com/assets/5296671/19285906/839b8d56-8fc1-11e6-8c66-9a8df76ba4a3.png)
 
 Through these research sessions and our background research (about federal childcare funding, participation, state programs) we identified the tasks that users were likely to follow in identifying a daycare provider for a child (or children).
-Tasks (Req. 4.3.2.5):
-1. Identify daycare provider options.  This is conducted by personal knowledge and recommendations and internet searches.
-1a. Users identify options by selecting a location that is convenient for the parent/caretakers of the child whether near to work or home.
-2. Users evaluate options in order to narrow down their options to a subset of possible providers.
-2a. Users are most interested in "fit" of the center profile with their child(ren).  For example, is this a "high quality" provider.  High quality assessments could include: center- or home-based preference, teacher/student ratios, type of curriculum, age group(s) served, hours of operation, all year calendar, after school or early day programs, safety measures, etc. etc.
-3. Users select 1-3 options to call.  Users want to know whether program is taking applications or has openings and supplementing information that can be found online.
-4. Users select 1-3 options to visit.
-5. Users make their selection.
+
+User Tasks (Req. 4.3.2.5):
+
+ 1. Identify daycare provider options. This is conducted by personal knowledge and recommendations and internet searches.
+	 - Users identify options by selecting a location that is convenient for the parent/caretakers of the child whether near to work or home.
+ 2. Users evaluate options in order to narrow down their options to a subset of possible providers.
+	 - Users are most interested in "fit" of the center profile with their child(ren).  For example, is this a "high quality" provider.  High quality assessments could include: center- or home-based preference, teacher/student ratios, type of curriculum, age group(s) served, hours of operation, all year calendar, after school or early day programs, safety measures, etc. etc.
+ 3. Users select 1-3 options to call.  Users want to know whether program is taking applications or has openings and supplementing information that can be found online.
+ 
+ 4. Users select 1-3 options to visit.
+ 5. Users make their selection.
 
 During sprint zero user research we quickly identified the top ways in which parents and social workers conducted their searches:
 
- -- Location (address, zipcode) was critical. It was the first thing most users wanted to enter. Some offered to hop off the site and look in Google Maps to get better results. 
+ - Location (address, zipcode) was critical. It was the first thing most users wanted to enter. Some offered to hop off the site and look in Google Maps to get better results.
+ - The hours of operation, curriculum, ages of children served and programs, and other information (other parents reviews, pictures, etc) that did not exist in our dataset.
+ - Whether the providers are currently taking applications.
+
+We also identified the top two tasks in the list as our priority.  Our prototype development would focus on enabling users to identify and find enough information to narrow down their top choices to conduct follow up (or to share with a third party, like foster parent.)
+
+This was our attempt to address the whole experience, from start to finish (USDS Play #2), although we had time in this exercise to address only the first, highest-priority item.
+
+We determined that users are most interested in identifying high quality, safe daycare providers convenient to their work or home location. The search function is used to identify state-licensed and registered providers and, ideally, to lessen the legwork needed in order to make a selection (Req. 4.3.2.5).
+
+![sprintzero](https://cloud.githubusercontent.com/assets/7294004/19325171/7a42ecb2-908a-11e6-92e3-fc0a23347cf7.png)
  
--- The hours of operation, curriculum, ages of children served and programs, and other information (other parents reviews, pictures, etc) that did not exist in our dataset.
 
- -- Whether the providers are currently taking applications.
 
-We also identified the top 2 tasks in the list as our priority.  Our prototype development would focus on enabling users to identify and find enough information to narrow down their top choices to conduct follow up (or to share with a third party, like foster parent.)
+----------
 
-This was our attempt to address the whole experience, from start to
-finish ([USDS Play #2](https://playbook.cio.gov/#play2)), although we had time in this exercise to
-address only the first, highest-priority item.
+###Sprint 1
+This initial pre-sprint or sprint zero work enabled us to conduct our next phase of development (first sprint) (Req. 4.4) with a few key areas for improvement in mind:
 
-We determined that users are most interested in identifying high
-quality, safe daycare providers convenient to their work or home
-location. The search function is used to identify state-licensed and
-registered providers and, ideally, to lessen the legwork needed in
-order to make a selection (Req. 4.3.2.5).
- 
-This initial pre-sprint or sprint zero work enabled us to conduct our
-next phase of development (Req. 4.4) with a few key areas for improvement in
-mind:
+ - We learned that users were confused by the terminology. Types of providers were unclear; this led users to make incorrect assumptions about search results and to completely drop Slot Contractors from their search although these centers, by definition, met the users’ criteria.
+ - Users were also confused by the star ratings, believing falsely that most of the identified providers had a zero (0) rating when in fact they had no rating or were not participating in the rating system.
 
-We learned that users were confused by the terminology. Types of
-providers were unclear; this led users to make incorrect assumptions
-about search results and to completely drop slot contractors from
-their search although these centers, by definition, met the users’
-criteria.
+Following the principle of keeping it simple and intuitive (USDS Play #3), we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would clarify this terminology and rating confusion and make it a prominent part of the searching, raising it to the top. We also developed additional verbiage using a "plain language" approach that we hoped would clarify terminology (Req. 4.4.2.4).
 
-Users were also confused by the star ratings, believing falsely that
-most of the identified providers had a zero (0) rating when in fact
-they had no rating or were not participating in the rating system.
+Since we had developed a prototype early on, we were able to iterate on our prototype in each user interview with screen-sharing technology so that users could directly experience our website (USDS Plays #9 and #4). For the remaining user sessions, our experienced UX expert (USDS play #7) continued to follow a think-aloud approach which asked users to place themselves in a scenario where they are either social workers trying to find a daycare provider in order to get their kids a placement or a parent conducting a daycare search.
 
-Following the principle of keeping it simple and intuitive ([USDS Play #3](https://playbook.cio.gov/#play3)),
-we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would
-clarify this terminology and rating confusion and make it a prominent
-part of the searching, raising it to the top. We also developed
-additional verbiage using a "plain language" approach that we hoped
-would clarify terminology (Req. 4.4.2.4).
+For all phases of research, design and development, we documented our user research sessions and findings, driving our development with user stories (Req. 4.3.2.4) {FILLMEIN: Link to Google docs of user sessions + Stories in backlog in Trello?}
 
-Since we had developed a prototype early on, we were able to iterate
-on our prototype in each user interview with screen-sharing technology
-so that users could directly experience our website (USDS Plays [#9](https://playbook.cio.gov/#play9) and [#4](https://playbook.cio.gov/#play4)).
-For the remaining user sessions, our experienced UX expert ([USDS
-play #7](https://playbook.cio.gov/#play7)) continued to follow a think-aloud approach which asked users
-to place themselves in a scenario where they are either social workers
-trying to find a daycare provider in order to get their kids a
-placement or a parent conducting a daycare search.
+For parents, we implemented the feature of starting the map and search at their current location. We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like location search for finding providers.
 
-For all phases of research, design and development, we documented our user research sessions and findings (Req. 4.3.2.4) {FILLMEIN: Link to Google docs of user sessions + Stories in backlog in Trello + Stories on Board?}
+In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (Req. 4.4.2.1, 4.4.2.4).  We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensure that we used consistent language, iconography and patterns for all experiences (Req. 4.4.2.5).  
 
-For parents, we implemented the feature of starting the map and search
-at their current location. We learned that for social workers this was
-less valuable, but we implemented, using Google Maps, a Google-like
-place search for finding providers.
+By following the US Web Design Standards, we were able to ensure that we followed accessibility standards. Additionally, we used distinct shapes (in addition to different colors) to represent the map markers for different types of providers (Req. 4.4.2.3).
 
-Additionally, in working with our front end engineering team, we were
-able to choose the [Draft U.S. Web Design Standards](https://standards.usa.gov/) as
-our responsive pattern library (Req. 4.4.2.1, 4.4.2.4).  We built
-using a responsive framework which enabled our application to
-iteratively be tested with end users on multiple devices and ensure
-that we used consistent language, iconography and patterns for all
-experiences (Req. 4.4.2.5).  Additionally, by using the Federal style
-guide we were able to ensure that we followed accessibility standards.
 
-In this second Sprint, we were fortunate to receive the support of
-Virginia Pryor, Director of the Georgia Department of Family and
-Children Services. We had multiple user participants—from the Adoption
-unit, the Permanency unit and the Resource department—who interacted
-with our iterative prototypes (now live websites), as well as a few
-returning participants from the prior phase. These workers conduct the
-Mississippi challenge’s use case regularly, so we thought that these
-users would give us a closer insight into whether the new application
-would address key concerns—and most importantly, be user friendly (Req.4.3.2.1, 4.3.2.4).
+----------
 
+###Sprint 2
+In the second sprint, we were fortunate to receive the support of Virginia Pryor, Director of the Georgia Department of Family and Children Services. We had multiple user participants—from the Adoption unit, the Permanency unit and the Resource department—who interacted with our iterative prototypes (now live websites), as well as a few returning participants from the prior phase. These workers conduct the Mississippi challenge’s use case regularly, so we thought that these users would give us a closer insight into whether the new application would address key concerns—and most importantly, whether it was user friendly (Req. 4.3.2.1, 4.3.2.4).
 
 ![devsprint](https://cloud.githubusercontent.com/assets/5296671/19285974/bb5f5998-8fc1-11e6-8bea-9ae9f03133c2.png)
 
-These Georgia child welfare staff were able to help us confirm that
-the terminology of provider types and ratings was hard to
-understand. Additionally, they helped us to identify the importance of
-ensuring that the site worked on all devices—essential, given that
-workers will be in many locations when conducting a search of this
-type. Although our prototype did not mature to the point of making it
-appropriate to use quantitative data collection, such as A/B testing,
-time-on-task testing, etc., we continually and iteratively used user
-interview data to guide our development decisions ([USDS Play #12](https://playbook.cio.gov/#play12)).
+These Georgia child welfare staff were able to help us confirm that the terminology of provider types and ratings was hard to understand. Additionally, they helped us to identify the importance of ensuring that the site worked on all devices—essential, given that workers will be in many locations when conducting a search of this
+type. Although our prototype did not mature to the point of making it appropriate to use quantitative data collection, such as A/B testing, time-on-task testing, etc., we continually and iteratively used user interview data to guide our development decisions (USDS Play #12).
 
-Instead we heavily used qualitative data (Req. 4.3.2.2) in order to collect it we
-asked open-ended questions first so as to get as much unbiased
-information from the users as possible. Our users were parents and
-social workers who worked with foster youths.
-
-After these interviews in our third Sprint, we identified the need for
-a new visual approach that would emphasize provider type and quality
-star ratings and explain them to the user, while moving the map to a
-position parallel to the results lists. We had discovered that for a
-fraction (approximately one-fifth) of all providers we could discover
-the physical postal address of the businesses and place these on the
-map. We immediately started Sprint 4 with that in mind. Our automated
-deployment allowed us to rapidly deploy significant development
-changes with confidence ([USDS Play #10](https://playbook.cio.gov/#play10)).
+Instead we relied heavily on qualitative data (Req. 4.3.2.2) in order to collect it we asked open-ended questions first so as to get as much unbiased information from the users as possible. Our users were parents and social workers who worked with foster youths.
 
 
+----------
+
+###Sprint 3
+Following these interviews, in our third sprint, we identified the need for a new visual approach that would emphasize provider type and quality star ratings and explain them to the user, while moving the map to a position parallel to the results lists. We had discovered that for a fraction (approximately one-fifth) of all providers we could discover the physical postal address of the businesses and place these on the map. We immediately started Sprint 4 with that in mind. Our automated deployment allowed us to rapidly deploy significant development changes with confidence (USDS Play #10).
+
+![final2days](https://cloud.githubusercontent.com/assets/7294004/19325170/7a41f910-908a-11e6-8473-dc5e6f9612df.png)
 
 ![final2days](https://cloud.githubusercontent.com/assets/5296671/19286190/5c02cfba-8fc2-11e6-89bb-91f417fc9908.png)
 
