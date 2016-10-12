@@ -108,11 +108,11 @@ Details regarding rates per role were submitted to the Procurement Team Leader a
 
 To make this documentation easier to evalue, we have called out
 specific numbered reqirements from the Vendor Challenge requirements
-and the USDS playbook in our below narrative. Each point and sub-point in requirements **4.3-4.5** is mentioned below.
+and the USDS playbook in our below narrative. Each point and sub-point in requirements **Req. 4.3-4.5** is mentioned below.
 
-###Sprint 0 **(4.4.1)**
+###Sprint 0 **(Req. 4.4.1)**
 Seeking first to understand what was really needed **([USDS Play
-#1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” **(4.4.1)**
+#1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” **(Req. 4.4.1)**
 during the week prior to our iterative development kickoff. In this
 pre-sprint research and planning phase (**Req. 4.3.2.1-4**), we built
 an initial prototype to identify any technical risks and to validate
@@ -244,7 +244,7 @@ In our final sprint we acted yet again on user interview data that the
 the top filter hid the results "below the fold". We visually
 compressed that area, and moved some explanatory texts into pop-ups.
 We tested the responsivenss more fully by testing on Android and
-iPhone platforms **(4.5.1.1)**. We added the color icons. We continued work on the
+iPhone platforms **(Req. 4.5.1.1)**. We added the color icons. We continued work on the
 Map, which we do not fully complete. We found a number of small bugs
 which we fixed in a prioritized process as our budgeted effort ran
 down and the product achieved a level of usability of which we are
@@ -297,7 +297,7 @@ as one expects on a Google map on other sites.
 ### A "Serverless" Architecture
 
 In this project we have employed the modern, so-called "Serverless"
-architecture **(4.5.1.2)**.  That is, because this functionality is "stateless",
+architecture **(Req. 4.5.1.2)**.  That is, because this functionality is "stateless",
 there is no database. We read the data from a static file directly
 into the javascript which runs in the user's browser. This makes a
 much simpler implementation than using an unnecessarily database. In
@@ -317,13 +317,13 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 
 #### Technical Architecture
 
-As per **(4.5.1.2)**,
+As per **(Req. 4.5.1.2)**,
 1. Bootstrap
 1. Google Maps (API Key required)
 1. Angular JS
-1. AWS Cloud Environments **(4.5.1.3)**,**(4.5.1.3.2)**
-1. Docker **(4.5.1.3.1)**
-1. Jenkins CI Server **(4.5.1.3.2)**
+1. AWS Cloud Environments **(Req. 4.5.1.3)**,**(Req. 4.5.1.3.2)**
+1. Docker **(Req. 4.5.1.3.1)**
+1. Jenkins CI Server **(Req. 4.5.1.3.2)**
 1. JSON web service data endpoint
 1. Gulp as a task runner
 
@@ -346,7 +346,7 @@ This deploys an instance of the application on Amazon Web Services, then configu
 1. CloudFlare account and API keys to automate interactions with CloudFlare.
 1. Chrome, Firefox, or IE 9+ web browser
 
-#### Instructions **(4.5.1.6)**
+#### Instructions **(Req. 4.5.1.6)**
 
 
 Clone the repository, and change to the project directory:
@@ -389,7 +389,7 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 ./bin/deploy agile-ms civicactions.com
 ```
 
-This will deploy a candidate instance to https://agile-ms.civicactions.com/ **(4.5.1.5)**.
+This will deploy a candidate instance to https://agile-ms.civicactions.com/ **(Req. 4.5.1.5)**.
 
 ## Testing 
                                                                                                                                   
@@ -403,7 +403,7 @@ The tests run 2 suites (mobile and desktop viewports), first on Google Chrome an
                                                     
 ### Test Development                                                    
                                                                                                     
-As per **(4.5.1.4)**, the tests use the open source [Selenium
+As per **(Req. 4.5.1.4)**, the tests use the open source [Selenium
 Builder](https://github.com/SeleniumBuilder/se-builder) Selenium 2
 JSON test format, which is easy to version control and edit with the
 open source Selenium Builder Firefox extension (which can run/debug
