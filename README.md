@@ -63,6 +63,9 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 
 ## The USDS Playbook Checklist
 
+ROB: Rob is going to make short answers here, but we need to add references to the plays through our other material,
+which I think will be easy.
+
 1. Understand what people need
 2. Address the whole experience, from start to finish
 3. Make it simple and intuitive
@@ -98,6 +101,10 @@ the form of the criteria provided to us:
 
 ### 4.3. Research and Discovery
 
+NICOLE -- Please answer the points here, but briefly---if we have something long, let's put it in a secondary
+document. I would like this section to be quickly readable. We'll put an anchor/bookmark to the long narrative that
+you wrote (which I do intend to leave included in this docuemnt).
+
 * 4.3.1. Initiate a research phase to explore the existing tool and pinpoint the needs of the
        people who will use the service, and the ways the service will fit into their lives.
        Document the process and findings. (see: https://playbook.cio.gov/#play1)
@@ -115,6 +122,9 @@ the form of the criteria provided to us:
 
 
 #### 4.4. Design
+
+JEN -- Please answer the points here, but briefly---if we have something long, let's put it in a secondary
+document. I would like this section to be quickly readable.
 
 * 4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
        use the service.
