@@ -2,7 +2,10 @@
 
 ### Product Manager
 Robert Read
+
 35 years' experience in role 
+
 X hours on this project 
-Description: 
+
+*Description:* 
 Rob lead the multi-disciplinary team, gathered user requirements, and translated user research into actionable plans.
