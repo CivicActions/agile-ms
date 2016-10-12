@@ -116,17 +116,17 @@ the form of the criteria provided to us:
 
 #### 4.4. Design
 
-4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
+1. 4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
        use the service.
-4.4.2. Criteria for evaluation
-4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
+2. 4.4.2. Criteria for evaluation
+3. 4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
 	 Web Design Standards*4).
-4.4.2.2. Give users clear information about where they are in each step of the
+4. 4.4.2.2. Give users clear information about where they are in each step of the
 	 process.
-4.4.2.3. Follow accessibility best practices to ensure all people can use the
+5. 4.4.2.3. Follow accessibility best practices to ensure all people can use the
 	 service.
-4.4.2.4. Use language that is familiar to the user and easy to understand.
-4.4.2.5. Use language and design consistently throughout the service,
+6. 4.4.2.4. Use language that is familiar to the user and easy to understand.
+7. 4.4.2.5. Use language and design consistently throughout the service,
 	 including online and offline touch points.
 
 
