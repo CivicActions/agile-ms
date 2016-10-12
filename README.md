@@ -91,7 +91,9 @@ The overall team structure was:
 * Software Engineer: Ethan Teague
 * Software Engineer: Alex Schmoe
 * UX Designer: Jen Harris
-* Engagment Manager: Steve Curtis
+* Engagement Manager: Steve Curtis
+
+For details on roles and rates, please see documentation submitted not in our repo.
 
 
 ## Evaluation Criteria Point-by-Point
