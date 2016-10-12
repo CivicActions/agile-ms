@@ -167,11 +167,11 @@ This initial pre-sprint or sprint zero work enabled us to conduct our next phase
 
 Following the principle of keeping it simple and intuitive (USDS Play #3), we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would clarify this terminology and rating confusion and make it a prominent part of the searching, raising it to the top. We also developed additional verbiage using a "plain language" approach that we hoped would clarify terminology (Req. 4.4.2.4):
 
-- Slot Contractor = Quality Star participating Daycare Center
-- Center = Daycare Center
-- Group Home = Licensed Home-based Daycare
-- Non-relative In-Home = Nanny
-- Non-relative Out-of-Home = Un-licensed Home-based Daycare
+- Slot Contractor => Quality Star participating Daycare Center
+- Center => Daycare Center
+- Group Home => Licensed Home-based Daycare
+- Non-relative In-Home => Nanny
+- Non-relative Out-of-Home => Un-licensed Home-based Daycare
 
 Since we had developed a prototype early on, we were able to iterate on our prototype in each user interview with screen-sharing technology so that users could directly experience our website (USDS Plays #9 and #4). For the remaining user sessions, our experienced UX expert (USDS play #7) continued to follow a think-aloud approach which asked users to place themselves in a scenario where they are either social workers trying to find a daycare provider in order to get their kids a placement or a parent conducting a daycare search.
 
