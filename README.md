@@ -202,6 +202,8 @@ In our final sprint we acted yet again on user interview data that the the top f
 We tested the responsivenss more fully by testing on Android and iPhone platforms. We added the color icons. We continued work on the Map, which we do not fully complete. We found a number of small bugs which we
 fixed in a prioritized process as our budgeted effort ran down and the product achieved a level of usability of which we are proud.
 
+![FinalScreen](https://cloud.githubusercontent.com/assets/5296671/19327369/45c7997e-9094-11e6-9b4b-2df6aab53775.png)
+
 ## The Story of our Map
 
 One of the main features in our prototype is the use of a Google Map populated with *real* geolocated data. Many of the providers are commercial businesses that have a clearly defined place-of-business which can be determined with a Google search or the Google Places geo-location service. When our users told us that a map would be useful, and that they needed to know where providers were, we executed a script to geolocate Licensed providers. From the data set given to us, we found 352 likely physical addresses, which allowed us to accurately place those Centers, Group Homes, and Slot Contractors on
