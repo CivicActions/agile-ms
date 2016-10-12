@@ -14,6 +14,11 @@
   * Design
   * Prototype
 * Story of our User Interaction
+  * Sprint 0
+  * Sprint 1
+  * Sprint 2
+  * Sprint 3
+  * Sprint 4
 * Story of our Map
 * "Serverless Architecture"
 * Build and Deploy Instructions
