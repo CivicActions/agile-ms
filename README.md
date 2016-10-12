@@ -59,7 +59,8 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
 ### How to Report Bugs
 
-To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue
+To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue.
+At present, there are a small number of issues because we used a [public Trello board](https://trello.com/b/ajnQPxSx/agile-ms-prototype) to manage our development.
 
 ## The USDS Playbook Checklist
 
@@ -256,7 +257,14 @@ at their current location. We learned that for social workers this was
 less valuable, but we implemented, using Google Maps, a Google-like
 place search for finding providers.
 
-Additionally, in working with our front end engineering team, we were able to choose the US Federal Style Guide {FILLMEIN Correct name?} as our responsive pattern library (Req. 4.4.2.1, 4.4.2.4).  We built using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensure that we used consistent language, iconography and patterns for all experiences (Req. 4.4.2.5).  Additionally, by using the Federal style guide we were able to ensure that we followed accessibility standards.  
+Additionally, in working with our front end engineering team, we were
+able to choose the [Draft U.S. Web Design Standards](https://standards.usa.gov/) as
+our responsive pattern library (Req. 4.4.2.1, 4.4.2.4).  We built
+using a responsive framework which enabled our application to
+iteratively be tested with end users on multiple devices and ensure
+that we used consistent language, iconography and patterns for all
+experiences (Req. 4.4.2.5).  Additionally, by using the Federal style
+guide we were able to ensure that we followed accessibility standards.
 
 In this second Sprint, we were fortunate to receive the support of
 Virginia Pryor, Director of the Georgia Department of Family and
