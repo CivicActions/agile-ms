@@ -85,14 +85,14 @@ Here is a brief summary of how we followed the playbook; specific examples are c
 
 Robert L. Read was appointed the role Product Owner and was responsible for the overall success of the prototype.
 The team was structured as follows:
-* Product Owner: Rob Read
-* Tech Lead: Adam Bergstein
-* UX Lead: Nicole Tecco-Reece
-* Deployment Engineer: Josh Rose
-* Software Engineer: Ethan Teague
-* Software Engineer: Alex Schmoe
-* UX Designer: Jen Harris
-* Engagement Manager: Steve Curtis
+* Product Manager: Rob Read
+* Technical Architect: Adam Bergstein
+* Lead Interaction Designer / User Researcher / Usability Tester: Nicole Tecco-Reece
+* DevOps Engineer / Backend Web Developer: Josh Rose
+* Frontend Web Developer: Ethan Teague
+* Frontend Web Developer: Alex Schmoe
+* Interaction Designer / User Researcher / Usability Tester: Jen Harris
+* Delivery Manager: Steve Curtis
 
 For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.
 
