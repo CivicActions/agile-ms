@@ -43,6 +43,16 @@ angular.module('app')
   }
 })
 
+.directive('resourceTeaser', function factory($window, $browser) {
+  return {
+    restrict: 'E',
+    scope: {
+     'item': '=',
+    },
+    templateUrl: 'public/views/resource/teaser.html'
+  }
+})
+
 .directive('providerFiltersLicensed', function factory($window, $browser, $timeout) {
   return {
     restrict: 'E',
@@ -76,54 +86,5 @@ angular.module('app')
       // Watch filtered ResultsCallbvac
       $scope.respondFilterChange($scope);
     }
-  }
-})
-
-// Watches input for return key
-.directive('nameSearchField', function () {
-  return {
-    restrict: 'A',
-    controller: 'NameSearchController',
-    link: function ($scope, $element, $attrs) {
-      $element.bind("keydown", function (event) {
-        if (event.which == 13) {
-          $scope.nameSearchAction(event);
-        }
-      });
-    }
-  }
-})
-
-.directive('nameSearch', function factory($window, $browser, $timeout) {
-  return {
-    restrict: 'E',
-    controller: 'NameSearchController',
-    templateUrl: 'public/views/resource/name-search.html',
-    link: function($scope, $element, $attrs) {
-      // Watch filtered ResultsCallbvac
-      $scope.respondFilterChange($scope);
-    }
-  }
-})
-
-.directive('resourceTeaser', function factory($window, $browser) {
-  return {
-    restrict: 'E',
-    scope: {
-     'item': '=',
-    },
-    controller: 'ResourceItemController',
-    templateUrl: 'public/views/resource/teaser.html'
-  }
-})
-
-.directive('resourceFull', function factory($window, $browser) {
-  return {
-    restrict: 'E',
-    scope: {
-     'item': '=',
-    },
-    controller: 'ResourceItemController',
-    templateUrl: 'public/views/resource/full.html'
   }
 });

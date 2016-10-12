@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('rawService', ['ngResource'])
+angular.module('rawService', [])
 
   .service('FilteredResults', function($rootScope){
     // Watch filteredResults Callback
