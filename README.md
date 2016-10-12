@@ -59,7 +59,8 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
 ### How to Report Bugs
 
-To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue
+To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue.
+At present, there are a small number of issues because we used a [public Trello board](https://trello.com/b/ajnQPxSx/agile-ms-prototype) to manage our development.
 
 ## The USDS Playbook Checklist
 
