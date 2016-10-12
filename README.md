@@ -7,7 +7,12 @@
  * Links to Working Prototype
  * Key Assets
  * How to Report Bugs
-* Team Structure
+* The USDS Playbook Checklist
+* Evaluation Criteria Point-by-Point
+  * Team Structure
+  * Research and Discovery
+  * Design
+  * Prototype
 * Story of our User Interaction
 * Story of our Map
 * "Serverless Architecture"
@@ -56,6 +61,22 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 
 To report a bug against this prototype, please enter a new GitHub issue: https://github.com/CivicActions/agile-ms/issue
 
+## The USDS Playbook Checklist
+
+1. Understand what people need
+2. Address the whole experience, from start to finish
+3. Make it simple and intuitive
+4. Build the service using agile and iterative practices
+5. Structure budgets and contracts to support delivery
+6. Assign one leader and hold that person accountable
+7. Bring in experienced teams
+8. Choose a modern technology stack
+9. Deploy in a flexible hosting environment
+10. Automate testing and deployments
+11. Manage security and privacy through reusable processes
+12. Use data to drive decisions
+13. Default to open
+
 ## Team Structure
 
 Robert L. Read was appointed the role Product Owner and was responsible for the overall success of the prototype.
@@ -69,6 +90,44 @@ The overall team structure was:
 * UX Designer: Jen Harris
 * Engagment Manager: Steve Curtis
 
+
+## Evaluation Criteria Point-by-Point
+
+In an effort to make the burdern of evaluating our effort easier, we have organized some of documentation in
+the form of the criteria provided to us:
+
+### 4.3. Research and Discovery
+
+4.3.1. Initiate a research phase to explore the existing tool and pinpoint the needs of the
+people who will use the service, and the ways the service will fit into their lives.
+Document the process and findings. (see: https://playbook.cio.gov/#play1)
+4.3.2. Criteria for evaluation
+4.3.2.1. Spend time with current and prospective users of the service.
+4.3.2.2. Use qualitative and quantitative research methods to determine
+people’s goals, needs, and behaviors; be thoughtful about the time
+spent.
+4.3.2.3. Test prototypes of solutions with prospective users you do not have a
+current direct relationship with (e.g. friends, coworkers, family, etc).
+Explain how you found them in the documentation.
+4.3.2.4. Document the findings about user goals, needs, behaviors, and
+preferences.
+4.3.2.5. Create a prioritized list of tasks the user is trying to accomplish.
+
+
+#### 4.4. Design
+
+4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
+use the service.
+4.4.2. Criteria for evaluation
+4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
+Web Design Standards*4).
+4.4.2.2. Give users clear information about where they are in each step of the
+process.
+4.4.2.3. Follow accessibility best practices to ensure all people can use the
+service.
+4.4.2.4. Use language that is familiar to the user and easy to understand.
+4.4.2.5. Use language and design consistently throughout the service,
+including online and offline touch points.
 
 
 
@@ -234,13 +293,15 @@ the State of Mississippi probably has a postal addresses for licensed
 providers which could enrich the user experience, and hope our
 prototype has demonstrated how to make use of this.
 
-## A "Serverless" Architecture
+## Prototype
+
+### A "Serverless" Architecture
 
 In this project we have employed the modern, so-called "Serverless" architecture.  That is, because this functionality is "stateless", there is no database. We read the data from a static file directly into the javascript which runs in the user's browser. This makes a much simpler implementation than using an unnecessarily database. In this model, the maintenance of the provider data could be as simple as editing a CSV file. However, any software engineer would understand how to connect this to a relational database if that is preferable.
 
-## Deployment Instructions
+### Deployment Instructions
 
-### Development Workflow
+#### Development Workflow
 
 We are leveraging a fork-and-pull peer reviewed code model that leverages pull requests.
 
@@ -248,7 +309,7 @@ Pull requests are submitted to the Slack channel and any available developer per
  
 Deployments occur through Slack by running the commands noted above. Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
 
-### Technical Architecture
+#### Technical Architecture
 1. Bootstrap
 1. Google Maps (API Key required)
 1. Angular JS
@@ -258,7 +319,7 @@ Deployments occur through Slack by running the commands noted above. Dev deploym
 1. JSON web service data endpoint
 1. Gulp as a task runner
 
-### Local Development Config
+#### Local Development Config
 1. Ensure you have node, and npm installed on your local machine
 1. Navigate to /docroot
 1. run gulp from terminal
