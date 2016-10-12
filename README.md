@@ -98,35 +98,35 @@ the form of the criteria provided to us:
 
 ### 4.3. Research and Discovery
 
-4.3.1. Initiate a research phase to explore the existing tool and pinpoint the needs of the
+* 4.3.1. Initiate a research phase to explore the existing tool and pinpoint the needs of the
        people who will use the service, and the ways the service will fit into their lives.
        Document the process and findings. (see: https://playbook.cio.gov/#play1)
-4.3.2. Criteria for evaluation
-4.3.2.1. Spend time with current and prospective users of the service.
-4.3.2.2. Use qualitative and quantitative research methods to determine
+* 4.3.2. Criteria for evaluation
+* 4.3.2.1. Spend time with current and prospective users of the service.
+* 4.3.2.2. Use qualitative and quantitative research methods to determine
 	 people’s goals, needs, and behaviors; be thoughtful about the time
 	 spent.
-4.3.2.3. Test prototypes of solutions with prospective users you do not have a
+* 4.3.2.3. Test prototypes of solutions with prospective users you do not have a
 	 current direct relationship with (e.g. friends, coworkers, family, etc).
 	 Explain how you found them in the documentation.
-4.3.2.4. Document the findings about user goals, needs, behaviors, and
+* 4.3.2.4. Document the findings about user goals, needs, behaviors, and
 	 preferences.
 4.3.2.5. Create a prioritized list of tasks the user is trying to accomplish.
 
 
 #### 4.4. Design
 
-1. 4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
+* 4.4.1. Initiate a research phase to explore and pinpoint the needs of the people who will
        use the service.
-2. 4.4.2. Criteria for evaluation
-3. 4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
+* 4.4.2. Criteria for evaluation
+* 4.4.2.1. Use a simple and flexible design style guide for the service (e.g. U.S.
 	 Web Design Standards*4).
-4. 4.4.2.2. Give users clear information about where they are in each step of the
+* 4.4.2.2. Give users clear information about where they are in each step of the
 	 process.
-5. 4.4.2.3. Follow accessibility best practices to ensure all people can use the
+* 4.4.2.3. Follow accessibility best practices to ensure all people can use the
 	 service.
-6. 4.4.2.4. Use language that is familiar to the user and easy to understand.
-7. 4.4.2.5. Use language and design consistently throughout the service,
+* 4.4.2.4. Use language that is familiar to the user and easy to understand.
+* 4.4.2.5. Use language and design consistently throughout the service,
 	 including online and offline touch points.
 
 
