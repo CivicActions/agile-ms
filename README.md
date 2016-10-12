@@ -84,7 +84,7 @@ Here is a brief summary of how we followed the playbook; specific examples are c
 ## Team Structure
 
 Robert L. Read was appointed the role Product Owner and was responsible for the overall success of the prototype.
-The overall team structure was:
+The team was structured as follows:
 * Product Owner: Rob Read
 * Tech Lead: Adam Bergstein
 * UX Lead: Nicole Tecco-Reece
@@ -94,7 +94,9 @@ The overall team structure was:
 * UX Designer: Jen Harris
 * Engagement Manager: Steve Curtis
 
-For details on roles and rates, please see documentation submitted not in our repo.
+For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.
+
+Details regarding rates per role were submitted to the Program Officer as part of our response to RFP Section VIII, as instructed. 
 
 
 ## Evaluation Criteria Point-by-Point
