@@ -206,6 +206,12 @@ Following these interviews, in our third sprint, we identified the need for a ne
 
 ![final2days](https://cloud.githubusercontent.com/assets/5296671/19286190/5c02cfba-8fc2-11e6-89bb-91f417fc9908.png)
 
+###Sprint 4
+
+In our final sprint we acted yet again on user interview data that the the top filter hid the results "below the fold". We visually compressed that area, and moved some explanatory texts into pop-ups.
+We tested the responsivenss more fully by testing on Android and iPhone platforms. We added the color icons. We continued work on the Map, which we do not fully complete. We found a number of small bugs which we
+fixed in a prioritized process as our budgeted effort ran down and the product achieved a level of usability of which we are proud.
+
 ## The Story of our Map
 
 One of the main features in our prototype is the use of a Google Map
@@ -229,6 +235,9 @@ brick-and-mortar place of business must be protected. We believe that
 the State of Mississippi probably has a postal addresses for licensed
 providers which could enrich the user experience, and hope our
 prototype has demonstrated how to make use of this.
+
+We did not complete the full coordination of zooming and panning of the map
+as one expects on a Google map on other sites.
 
 ## Prototype
 
