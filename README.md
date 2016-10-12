@@ -106,6 +106,8 @@ Details regarding rates per role were submitted to the Procurement Team Leader a
 
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
+To make this documentation easier to evalue, we have called out specific numbered reqirements from the Vendor Challenge requirements and the USDS playbook in our below narrative.
+
 ###Sprint 0
 Seeking first to understand what was really needed **([USDS Play #1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” during the week prior to our iterative development kickoff. In this pre-sprint research and planning phase (**Req. 4.3.2.1-4**), we built an initial prototype to identify any technical risks and to validate some initial technical assumptions.  This prototype and all work to follow was in pursuit of the goal that the state of MS team described in the caseworker Q+A session - to provide a way for social workers and parents to find safe and quality daycares in MS without training.
 
@@ -238,7 +240,7 @@ job with fundamental mission:
 
 ## The Story of our Map
 
-Following **([USDS Play #2](https://playbook.cio.gov/#play2)** to look at the whole experience,
+Following **([USDS Play #2](https://playbook.cio.gov/#play2))** to look at the whole experience,
 our users quickly identified the need to see the provider locations on a map.
 One of the main features in our prototype is the use of a Google Map
 populated with *real* geolocated data. We used offline code (see: [https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool](https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool))
