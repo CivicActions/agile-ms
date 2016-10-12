@@ -106,12 +106,33 @@ Details regarding rates per role were submitted to the Procurement Team Leader a
 
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
-To make this documentation easier to evalue, we have called out specific numbered reqirements from the Vendor Challenge requirements and the USDS playbook in our below narrative.
+To make this documentation easier to evalue, we have called out
+specific numbered reqirements from the Vendor Challenge requirements
+and the USDS playbook in our below narrative. Each point and sub-point in requirements **4.3-4.5** is mentioned below.
 
-###Sprint 0
-Seeking first to understand what was really needed **([USDS Play #1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” during the week prior to our iterative development kickoff. In this pre-sprint research and planning phase (**Req. 4.3.2.1-4**), we built an initial prototype to identify any technical risks and to validate some initial technical assumptions.  This prototype and all work to follow was in pursuit of the goal that the state of MS team described in the caseworker Q+A session - to provide a way for social workers and parents to find safe and quality daycares in MS without training.
+###Sprint 0 **(4.4.1)**
+Seeking first to understand what was really needed **([USDS Play
+#1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” **(4.4.1)**
+during the week prior to our iterative development kickoff. In this
+pre-sprint research and planning phase (**Req. 4.3.2.1-4**), we built
+an initial prototype to identify any technical risks and to validate
+some initial technical assumptions.  This prototype and all work to
+follow was in pursuit of the goal that the state of MS team described
+in the caseworker Q+A session - to provide a way for social workers
+and parents to find safe and quality daycares in MS without training.
 
-In parallel, we began conducting some initial policy and contextual research and recruiting our “users.” We based our initial research and outreach upon the initial input from the caseworker Q&A session hosted by the state. Because our target audiences are parents and social workers (or caseworkers) who work with foster parents, we reached out to individuals in the child welfare field, beginning with members of the Annie E. Casey Foundation’s Casey Strategic Consulting Group (CSCG) and staff at private providers. We also reached out to local daycare providers in order to identify parents who might have conducted daycare searches recently. Ideally, we were looking for a sampling of users who met a cross-section of criteria (**Req. 4.3.2.1, 4.3.2.3**):
+In parallel, we began conducting some initial policy and contextual
+research and recruiting our “users.” We based our initial research and
+outreach upon the initial input from the caseworker Q&A session hosted
+by the state. Because our target audiences are parents and social
+workers (or caseworkers) who work with foster parents, we reached out
+to individuals in the child welfare field, beginning with members of
+the Annie E. Casey Foundation’s Casey Strategic Consulting Group
+(CSCG) and staff at private providers. We also reached out to local
+daycare providers in order to identify parents who might have
+conducted daycare searches recently. Ideally, we were looking for a
+sampling of users who met a cross-section of criteria (**Req. 4.3.2.1,
+4.3.2.3**):
 
  - Job: social worker, someone working in a state child welfare agency or private provider or other organization providing child welfare-related services
  - Parent: an adult with children under 6 currently in daycare, or looking for daycare
@@ -223,7 +244,7 @@ In our final sprint we acted yet again on user interview data that the
 the top filter hid the results "below the fold". We visually
 compressed that area, and moved some explanatory texts into pop-ups.
 We tested the responsivenss more fully by testing on Android and
-iPhone platforms. We added the color icons. We continued work on the
+iPhone platforms **(4.5.1.1)**. We added the color icons. We continued work on the
 Map, which we do not fully complete. We found a number of small bugs
 which we fixed in a prioritized process as our budgeted effort ran
 down and the product achieved a level of usability of which we are
@@ -276,7 +297,7 @@ as one expects on a Google map on other sites.
 ### A "Serverless" Architecture
 
 In this project we have employed the modern, so-called "Serverless"
-architecture.  That is, because this functionality is "stateless",
+architecture **(4.5.1.2)**.  That is, because this functionality is "stateless",
 there is no database. We read the data from a static file directly
 into the javascript which runs in the user's browser. This makes a
 much simpler implementation than using an unnecessarily database. In
@@ -295,12 +316,14 @@ Pull requests are submitted to the Slack channel and any available developer per
 Deployments occur through Slack by running the commands noted above. Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
 
 #### Technical Architecture
+
+As per **(4.5.1.2)**,
 1. Bootstrap
 1. Google Maps (API Key required)
 1. Angular JS
-1. AWS Cloud Environments
-1. Docker
-1. Jenkins CI Server
+1. AWS Cloud Environments **(4.5.1.3)**,**(4.5.1.3.2)**
+1. Docker **(4.5.1.3.1)**
+1. Jenkins CI Server **(4.5.1.3.2)**
 1. JSON web service data endpoint
 1. Gulp as a task runner
 
@@ -323,7 +346,8 @@ This deploys an instance of the application on Amazon Web Services, then configu
 1. CloudFlare account and API keys to automate interactions with CloudFlare.
 1. Chrome, Firefox, or IE 9+ web browser
 
-#### Instructions
+#### Instructions **(4.5.1.6)**
+
 
 Clone the repository, and change to the project directory:
 ```bash
@@ -365,7 +389,7 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 ./bin/deploy agile-ms civicactions.com
 ```
 
-This will deploy a candidate instance to https://agile-ms.civicactions.com/.
+This will deploy a candidate instance to https://agile-ms.civicactions.com/ **(4.5.1.5)**.
 
 ## Testing 
                                                                                                                                   
@@ -379,7 +403,7 @@ The tests run 2 suites (mobile and desktop viewports), first on Google Chrome an
                                                     
 ### Test Development                                                    
                                                                                                     
-The tests use the open source [Selenium
+As per **(4.5.1.4)**, the tests use the open source [Selenium
 Builder](https://github.com/SeleniumBuilder/se-builder) Selenium 2
 JSON test format, which is easy to version control and edit with the
 open source Selenium Builder Firefox extension (which can run/debug
