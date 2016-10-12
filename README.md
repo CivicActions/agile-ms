@@ -241,7 +241,7 @@ job with fundamental mission:
 Following **([USDS Play #2](https://playbook.cio.gov/#play2)** to look at the whole experience,
 our users quickly identified the need to see the provider locations on a map.
 One of the main features in our prototype is the use of a Google Map
-populated with *real* geolocated data. We used offline code [https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool](https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool)
+populated with *real* geolocated data. We used offline code (see: [https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool](https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool))
 which is not
 part of our live product to get as many geolocated records as possible (352).Many of the providers are
 commercial businesses that have a clearly defined place-of-business
