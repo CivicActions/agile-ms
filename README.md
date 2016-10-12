@@ -100,7 +100,7 @@ The team was structured as follows:
 * Interaction Designer / User Researcher / Usability Tester: Jen Harris
 * Delivery Manager: Steve Curtis
 
-For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.
+For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.md.
 
 Details regarding rates per role were submitted to the Procurement Team Leader as part of our response to RFP Section X, as instructed. 
 
