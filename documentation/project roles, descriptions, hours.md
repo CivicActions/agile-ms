@@ -1,4 +1,10 @@
-## Project personnel, roles, years of experience in role, hours spent on the RFP 3717 project, brief description of work performed for this project
+# CivicActions Vendor Challenge: Roles overview
+
+1. Role 
+2. Project personnel
+3. Years of experience in role
+4. Hours spent in this role on the RFP 3717 project
+5. Brief description of work performed for this project
 
 ### Product Manager
 Robert Read
@@ -7,5 +13,5 @@ Robert Read
 
 X hours on this project 
 
-*Description:* 
+**Description:** 
 Rob lead the multi-disciplinary team, gathered user requirements, and translated user research into actionable plans.
