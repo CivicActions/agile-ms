@@ -13,15 +13,6 @@ angular.module('app')
     $scope.$on('resultChange', function(event, data){
       $timeout(function () {
         scope.$apply(function () {
-          // 
-
-          // // Loop over filtered data set and get unique set of types.
-          // 
-          //   // Check if type is in providerType array.
-          //   if (filteredProviderTypes.indexOf(data.results[i].ProviderTypeDescription) == -1) {
-          //     filteredProviderTypes.push(data.results[i].ProviderTypeDescription);
-          //   }
-          // }
 
           var filteredProviderLicensed = [],
               filteredProviderIndependent = [];

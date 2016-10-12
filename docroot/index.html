@@ -27,68 +27,77 @@
             this.activeFilters = {};
             // full results list for filtering
             this.fullResults = [];
-            // filtered results
+            // saves filtered results by address
+            this.latLngFilteredResults = [];
+            // saves last address / zip to avoid filter
+            this.lastLatLong = {
+              lat: 0,
+              lng: 0
+            };
+            // current filtered results
             this.results = [];
             // Setter for zipcode
             this.applyFilters = function() {
-                // Filter by lat/lng
+                // Set empty result
                 var results = [];
                 if(this.activeFilters) {
-
-                  // Filter out relative providers
-                  var i = 0;
-                  for (i; i < this.fullResults.length; i++) {
-                    if (this.fullResults[i].ProviderType == 6 || this.fullResults[i].ProviderType == 8) {
-                      this.fullResults[i] = '';
-                    }
-                  }
-
                   // Filter by lat/lng
-                  var spread;
-                    if(this.activeFilters.lat && this.activeFilters.lng) {
-
+                  var lat = this.activeFilters.lat,
+                      lng = this.activeFilters.lng;
+                  if(lat && lng) {
+                    // We have the same lat lng, use filtered value
+                    if(this.lastLatLong.lat === lat && this.lastLatLong.lng === lng ) {
+                      results = this.latLngFilteredResults;
+                    }
+                    // Lat long has changed, need to filter
+                    else {
                       // Grab lat/log range, save first to avoid ~5000
                       var degreeSpread = .06,
-                          activeLat = parseFloat(Number(this.activeFilters.lat).toFixed(2)),
-                          activeLng = parseFloat(Number((this.activeFilters.lng)).toFixed(2)),
+                          activeLat = parseFloat(Number(lat).toFixed(2)),
+                          activeLng = parseFloat(Number(lng).toFixed(2)),
                           activeLatLow = activeLat - degreeSpread,
                           activeLatHigh = activeLat + degreeSpread,
                           activeLngLow = activeLng - degreeSpread,
                           activeLngHigh = activeLng + degreeSpread;
-                       results = this.fullResults.filter(function(item) {
 
-                         var itemLat = parseFloat(Number(item.lat).toFixed(2)),
-                             itemLng =  parseFloat(Number(item.lng).toFixed(2));
+                      // Set results from full results
+                      results = this.fullResults.filter(function(item) {
 
-                         return ( activeLatLow < itemLat )
-                             && ( activeLatHigh > itemLat )
-                             && ( activeLngLow < itemLng )
-                             && ( activeLngHigh > itemLng );
-                       }, this);
+                        var itemLat = parseFloat(Number(item.lat).toFixed(2)),
+                            itemLng =  parseFloat(Number(item.lng).toFixed(2));
+
+                        return ( activeLatLow < itemLat )
+                            && ( activeLatHigh > itemLat )
+                            && ( activeLngLow < itemLng )
+                            && ( activeLngHigh > itemLng );
+                      }, this);
+
+                      // Save filtered for use next time
+                      // @TODO
+                      this.latLngFilteredResults = results;
+                      this.lastLatLong.lat = lat;
+                      this.lastLatLong.lng = lng;
                     }
-                    // filter by provider type
-                    if(  this.activeFilters.ProviderTypeDescription
-                      && this.activeFilters.ProviderTypeDescription.length
-                    ) {
-                        results = results.filter(function(item) {
-                            return -1 !== this.activeFilters.ProviderTypeDescription.indexOf(item.ProviderTypeDescription)
-                       }, this);
-                    }
-                    // filter by rating
-                    if(  this.activeFilters.QualityRatingDescription
-                            && this.activeFilters.QualityRatingDescription.length
-                    ) {
-                        results = results.filter(function(item) {
-                            return -1 !== this.activeFilters.QualityRatingDescription.indexOf(item.QualityRatingDescription)
-                        }, this);
-                    }
-                    // filter by name
-                    if(  this.activeFilters.ProviderName) {
-                        results = results.filter(function(item) {
-                            return JSON.stringify(item.ProviderName.toLowerCase()).match(this.activeFilters.ProviderName.toLowerCase());
-                        }, this);
-                    }
-                    // @TODO more filters
+
+
+                  }
+                  // filter by provider type
+                  if(  this.activeFilters.ProviderTypeDescription
+                    && this.activeFilters.ProviderTypeDescription.length
+                  ) {
+                      results = results.filter(function(item) {
+                          return -1 !== this.activeFilters.ProviderTypeDescription.indexOf(item.ProviderTypeDescription)
+                     }, this);
+                  }
+                  // filter by rating
+                  if(  this.activeFilters.QualityRatingDescription
+                          && this.activeFilters.QualityRatingDescription.length
+                  ) {
+                      results = results.filter(function(item) {
+                          return -1 !== this.activeFilters.QualityRatingDescription.indexOf(item.QualityRatingDescription)
+                      }, this);
+                  }
+                  // @TODO more filters
                 }
                 // Call angular callback
                 if(this.onChangeCallback) {
@@ -232,11 +241,8 @@
       </div>
     </footer>
     <script src="public/js/jquery.min.js"></script>
-    <script src="public/js/bootstrap.js"></script>
     <script src="public/js/angular.js"></script>
     <script src="public/js/angular-sanitize.js"></script>
-    <script src="public/js/angular-animate.js"></script>
-    <script src="public/js/angular-resource.js"></script>
     <script src="public/js/angular-touch.js"></script>
     <script src="public/js/ui-bootstrap.js"></script>
     <script src="public/js/ui-bootstrap-tpls.js"></script>
@@ -271,7 +277,10 @@
             , function( data ) {
                 var sameLatLng = [];
                 // sort results
-                filteredResults.fullResults = data.sort(function(a,b) {
+                filteredResults.fullResults = data.filter(function(item) {
+                  // filter out Relatives
+                  return !(parseInt(item.ProviderType) === 6 || parseInt(item.ProviderType) == 8)
+                }).sort(function(a,b) {
                   if(a.ProviderType > b.ProviderType) {
                     return 1;
                   }
