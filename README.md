@@ -60,14 +60,14 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 
 Robert L. Read was appointed the role Product Owner and was responsible for the overall success of the prototype.
 The overall team structure was:
-* Product Owner: Rob
-* Tech Lead: Adam
-* UX Lead: Nicole
-* Deployment Engineer: Josh
-* Software Engineer: Ethan
-* Software Engineer: Alex
-* UX Designer: Jen
-* Engagment Manager: Steve
+* Product Owner: Rob Read
+* Tech Lead: Adam Bergstein
+* UX Lead: Nicole Tecco-Reece
+* Deployment Engineer: Josh Rose
+* Software Engineer: Ethan Teague
+* Software Engineer: Alex Schmoe
+* UX Designer: Jen Harris
+* Engagment Manager: Steve Curtis
 
 
 
