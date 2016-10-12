@@ -202,7 +202,7 @@ In our final sprint we acted yet again on user interview data that the the top f
 We tested the responsivenss more fully by testing on Android and iPhone platforms. We added the color icons. We continued work on the Map, which we do not fully complete. We found a number of small bugs which we
 fixed in a prioritized process as our budgeted effort ran down and the product achieved a level of usability of which we are proud.
 
-![FinalScreen](https://cloud.githubusercontent.com/assets/5296671/19327369/45c7997e-9094-11e6-9b4b-2df6aab53775.png)
+![FinalScreen](https://cloud.githubusercontent.com/assets/5296671/19327548/1809616a-9095-11e6-8fa4-0c9a2a99df99.png)
 
 ## The Story of our Map
 
