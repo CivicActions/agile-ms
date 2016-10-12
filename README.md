@@ -238,6 +238,8 @@ job with fundamental mission:
 
 ## The Story of our Map
 
+Following **([USDS Play #2](https://playbook.cio.gov/#play2)** to look at the whole experience,
+our users quickly identified the need to see the provider locations on a map.
 One of the main features in our prototype is the use of a Google Map
 populated with *real* geolocated data. Many of the providers are
 commercial businesses that have a clearly defined place-of-business
@@ -261,7 +263,7 @@ providers which could enrich the user experience, and hope our
 prototype has demonstrated how to make use of this.
 
 We did not complete the full coordination of zooming and panning of the map
-as one expects on a Google map on other sites.
+as one expects on a Google map on other sites. 
 
 ----------
 
