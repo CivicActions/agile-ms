@@ -63,7 +63,7 @@ To report a bug against this prototype, please enter a new GitHub issue: https:/
 
 ## The USDS Playbook Checklist
 
-CivicActions has been following the USDS Playbook since the 18F Agile BPA and using it as a checklist on all projects.
+CivicActions has been following the [USDS Playbook](https://playbook.cio.gov/) since the 18F Agile BPA and using it as a checklist on all projects.
 Here is a brief summary of how we followed the playbook; specific examples are called out throughout this document.
 
 1. **Understand what people need** -- We did no less than 9 user interviews, leading us to a layout significantly different
@@ -151,7 +151,7 @@ document. I would like this section to be quickly readable.
 
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
-Seeking first to understand what was really needed (USDS Play #1), we
+Seeking first to understand what was really needed ([USDS Play #1](https://playbook.cio.gov/#play1)), we
 conducted a sprint “zero” during the week prior to our iterative
 development kickoff. In this pre-sprint research and planning phase (Req. 4.3.2.1-4),
 we built an initial prototype to identify any technical risks and to
@@ -210,7 +210,7 @@ During sprint zero user research we quickly identified the top ways in which par
 We also identified the top 2 tasks in the list as our priority.  Our prototype development would focus on enabling users to identify and find enough information to narrow down their top choices to conduct follow up (or to share with a third party, like foster parent.)
 
 This was our attempt to address the whole experience, from start to
-finish (USDS Play #2), although we had time in this exercise to
+finish ([USDS Play #2](https://playbook.cio.gov/#play2)), although we had time in this exercise to
 address only the first, highest-priority item.
 
 We determined that users are most interested in identifying high
@@ -233,8 +233,8 @@ Users were also confused by the star ratings, believing falsely that
 most of the identified providers had a zero (0) rating when in fact
 they had no rating or were not participating in the rating system.
 
-Following the principle of keeping it simple and intuitive (USDS Play
-#3), we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would
+Following the principle of keeping it simple and intuitive ([USDS Play #3](https://playbook.cio.gov/#play3)),
+we put effort into developing new GUI wireframes (Req. 4.4.2.2) that would
 clarify this terminology and rating confusion and make it a prominent
 part of the searching, raising it to the top. We also developed
 additional verbiage using a "plain language" approach that we hoped
@@ -242,9 +242,9 @@ would clarify terminology (Req. 4.4.2.4).
 
 Since we had developed a prototype early on, we were able to iterate
 on our prototype in each user interview with screen-sharing technology
-so that users could directly experience our website (USDS Plays #9 and
-#4). For the remaining user sessions, our experienced UX expert (USDS
-play #7) continued to follow a think-aloud approach which asked users
+so that users could directly experience our website (USDS Plays [#9](https://playbook.cio.gov/#play9) and [#4](https://playbook.cio.gov/#play4)).
+For the remaining user sessions, our experienced UX expert ([USDS
+play #7](https://playbook.cio.gov/#play7)) continued to follow a think-aloud approach which asked users
 to place themselves in a scenario where they are either social workers
 trying to find a daycare provider in order to get their kids a
 placement or a parent conducting a daycare search.
@@ -279,7 +279,7 @@ workers will be in many locations when conducting a search of this
 type. Although our prototype did not mature to the point of making it
 appropriate to use quantitative data collection, such as A/B testing,
 time-on-task testing, etc., we continually and iteratively used user
-interview data to guide our development decisions (USDS Play #12).
+interview data to guide our development decisions ([USDS Play #12](https://playbook.cio.gov/#play12)).
 
 Instead we heavily used qualitative data (Req. 4.3.2.2) in order to collect it we
 asked open-ended questions first so as to get as much unbiased
@@ -294,7 +294,7 @@ fraction (approximately one-fifth) of all providers we could discover
 the physical postal address of the businesses and place these on the
 map. We immediately started Sprint 4 with that in mind. Our automated
 deployment allowed us to rapidly deploy significant development
-changes with confidence (USDS Play #10).
+changes with confidence ([USDS Play #10](https://playbook.cio.gov/#play10)).
 
 
 
@@ -328,7 +328,14 @@ prototype has demonstrated how to make use of this.
 
 ### A "Serverless" Architecture
 
-In this project we have employed the modern, so-called "Serverless" architecture.  That is, because this functionality is "stateless", there is no database. We read the data from a static file directly into the javascript which runs in the user's browser. This makes a much simpler implementation than using an unnecessarily database. In this model, the maintenance of the provider data could be as simple as editing a CSV file. However, any software engineer would understand how to connect this to a relational database if that is preferable.
+In this project we have employed the modern, so-called "Serverless"
+architecture.  That is, because this functionality is "stateless",
+there is no database. We read the data from a static file directly
+into the javascript which runs in the user's browser. This makes a
+much simpler implementation than using an unnecessarily database. In
+this model, the maintenance of the provider data could be as simple as
+editing a CSV file. However, any software engineer would understand
+how to connect this to a relational database if that is preferable.
 
 ### Deployment Instructions
 
