@@ -3678,6 +3678,10 @@ fieldset {
   position: relative;
   overflow: hidden; }
 
+#map-help {
+  margin-top: 5px;
+  font-size: 11px; }
+
 img[src="public/images/circle.gif"] {
   background: #f99537;
   width: 20px;
