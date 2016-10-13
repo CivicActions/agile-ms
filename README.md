@@ -88,8 +88,8 @@ and security issues.
 ## Team Structure
 
 Robert L. Read was appointed the role Product Owner/Product Manager/Agile Coach and was responsible for the overall success of the prototype.
-An team with a combined experience of 87 years in their respective roles was assembled, structured as follows
-**([USDS Play #2](https://playbook.cio.gov/#play2))**:
+An team with a combined experience of 87 years in their respective roles was assembled, budgeted part-time, and structured as follows
+**([USDS Play #2](https://playbook.cio.gov/#play2)**, **([USDS Play #5](https://playbook.cio.gov/#play5))**:
 * Product Manager: Rob Read
 * Technical Architect: Adam Bergstein
 * Lead Interaction Designer / User Researcher / Usability Tester: Nicole Tecco-Reece
