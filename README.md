@@ -272,12 +272,13 @@ our users quickly identified the need to see the provider locations on a map.
 One of the main features in our prototype is the use of a Google Map
 populated with *real* geolocated data. We used offline code (see: [https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool](https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool))
 which is not
-part of our live product to get as many geolocated records as possible (352).Many of the providers are
+part of our live product to get as many geolocated records as possible.
+Many of the providers are
 commercial businesses that have a clearly defined place-of-business
 which can be determined with a Google search or the Google Places
 geo-location service. When our users told us that a map would be
 useful, and that they needed to know where providers were, we executed
-a script to geolocate Licensed providers. From the data set given to
+a script to geolocate Licensed providers. From the dataset of 5000 records given to
 us, we found 352 likely physical addresses, which allowed us to
 accurately place those Centers, Group Homes, and Slot Contractors on
 the Google Map. Furthermore, we use a different marker for each
@@ -285,7 +286,7 @@ provider type. We suspect that the data provided by the State for this
 exercise contains only a fraction of all the data, since all providers
 types are populated from the beginning of the alphabet to a particular
 letter. The full data may make the maps look more interesting and
-attractive than they do in our accurate prototype.
+attractive than they do in our current prototype.
 
 We believe the privacy of the those providers that do not have a
 brick-and-mortar place of business must be protected. We believe that
@@ -306,7 +307,7 @@ In this project we have employed the modern, so-called "Serverless"
 architecture **(Req. 4.5.1.2)**.  That is, because this functionality is "stateless",
 there is no database. We read the data from a static file directly
 into the javascript which runs in the user's browser. This makes a
-much simpler implementation than using an unnecessarily database. In
+much simpler implementation than using an unnecessary database. In
 this model, the maintenance of the provider data could be as simple as
 editing a CSV file. However, any software engineer would understand
 how to connect this to a relational database if that is preferable.
@@ -315,15 +316,13 @@ how to connect this to a relational database if that is preferable.
 
 #### Development Workflow
 
-We are leveraging a fork-and-pull peer reviewed code model that leverages pull requests.
-
-Pull requests are submitted to the Slack channel and any available developer performs a code review.
- 
-Deployments occur through Slack by running the commands noted above. Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
+Deployments occur through Slack by running the commands noted below.
+Dev deployments are done to perform tests. Prod deployments occur once Dev deployments have been validated.
 
 #### Technical Architecture
 
 As per **(Req. 4.5.1.2)**,
+
 1. Bootstrap
 1. Google Maps (API Key required)
 1. Angular JS
@@ -334,6 +333,7 @@ As per **(Req. 4.5.1.2)**,
 1. Gulp as a task runner
 
 #### Local Development Config
+
 1. Ensure you have node, and npm installed on your local machine
 1. Navigate to /docroot
 1. run gulp from terminal
