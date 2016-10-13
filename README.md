@@ -69,7 +69,8 @@ Here is a brief summary of how we followed the playbook; specific examples are c
    ends with a phone call, so we added a map and an ability to call a provider with a single click.
 3. **Make it simple and intuitive** -- We polished and removed features. We utilize Google-like search to find locations as a simplifcation.
    We emphasized non-legal language on the site.
-4. **Build the service using agile and iterative practices** -- We had four formal sprints with daily scrum and sprint planning meetings. We rapidly
+4. **Build the service using agile and iterative practices** -- We had four formal sprints with
+[daily scrum](https://github.com/CivicActions/agile-ms/blob/master/documentation/call%20notes.md) and sprint planning meetings. We rapidly
    evolved an ever-changing prototype.
 5. **Structure budgets and contracts to support delivery** -- We budgeted a part-time team with the necessary skills.
 6. **Assign one leader and hold that person accountable** -- We empowered a single Product Owner for all prioritization and executive tie-breaking power.
@@ -228,6 +229,8 @@ For parents, we implemented the feature of starting the map and search at their 
 determined, we start them in Jackson, MS.) We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like location search for finding providers.
 
 In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (**Req. 4.4.2.1, 4.4.2.4**). We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensured that we used consistent language, iconography and patterns for all experiences (**Req. 4.4.2.5**).
+We worked iteratively each work day (see daily call [notes](https://github.com/CivicActions/agile-ms/blob/master/documentation/call%20notes.md))
+in order to be as Agile as possible **([USDS Play #4](https://playbook.cio.gov/#play4))**.
 
 ![devsprint](https://cloud.githubusercontent.com/assets/7294004/19327283/c47bfee6-9093-11e6-8dc4-e2e3ea23a120.png)
 
