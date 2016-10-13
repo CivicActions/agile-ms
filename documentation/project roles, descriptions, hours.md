@@ -61,7 +61,7 @@ Alex Schmoe
 
 8 years' experience in role 
 
-X hours on this project 
+22 hours on this project 
 
 **Description:** 
 Alex integrated 18f web design standards SCSS into gulp build process, created Angular 1.x app to deal with filters and results listing, and handled responsive styling for the prototype.
@@ -71,10 +71,10 @@ Jen Harris
 
 15 years' experience in role 
 
-27 hours on this project 
+21 hours on this project 
 
 **Description:** 
-Need 
+Jen collaborated with our Lead User Researcher to produce a user story map to guide design decisions. She designed and specified several iterations of annotated user interfaces, observed user interviews/usability testing sessions, incorporating learnings into designs, and advised front end developer on style and design specifications. She also assisted with our testing efforts. 
 
 ### Delivery Manager
 Steve Curtis 
@@ -84,4 +84,4 @@ Steve Curtis
 18 hours on this project 
 
 **Description:** 
-Assembled the project team. Ran meetings, surfacing dependencies and blockers, and making sure that each team member understood the highest priority task for their time on the project each day. Oversaw project documentation and reporting. Ran project retrospectives, aimed at continually improving process and product.    
+Steve assembled the project team, ran meetings, surfacing dependencies and blockers, and making sure that each team member understood the highest priority task for their time on the project each day. Oversaw project documentation and reporting. Ran project retrospectives, aimed at continually improving process and product.    
