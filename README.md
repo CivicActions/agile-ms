@@ -70,7 +70,7 @@ Here is a brief summary of how we followed the playbook; specific examples are c
 3. **Make it simple and intuitive** -- We polished and removed features. We utilize Google-like search to find locations as a simplifcation.
    We emphasized non-legal language on the site.
 4. **Build the service using agile and iterative practices** -- We had four formal sprints with
-[daily scrum](https://github.com/CivicActions/agile-ms/blob/master/documentation/call%20notes.md) and sprint planning meetings. We rapidly
+daily scrum (see [call notes](https://github.com/CivicActions/agile-ms/blob/master/documentation/call%20notes.md)) and sprint planning meetings. We rapidly
    evolved an ever-changing prototype.
 5. **Structure budgets and contracts to support delivery** -- We budgeted a part-time team with the necessary skills.
 6. **Assign one leader and hold that person accountable** -- We empowered a single Product Owner for all prioritization and executive tie-breaking power.
