@@ -31,34 +31,32 @@ NTR: Both sites (Rob’s prototype and MS current site) are insufficient for the
 
 RR: To prioritize user stories with Adam and Nicole for Sprint 1 
 
-
-
-10/4 Morning scrum  
+### 10/4 Morning scrum  
 
 Rob: 
 Today: Backlog grooming
 - Understanding where we stand wrt prototype 
 - Question of how we're going to handle addresses
-Balance 9 
+- Balance 9 
 
 Ethan: 
 - Got gulp put together 
 - Alex implemented Angular -- and having a tough time implementing this -- big learning curve. Hazard that implementation of pizzanearme in Angular 
-Balance 7 
+- Balance 7 
 
 Josh: 
 - Finish deploy script - site is up 
 Today: Continue build -- set up Jenkins 
 - Slack integration, etc 
 - Or something else.... 
-Balance 7 
+- Balance 7 
 
 Adam
 - Have something tangible 
 - Begin evaluating feedback that comes 
 - In absence of Jen, working on wireframes 
 - Unblock Ethan
-Balance 7 
+- Balance 7 
 
 Nicole: 
 - Provider type copy 
