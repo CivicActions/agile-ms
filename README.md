@@ -399,6 +399,7 @@ This will deploy a candidate instance to https://agile-ms.civicactions.com/ **(R
 
 Within our project, we set up deployment as Slack commands for maximum ease and so that non-developers may kick-off a deployment.
 If you use Slack you may wish to do the same:
+
 1. Dev deployment Slack command: /agile-ms-deploy-dev
 1. Prod deployment Slack command: /agile-ms-deploy-prod
 
