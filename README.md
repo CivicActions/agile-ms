@@ -104,7 +104,7 @@ Details regarding rates per role were submitted to the Procurement Team Leader a
 
 ## The Story of our User Interactions (Req 4.3.1+4.4)
 
-To make this documentation easier to evalue, we have called out
+To make this documentation easier to evaluate, we have called out
 specific numbered reqirements from the Vendor Challenge requirements
 and the USDS playbook in our below narrative. Each point and sub-point in requirements **Req. 4.3-4.5** is mentioned below.
 
@@ -151,7 +151,7 @@ User Tasks (**Req. 4.3.2.5**):
 
  1. Identify daycare provider options. This is conducted by personal knowledge and recommendations and internet searches.
 	 - Users identify options by selecting a location that is convenient for the parent/caretakers of the child whether near to work or home.
- 2. Users evaluate options in order to narrow down their options to a subset of possible providers.
+ 2. Users evaluate possibilities in order to narrow down their options to a subset of possible providers.
 	 - Users are most interested in "fit" of the center profile with their child(ren).  For example, is this a "high quality" provider.  High quality assessments could include: center- or home-based preference, teacher/student ratios, type of curriculum, age group(s) served, hours of operation, all year calendar, after school or early day programs, safety measures, etc. etc.
  3. Users select 1-3 options to call.  Users want to know whether program is taking applications or has openings and supplementing information that can be found online.
  
@@ -162,13 +162,15 @@ During sprint zero user research we quickly identified the top ways in which par
 
  - Location (address, zipcode) was critical. It was the first thing most users wanted to enter. Some offered to hop off the site and look in Google Maps to get better results.
  - The hours of operation, curriculum, ages of children served and programs, and other information (other parents reviews, pictures, etc) that did not exist in our dataset.
- - Whether the providers are currently taking applications.
+ - Whether the providers are currently taking applications (also not in our dataset).
 
 We also identified the top two tasks in the list as our priority.  Our prototype development would focus on enabling users to identify and find enough information to narrow down their top choices to conduct follow up (or to share with a third party, like foster parent.)
 
-This was our attempt to address the whole experience, from start to finish **([USDS Play #2](https://playbook.cio.gov/#play2)**, although we had time in this exercise to address only the first, highest-priority item.
+This was our attempt to address the whole experience, from start to finish **([USDS Play #2](https://playbook.cio.gov/#play2))**, although we had time in this exercise to address only the first, highest-priority item.
 
 We determined that users are most interested in identifying high quality, safe daycare providers convenient to their work or home location. The search function is used to identify state-licensed and registered providers and, ideally, to lessen the legwork needed in order to make a selection (**Req. 4.3.2.5**).
+
+We used the modern practice of "Story Mapping" to organize our learnings:
 
 ![sprintzero](https://cloud.githubusercontent.com/assets/7294004/19325171/7a42ecb2-908a-11e6-92e3-fc0a23347cf7.png)
  
@@ -200,11 +202,15 @@ placement or a parent conducting a daycare search.
 
 For all phases of research, design and development, we documented our user research sessions and findings, driving our development with user stories (**Req. 4.3.2.4**). 
 
-{FILLMEIN: Link to Google docs of user sessions + Stories in backlog in Trello?}
+{FILLMEIN: Link to Google docs of user sessions}
 
-For parents, we implemented the feature of starting the map and search at their current location. We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like location search for finding providers.
+All of our stories, including the backlog of stories we did not accomplish, can be found in
+various columns in [public Trello board](https://trello.com/b/ajnQPxSx/agile-ms-prototype).
 
-In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (**Req. 4.4.2.1, 4.4.2.4**). We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensure that we used consistent language, iconography and patterns for all experiences (**Req. 4.4.2.5**).
+For parents, we implemented the feature of starting the map and search at their current location. (If the location of the user cannot be
+determined, we start them in Jackson, MS.) We learned that for social workers this was less valuable, but we implemented, using Google Maps, a Google-like location search for finding providers.
+
+In working with our front end engineering team, we chose the [US Web Design Standards](https://standards.usa.gov/) as our responsive pattern library (**Req. 4.4.2.1, 4.4.2.4**). We built the site using a responsive framework which enabled our application to iteratively be tested with end users on multiple devices and ensured that we used consistent language, iconography and patterns for all experiences (**Req. 4.4.2.5**).
 
 ![devsprint](https://cloud.githubusercontent.com/assets/7294004/19327283/c47bfee6-9093-11e6-8dc4-e2e3ea23a120.png)
 
@@ -219,9 +225,10 @@ In the second sprint, we were fortunate to receive the support of Virginia Pryor
 ![devsprint](https://cloud.githubusercontent.com/assets/5296671/19285974/bb5f5998-8fc1-11e6-8bea-9ae9f03133c2.png)
 
 These Georgia child welfare staff were able to help us confirm that the terminology of provider types and ratings was hard to understand. Additionally, they helped us to identify the importance of ensuring that the site worked on all devices—essential, given that workers will be in many locations when conducting a search of this
-type. Although our prototype did not mature to the point of making it appropriate to use quantitative data collection, such as A/B testing, time-on-task testing, etc., we continually and iteratively used user interview data to guide our development decisions **([USDS Play #12](https://playbook.cio.gov/#play12))**.
+type. Although our prototype did not mature to the point of making it appropriate to use quantitative data collection, such as A/B testing, time-on-task testing, etc., we continually and iteratively used user interview data to guide our development decisions **([USDS Play #12](https://playbook.cio.gov/#play12))**
+(**Req. 4.3.2.2**).
 
-Instead we relied heavily on qualitative data (**Req. 4.3.2.2**) in order to collect it we asked open-ended questions first so as to get as much unbiased information from the users as possible. Our users were parents and social workers who worked with foster youths.
+In order to collect this qualitative data we asked open-ended questions first so as to get as much unbiased information from the users as possible. Our users were parents and social workers who worked with foster youths.
 
 
 ----------
