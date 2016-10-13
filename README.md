@@ -234,7 +234,7 @@ Following these interviews, in our third sprint, we identified the need for a ne
 
 ![final2days](https://cloud.githubusercontent.com/assets/7294004/19325170/7a41f910-908a-11e6-8473-dc5e6f9612df.png)
 
-![final2days](https://cloud.githubusercontent.com/assets/5296671/19286190/5c02cfba-8fc2-11e6-89bb-91f417fc9908.png)
+![correctedtimeline](https://cloud.githubusercontent.com/assets/5296671/19353326/99be9f02-9128-11e6-9066-71c88a1e19c6.png)
 
 ----------
 
