@@ -9,7 +9,7 @@
 ### Product Manager
 Robert Read
 
-35 years' experience in role 
+17 years' experience in role 
 
 51 hours on this project 
 
