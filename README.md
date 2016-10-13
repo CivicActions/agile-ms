@@ -1,4 +1,4 @@
-# Agile Mississippi Project 
+# Agile Mississippi Vendor Challenge Project (RFP 3717)
 
 ## Table of Contents
 
@@ -8,11 +8,7 @@
  * Key Assets
  * How to Report Bugs
 * The USDS Playbook Checklist
-* Evaluation Criteria Point-by-Point
-  * Team Structure
-  * Research and Discovery
-  * Design
-  * Prototype
+* Team Structure
 * Story of our User Interaction
   * Sprint 0
   * Sprint 1
@@ -31,12 +27,12 @@
 We approached this project as if we were actually going to deploy a
 usable, lasting, maintainable tool for Mississippians to find day
 care. Our project is a serverless, responsive implementation that
-presents a usable map of commercial day care centers in our data that
+presents a usable map of some commercial day care centers from the provided data that
 enriches the user experience. Following our user testing, we
-significantly simplified and rearranged the user interface and rewrote
+simplified and rearranged the user interface. We rewrote
 it in plain language to maximize usability.
 
-We followed the USDS Playbook through 4 intense Sprints, each of which
+We followed the USDS Playbook through four intense Sprints, each of which
 garnered better and better user feedback. The resulting site allows
 users to search on locales specified the way one does a Google map
 search for an area. We clarify and link to the State’s definitions of
