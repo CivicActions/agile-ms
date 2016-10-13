@@ -296,6 +296,7 @@ One of the main features in our prototype is the use of a Google Map
 populated with *real* geolocated data. We used offline code (see: [https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool](https://github.com/CivicActions/agile-ms/tree/master/offlineGeolocationTool))
 which is not
 part of our live product to get as many geolocated records as possible.
+
 Many of the providers are
 commercial businesses that have a clearly defined place-of-business
 which can be determined with a Google search or the Google Places
@@ -305,7 +306,8 @@ a script to geolocate Licensed providers. From the dataset of 5000 records given
 us, we found 352 likely physical addresses, which allowed us to
 accurately place those Centers, Group Homes, and Slot Contractors on
 the Google Map. Furthermore, we use a different marker for each
-provider type. We suspect that the data provided by the State for this
+provider type, as per Requirement **(2.6)** which asks us to included additional data as needed.
+We suspect that the data provided by the State for this
 exercise contains only a fraction of all the data, since all providers
 types are populated from the beginning of the alphabet to a particular
 letter. The full data may make the maps look more interesting and
