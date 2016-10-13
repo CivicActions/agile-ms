@@ -87,9 +87,10 @@ and security issues.
 
 ## Team Structure
 
-Robert L. Read was appointed the role Product Owner/Product Manager/Agile Coach and was responsible for the overall success of the prototype.
+Robert L. Read was appointed the role Product Owner/Product Manager/Agile Coach and was responsible for the overall success of the prototype
+**[USDS Play #6](https://playbook.cio.gov/#play6)**.
 An team with a combined experience of 87 years in their respective roles was assembled, budgeted part-time, and structured as follows
-**([USDS Play #2](https://playbook.cio.gov/#play2)**, **[USDS Play #5](https://playbook.cio.gov/#play5))**:
+**([USDS Play #7](https://playbook.cio.gov/#play7)**, **[USDS Play #5](https://playbook.cio.gov/#play5))**:
 * Product Manager: Rob Read
 * Technical Architect: Adam Bergstein
 * Lead Interaction Designer / User Researcher / Usability Tester: Nicole Tecco-Reece
@@ -341,7 +342,7 @@ Dev deployments are done to perform tests. Prod deployments occur once Dev deplo
 
 #### Technical Architecture
 
-As per **(Req. 4.5.1.2)**,
+As per **(Req. 4.5.1.2)** and **([USDS Play #8](https://playbook.cio.gov/#play8))**, our technology stack is:
 
 1. Bootstrap
 1. Google Maps (API Key required)
@@ -360,7 +361,8 @@ As per **(Req. 4.5.1.2)**,
 
 ### Deployment
 
-This deploys an instance of the application on Amazon Web Services, then configures DNS (with CDN and SSl) using Cloudflare. Docker Machine is used to provision and bootstrap the instances. The AWS CLI is used to manage network configuration and a Cloudflare CLI is used to configure Cloudflare (the AWS CLI and Cloudflare tools are run via Docker, so dependencies are minimized).
+This deploys an instance of the application on Amazon Web Services, then configures DNS (with CDN and SSl) using Cloudflare **([USDS Play #9](https://playbook.cio.gov/#play9))**. Docker Machine is used to provision and bootstrap the instances. The AWS CLI is used to manage network configuration and a Cloudflare CLI is used to configure Cloudflare (the AWS CLI and Cloudflare tools are run via Docker, so dependencies are minimized).
+This automated deployment process allows repeatable control of the server security **([USDS Play #11](https://playbook.cio.gov/#play11))**.
 
 #### Requirements
 1. [Docker](https://www.docker.com/) to manage containers.
