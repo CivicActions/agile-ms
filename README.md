@@ -97,7 +97,8 @@ The team was structured as follows:
 * Interaction Designer / User Researcher / Usability Tester: Jen Harris
 * Delivery Manager: Steve Curtis
 
-For details on roles hours per role, please see documentation located elsewhere in this repository: agile-ms/documentation/project roles, descriptions, hours.md.
+For details on roles hours per role, please see documentation located elsewhere in this repository:
+[agile-ms/documentation/project roles, descriptions, hours.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/project%20roles%2C%20descriptions%2C%20hours.md).
 
 Details regarding rates per role were submitted to the Procurement Team Leader as part of our response to RFP Section X, as instructed. 
 
@@ -108,8 +109,7 @@ specific numbered reqirements from the Vendor Challenge requirements
 and the USDS playbook in our below narrative. Each point and sub-point in requirements **Req. 4.3-4.5** is mentioned below.
 
 ###Sprint 0 **(Req. 4.4.1)**
-Seeking first to understand what was really needed **([USDS Play
-#1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” **(Req. 4.4.1)**
+Seeking first to understand what was really needed **([USDS Play #1](https://playbook.cio.gov/#play1))**, we conducted a sprint “zero” **(Req. 4.4.1)**
 during the week prior to our iterative development kickoff. In this
 pre-sprint research and planning phase (**Req. 4.3.2.1-4**), we built
 an initial prototype to identify any technical risks and to validate
