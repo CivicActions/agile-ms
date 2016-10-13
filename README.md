@@ -85,6 +85,8 @@ and security issues.
 12. **Use data to drive decisions** -- We used user interviews to iteratively and readically develop our new approach.
 13. **Default to open** -- Our repo has been public with a Creative Commons Public Domain license since the start of the project.
 
+Look for our references to each of these plays in the text below.
+
 ## Team Structure
 
 Robert L. Read was appointed the role Product Owner/Product Manager/Agile Coach and was responsible for the overall success of the prototype
