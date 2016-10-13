@@ -63,7 +63,7 @@ At present, there are a small number of issues because we used a [public Trello 
 CivicActions has been following the [USDS Playbook](https://playbook.cio.gov/) since the 18F Agile BPA and using it as a checklist on all projects.
 Here is a brief summary of how we followed the playbook; specific examples are called out throughout this document.
 
-1. **Understand what people need** -- We did no less than nine user interviews, leading us to a layout significantly different
+1. **Understand what people need** -- We did no less than eleven user interviews, leading us to a layout significantly different
    than that currently used by the state. We discovered a new "plain language" terminology.
 2. **Address the whole experience, from start to finish** -- We learned that the search for a provider begins with thinking about location and
    ends with a phone call, so we added a map and an ability to call a provider with a single click.
@@ -139,7 +139,7 @@ sampling of users who met a cross-section of criteria (**Req. 4.3.2.1,
 
 We then scheduled three initial user sessions combining a contextual interview and “think aloud” exercises (**Req. 4.3.2.2**) focused on two websites: the MDHS site and the site hosting our initial sprint zero prototype (**Req. 4.3.2.1 - 4.3.2.4**).
 
-Here is a complete list of all our user interviews (not just Sprint 0):
+Here is a complete list of all our user interviews (not just Sprint 0) **([USDS Play #12](https://playbook.cio.gov/#play12)**, **[USDS Play #1](https://playbook.cio.gov/#play1))**:
 
 1. [Polly - former social worker - Sept 27.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Polly%20-%20former%20social%20worker%20-%20Sept%2027.md)
 1. [Rachel - foster parent, social worker, adoptive parent - Sept 28.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Rachel%20-%20foster%20parent%2C%20social%20worker%2C%20adoptive%20parent%20-%20Sept%2028.md)
