@@ -56,9 +56,6 @@ Our fully-open GitHub Repo is: https://github.com/CivicActions/agile-ms.
 1. Production server: https://agile-ms.civicactions.com
 1. CI server: http://ci.civicactions.net
 1. Trello board (Project backlog and Sprint backlogs): https://trello.com/b/ajnQPxSx/agile-ms-prototype
-1. Slack channel: #agile-ms
-1. Dev deployment Slack command: /agile-ms-deploy-dev
-1. Prod deployment Slack command: /agile-ms-deploy-prod
 
 ### How to Report Bugs
 
@@ -85,7 +82,7 @@ Here is a brief summary of how we followed the playbook; specific examples are c
 11. **Manage security and privacy through reusable processes** -- Because this application collects no information from the user, privacy is not an issue.
     Security of the AWS server is handled by Amazon, the cloud provider, and reasonable practices.
 12. **Use data to drive decisions** -- We used user interviews to iteratively and readically develop our new approach.
-13. **Default to open** -- Our repo has been public since the start of the project.
+13. **Default to open** -- Our repo has been public with a Creative Commons Public Domain license since the start of the project.
 
 ## Team Structure
 
@@ -392,6 +389,12 @@ Run the ./bin/deploy script to initiate the deploy, where the first parameter is
 ```
 
 This will deploy a candidate instance to https://agile-ms.civicactions.com/ **(Req. 4.5.1.5)**.
+
+Within our project, we set up deployment as Slack commands for maximum ease and so that non-developers may kick-off a deployment.
+If you use Slack you may wish to do the same:
+1. Dev deployment Slack command: /agile-ms-deploy-dev
+1. Prod deployment Slack command: /agile-ms-deploy-prod
+
 
 ## Testing 
                                                                                                                                   
