@@ -13,7 +13,7 @@ As a small business, CivicActions can not sign up for unlimited liability.  Ther
 
 That the personnel assigned to a project will remain a part of the project throughout the duration of the contract as long as the personnel are employed by the Vendor, unless replaced by the Vendor at the request of the State.  This requirement includes the responsibility for ensuring all non-citizens maintain current INS eligibility throughout the duration of the contract.
 
-### CivicActions Response: 
+### CivicActions' Response: 
 
 One of the benefits of working with CivicActions is our diversity both technically and demographically.  Part of that includes rotating our technical staff through projects. We would ask the State of Mississippi to consider allowing CivicActions to continue this policy while working on this project.
 
