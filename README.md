@@ -137,7 +137,23 @@ sampling of users who met a cross-section of criteria (**Req. 4.3.2.1,
  - Tech savvy: low to medium
  - Geographic area: ideally Mississippi, but if not possible then a range of states
 
-We then scheduled three initial user sessions combining a contextual interview and “think aloud” exercises (**Req. 4.3.2.2**) focused on two websites: the MDHS site and the site hosting our initial sprint zero prototype (**Req. 4.3.2.1 - 4.3.2.4**)
+We then scheduled three initial user sessions combining a contextual interview and “think aloud” exercises (**Req. 4.3.2.2**) focused on two websites: the MDHS site and the site hosting our initial sprint zero prototype (**Req. 4.3.2.1 - 4.3.2.4**).
+
+Here is a complete list of all our user interviews (not just Sprint 0):
+
+1. [Polly - former social worker - Sept 27.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Polly%20-%20former%20social%20worker%20-%20Sept%2027.md)
+1. [Rachel - foster parent, social worker, adoptive parent - Sept 28.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Rachel%20-%20foster%20parent%2C%20social%20worker%2C%20adoptive%20parent%20-%20Sept%2028.md)
+1. [Lillian - birth parent, daycare proc - Sept 29.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Lillian%20-%20birth%20parent%2C%20daycare%20proc%20-%20Sept%2029.md)
+
+1. [Polly - former social worker - Oct 4.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Polly%20-%20former%20social%20worker%20-%20Oct%204.md)
+1. [Cindy - GA resource department supervisor - Oct 5.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Cindy%20-%20GA%20resource%20department%20supervisor%20-%20Oct%205.md)
+1. [Rachel - foster parent, social worker, adoptive parent - Oct 6.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Rachel%20-%20foster%20parent%2C%20social%20worker%2C%20adoptive%20parent%20-%20Oct%206.md)
+1. [Sherri and Susan - GA resource workers - Oct 6.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Sherri%20and%20Susan%20-%20GA%20resource%20workers%20-%20Oct%206.md)
+1. [Tammy - GA child welfare director - Oct 6.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Tammy%20-%20GA%20child%20welfare%20director%20-%20Oct%206.md)
+1. [Wanda - GA director, placement supervisor - Oct 7.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Wanda%20-%20GA%20director%2C%20placement%20supervisor%20-%20Oct%207.md)
+1. [Angela - adoption case manager - Oct 10.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Angela%20-%20adoption%20case%20manager%20-%20Oct%2010.md)
+1. [Wanda - GA director, placement supervisor - Oct 11.md](https://github.com/CivicActions/agile-ms/blob/master/documentation/ux-notes/Wanda%20-%20GA%20director%2C%20placement%20supervisor%20-%20Oct%2011.md)
+
 
 We realized that to quickly convey convenient providers we could use a map to show the location of nearest providers. Later we realized that only certain provider types are places of business with physical addresses. We quickly prototyped a map using "fake" addresses based around the geographic center of the zip codes, which we had for each provider.
 
