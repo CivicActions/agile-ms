@@ -305,8 +305,9 @@ useful, and that they needed to know where providers were, we executed
 a script to geolocate Licensed providers. From the dataset of 5000 records given to
 us, we found 352 likely physical addresses, which allowed us to
 accurately place those Centers, Group Homes, and Slot Contractors on
-the Google Map. Furthermore, we use a different marker for each
-provider type, as per Requirement **(2.6)** which asks us to included additional data as needed.
+the Google Map, as per Requirement **(2.6)** which asks us to included additional data as needed.
+Furthermore, we use a different marker for each
+provider type.
 We suspect that the data provided by the State for this
 exercise contains only a fraction of all the data, since all providers
 types are populated from the beginning of the alphabet to a particular
